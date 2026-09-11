@@ -76,7 +76,9 @@
   // that content lives now, and send anything unrecognized to the 404
   // page rather than silently doing nothing. Only applies to in-page
   // section hashes on this page — cv.html and qa-suite.html are unaffected.
-  var KNOWN_SECTIONS = ["#top", "#about", "#experience", "#skills", "#projects", "#contact"];
+  // "#main" is the skip link's target — without it here, keyboard users
+  // pressing "Skip to content" would be sent to the 404 page.
+  var KNOWN_SECTIONS = ["#top", "#main", "#about", "#experience", "#skills", "#projects", "#contact"];
   var LEGACY_ANCHORS = { "#work": "#projects", "#resume": "cv.html", "#cv": "cv.html" };
   function routeHash() {
     var hash = location.hash;

@@ -7,7 +7,8 @@
 :root {
   --ink: #23262b;
   --ink-soft: #5b6169;
-  --ink-faint: #8b9096;
+  /* #8b9096 read at ~3:1 on the page ground; axe flagged it. 4.5:1+ now. */
+  --ink-faint: #666b72;
   --bg: #f7f7f5;
   --surface: #ffffff;
   --surface-2: #f1efea;
@@ -27,7 +28,7 @@
   --pass-soft: #e6efe9;
   --fail: #a1503c;
   --fail-soft: #f5e6e1;
-  --skip: #a3792f;
+  --skip: #82601f;
   --skip-soft: #f3ead7;
 }
 
@@ -35,7 +36,7 @@
   :root:not([data-theme="light"]) {
     --ink: #eceae4;
     --ink-soft: #adb2ac;
-    --ink-faint: #797f7a;
+    --ink-faint: #929892;
     --bg: #17191b;
     --surface: #1e2124;
     --surface-2: #262a2c;
@@ -58,7 +59,7 @@
 :root[data-theme="dark"] {
   --ink: #eceae4;
   --ink-soft: #adb2ac;
-  --ink-faint: #797f7a;
+  --ink-faint: #929892;
   --bg: #17191b;
   --surface: #1e2124;
   --surface-2: #262a2c;
@@ -98,6 +99,14 @@ body {
 a { color: var(--accent-ink); text-decoration-color: color-mix(in srgb, var(--accent-ink) 40%, transparent); }
 a:hover, a:focus-visible { text-decoration-color: var(--accent-ink); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* Off-screen until focused: the first Tab stop on every page. */
+.skip-link {
+  position: absolute; left: 12px; top: -80px; z-index: 100;
+  background: var(--accent-ink); color: #fff; font-weight: 600; font-size: 0.92rem;
+  padding: 10px 16px; border-radius: var(--radius-sm); text-decoration: none;
+}
+.skip-link:focus { top: 12px; }
 
 h1, h2, h3, h4 {
   font-family: "Spectral", Georgia, "Times New Roman", serif;
@@ -286,6 +295,11 @@ ul.wins li::before { content: "＋"; color: var(--accent-ink); font-weight: 700;
     from { width: 0%; }
     to { width: var(--target); }
   }
+  /* The global reduced-motion rule shortens durations, but a scroll-driven
+     animation has no duration to shorten — switch it off outright. */
+  @media (prefers-reduced-motion: reduce) {
+    .skill-bar-fill { animation: none; }
+  }
 }
 
 /* ---------------- projects ---------------- */
@@ -394,7 +408,7 @@ footer a { color: var(--ink-faint); }
 .qa-section { margin-top: 40px; }
 .qa-section h2 { font-size: 1.1rem; letter-spacing: 0.02em; text-transform: uppercase; color: var(--accent-ink); margin-bottom: 16px; }
 
-.qa-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.qa-stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
 .qa-stat { background: var(--surface); padding: 20px 18px; }
 .qa-stat .num { font-family: "Spectral", serif; font-size: 1.7rem; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; }
 .qa-stat .label { margin-top: 4px; font-size: 0.8rem; color: var(--ink-soft); }
@@ -449,3 +463,78 @@ footer a { color: var(--ink-faint); }
   .qa-test-row { flex-wrap: wrap; }
   .qa-test-project { width: auto; }
 }
+
+/* dashboard v2: showcase, accessibility, performance, stability, tag filter */
+/* .qa-section is a <section>: drop the landing page's 60px section rhythm. */
+section.qa-section { padding-block: 0; border-top: none; margin-top: 44px; }
+@media (max-width: 720px) {
+  /* five stat tiles in a two-column grid: let the last one span the row */
+  .qa-stat:last-child:nth-child(odd) { grid-column: span 2; }
+}
+.qa-lede { color: var(--ink-soft); font-size: 0.92rem; margin: -6px 0 16px; max-width: 70ch; }
+.qa-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; }
+.qa-grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; }
+
+.qa-showcase { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 24px; align-items: center; }
+.qa-showcase video { width: 100%; max-width: 100%; aspect-ratio: 16 / 9; border-radius: var(--radius-sm); border: 1px solid var(--line); background: #111; display: block; }
+.qa-showcase-play {
+  width: 100%; aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center; gap: 10px;
+  font: inherit; font-size: 1rem; font-weight: 600; color: #fff; cursor: pointer;
+  background: radial-gradient(circle at 50% 45%, #3a4a44 0%, #151816 75%);
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+}
+.qa-showcase-play:hover, .qa-showcase-play:focus-visible { background: radial-gradient(circle at 50% 45%, var(--accent) 0%, #151816 80%); }
+.qa-showcase-play span { font-size: 1.6rem; line-height: 1; }
+.qa-showcase h3 { font-size: 1.1rem; }
+.qa-showcase p { color: var(--ink-soft); font-size: 0.92rem; margin-top: 8px; }
+.qa-showcase .btn { margin-top: 16px; }
+@media (max-width: 720px) { .qa-showcase { grid-template-columns: 1fr; } }
+
+.qa-headline { font-family: "Spectral", serif; font-size: 1.35rem; font-weight: 600; }
+.qa-headline.is-good { color: var(--pass); }
+.qa-headline.is-bad { color: var(--fail); }
+
+.qa-table-wrap { overflow-x: auto; }
+.qa-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; font-variant-numeric: tabular-nums; }
+.qa-table th, .qa-table td { text-align: left; padding: 9px 10px; border-top: 1px solid var(--line); white-space: nowrap; }
+.qa-table th { border-top: none; font-size: 0.74rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-soft); }
+.qa-table td.is-over { color: var(--fail); font-weight: 600; }
+.qa-table td.is-ok { color: var(--pass); }
+
+.qa-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.qa-chip {
+  font: inherit; font-size: 0.8rem; padding: 5px 12px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink-soft);
+}
+.qa-chip:hover { border-color: var(--accent); color: var(--accent-ink); }
+.qa-chip[aria-pressed="true"] { background: var(--accent-ink); border-color: var(--accent-ink); color: #fff; }
+.qa-tag { flex: 0 0 auto; font-size: 0.72rem; color: var(--ink-soft); background: var(--surface-2); padding: 2px 8px; border-radius: 999px; }
+
+.qa-runs { display: inline-flex; gap: 2px; vertical-align: middle; }
+.qa-run { width: 7px; height: 14px; border-radius: 2px; background: var(--pass); }
+.qa-run.is-f { background: var(--fail); }
+.qa-run.is-k { background: var(--skip); }
+.qa-run.is-s { background: var(--line); }
+.qa-slowest { list-style: none; margin: 0; padding: 0; font-size: 0.88rem; }
+.qa-slowest li { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-top: 1px solid var(--line); }
+.qa-slowest li:first-child { border-top: none; }
+.qa-slowest .qa-test-duration { width: auto; }
+.qa-slowest .is-regressed { color: var(--fail); font-weight: 600; }
+.qa-stability-empty { color: var(--ink-soft); font-size: 0.9rem; }
+
+/* test list: one collapsible group per describe block × browser */
+.qa-suite-group { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 0 16px; }
+.qa-suite-group + .qa-suite-group { margin-top: 8px; }
+.qa-suite-group > summary {
+  list-style: none; cursor: pointer; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  padding: 11px 0; font-size: 0.9rem; font-weight: 600; color: var(--ink);
+}
+.qa-suite-group > summary::-webkit-details-marker { display: none; }
+.qa-suite-group > summary::before { content: "▸"; color: var(--ink-soft); }
+.qa-suite-group[open] > summary::before { content: "▾"; }
+.qa-group-name { flex: 1 1 auto; }
+.qa-group-counts { font-size: 0.8rem; font-weight: 400; color: var(--ink-soft); white-space: nowrap; }
+.qa-group-counts.is-bad { color: var(--fail); font-weight: 600; }
+.qa-suite-group .qa-test-row:first-of-type { border-top: 1px solid var(--line); }
+
+@media (max-width: 720px) { .qa-stats { grid-template-columns: repeat(2, 1fr); } }

@@ -1,12 +1,39 @@
-/* Print rules for cv.html — screen chrome (toolbar, nav) disappears,
-   the résumé itself lays out cleanly on paper. */
+/* Print rules for cv.html — screen chrome (toolbar, skip link) disappears and
+   the résumé is set for paper: tighter type and spacing than the screen
+   layout, whose generous section padding would otherwise push it to 7 A4
+   pages. tests/cv-print.spec.ts holds the page count to a budget. */
 @media print {
   .no-print { display: none !important; }
-  body { background: #fff; color: #111; font-size: 11.5pt; padding: 0; }
+  html { scroll-behavior: auto; }
+  body { background: #fff; color: #111; font-size: 10.5pt; line-height: 1.45; padding: 0; }
   a { color: #111; text-decoration: none; }
+
   .cv-page { max-width: none; margin: 0; padding: 0; box-shadow: none; border: none; }
+  .cv-header { padding: 0 0 10pt; margin-bottom: 12pt; }
+  .cv-header h1 { font-size: 22pt; }
+  .cv-header .role { font-size: 11.5pt; margin-top: 2pt; }
+  .cv-contact { margin-top: 6pt; gap: 10pt; font-size: 9.5pt; }
+  .cv-summary { max-width: none; margin-bottom: 0; }
+
+  /* cv-block is a <section>: undo the screen section padding and dividers. */
+  section.cv-block { padding-block: 0; margin-top: 16pt; border-top: none; break-inside: auto; }
+  .cv-block h2 { font-size: 11.5pt; margin-bottom: 8pt; }
+
   .cv-entry, .cv-simple-list li { break-inside: avoid; }
-  .cv-block { break-inside: auto; }
+  .cv-entry + .cv-entry { margin-top: 10pt; padding-top: 10pt; }
+  .cv-entry .job-title { font-size: 11pt; }
+  .cv-entry .job-client { font-size: 9.5pt; margin-top: 1pt; }
+  .tag-row { margin: 5pt 0 6pt; gap: 4pt; }
+  .tag { font-size: 8pt; padding: 1pt 6pt; }
+  .cv-entry ul.duties { font-size: 9.8pt; margin-bottom: 6pt; }
+  ul.duties li { margin-bottom: 2pt; }
+  .cv-entry ul.wins { font-size: 9.8pt; margin-top: 4pt; padding: 6pt 10pt; gap: 3pt; }
+  /* the screen rule sizes these in rem, which ignores the print body size */
+  ul.wins li { font-size: inherit; }
+
+  .cv-skill-line { padding: 2pt 0; font-size: 9.8pt; }
+  .cv-simple-list { font-size: 9.8pt; }
+  .cv-simple-list li { padding: 3pt 0; }
+
   h1, h2, h3 { break-after: avoid; }
-  .cv-header { padding-top: 0; }
 }

@@ -9,9 +9,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css?v=2">
+  <link rel="stylesheet" href="assets/css/styles.css?v=3">
 </head>
 <body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <nav class="site-nav">
     <div class="container">
@@ -28,6 +30,7 @@
     </div>
   </nav>
 
+  <main id="main">
   <header class="hero container" id="top">
     <div class="hero-grid">
       <div class="avatar" aria-hidden="true">SM</div>
@@ -264,9 +267,9 @@
           <div class="project-title">QA Suite Runner — live CI results for this site</div>
           <div class="project-meta-badge">This portfolio · self-hosted report</div>
         </div>
-        <p class="project-desc">This portfolio ships with its own Playwright suite, and this site is the report viewer for it — real pass/fail results published by GitHub Actions on every deploy, broken down by browser, with a run history and replay links for anything that fails.</p>
+        <p class="project-desc">This portfolio ships with its own Playwright suite, and this site is its dashboard. Every push runs it on Chromium, Firefox, WebKit and a mobile viewport, with a WCAG 2.2 accessibility gate, performance budgets, print/PDF checks for the CV, and hermetic tests for the dashboard itself. A custom reporter merges the results and publishes them with per-test stability history, plus a recorded run you can open in Playwright's Trace Viewer.</p>
         <div class="tag-row">
-          <span class="tag">Playwright</span><span class="tag">GitHub Actions</span><span class="tag">Trace Viewer</span>
+          <span class="tag">Playwright</span><span class="tag">axe-core</span><span class="tag">Custom reporter</span><span class="tag">Trace Viewer</span><span class="tag">GitHub Actions</span>
         </div>
         <p class="project-foot"><a class="btn btn-ghost" href="qa-suite.html">Open the suite runner →</a></p>
       </div>
@@ -286,6 +289,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <footer class="container">
     <span>© <span id="year"></span> Stefan Mandovski</span>
@@ -294,6 +298,6 @@
 
   <a href="#contact" class="floating-cta" id="floatingCta">Let's talk <span aria-hidden="true">→</span></a>
 
-  <script src="assets/js/main.js?v=2"></script>
+  <script src="assets/js/main.js?v=3"></script>
 </body>
 </html>

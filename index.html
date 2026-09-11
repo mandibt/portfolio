@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css?v=1">
+  <link rel="stylesheet" href="assets/css/styles.css?v=2">
 </head>
 <body>
 
@@ -120,49 +120,60 @@
           </ul>
         </div>
 
-        <div class="tl-item js-reveal">
-          <div class="tl-dot"></div>
-          <div class="job-head">
-            <div>
-              <div class="job-title">QA Lead — E-Commerce Platform (US Pet Retailer)</div>
-              <div class="job-client">Retail / E-Commerce · Offshore team of 20 (Lead)</div>
-            </div>
-            <div class="job-when">2018 — 2023</div>
-          </div>
-          <div class="tag-row">
-            <span class="tag">Selenium</span><span class="tag">Appium</span><span class="tag">SQL Server</span><span class="tag">Docker</span><span class="tag">Jenkins</span>
-          </div>
-          <ul class="duties">
-            <li>End-to-end order-lifecycle testing — cart/checkout (WCS) through fulfillment, shipping, and returns (OMS).</li>
-            <li>~800-test UI + API framework, optimized via parallel execution; mobile testing on SauceLabs; JMeter baseline load tests ahead of holiday season.</li>
-          </ul>
-          <ul class="wins">
-            <li>Validated full WCS-to-OMS integration across order placement, fulfillment, cancellations, returns, and PSP migrations.</li>
-            <li>Cut manual regression workload 80% via automation — full run down from 32 hours to 3.</li>
-            <li>Delivered coverage for critical workflows while mentoring a fast-scaling team of 20.</li>
-          </ul>
-        </div>
+        <details class="tl-more" id="tlMore">
+          <summary class="tl-more-toggle">
+            <span class="chevron" aria-hidden="true">▾</span>
+            <span class="tl-more-label">Show earlier roles</span>
+            <span class="tl-more-count">(2)</span>
+          </summary>
+          <div class="tl-more-body">
 
-        <div class="tl-item js-reveal">
-          <div class="tl-dot"></div>
-          <div class="job-head">
-            <div>
-              <div class="job-title">QA Engineer — NS NL (Transport &amp; Logistics)</div>
-              <div class="job-client">Transportation · solo → mentoring 3 onsite QAs</div>
+            <div class="tl-item js-reveal">
+              <div class="tl-dot"></div>
+              <div class="job-head">
+                <div>
+                  <div class="job-title">QA Lead — E-Commerce Platform (US Pet Retailer)</div>
+                  <div class="job-client">Retail / E-Commerce · Offshore team of 20 (Lead)</div>
+                </div>
+                <div class="job-when">2018 — 2023</div>
+              </div>
+              <div class="tag-row">
+                <span class="tag">Selenium</span><span class="tag">Appium</span><span class="tag">SQL Server</span><span class="tag">Docker</span><span class="tag">Jenkins</span>
+              </div>
+              <ul class="duties">
+                <li>End-to-end order-lifecycle testing — cart/checkout (WCS) through fulfillment, shipping, and returns (OMS).</li>
+                <li>~800-test UI + API framework, optimized via parallel execution; mobile testing on SauceLabs; JMeter baseline load tests ahead of holiday season.</li>
+              </ul>
+              <ul class="wins">
+                <li>Validated full WCS-to-OMS integration across order placement, fulfillment, cancellations, returns, and PSP migrations.</li>
+                <li>Cut manual regression workload 80% via automation — full run down from 32 hours to 3.</li>
+                <li>Delivered coverage for critical workflows while mentoring a fast-scaling team of 20.</li>
+              </ul>
             </div>
-            <div class="job-when">2017 — 2018</div>
+
+            <div class="tl-item js-reveal">
+              <div class="tl-dot"></div>
+              <div class="job-head">
+                <div>
+                  <div class="job-title">QA Engineer — NS NL (Transport &amp; Logistics)</div>
+                  <div class="job-client">Transportation · solo → mentoring 3 onsite QAs</div>
+                </div>
+                <div class="job-when">2017 — 2018</div>
+              </div>
+              <div class="tag-row">
+                <span class="tag">Robot Framework</span><span class="tag">SOATest</span><span class="tag">Jenkins</span><span class="tag">dBeaver</span>
+              </div>
+              <ul class="duties">
+                <li>First QA on the project — built a unified framework integrating API, UI, and DB validation for end-to-end coverage.</li>
+              </ul>
+              <ul class="wins">
+                <li>Framework adopted as the foundation of the client's automated testing effort.</li>
+                <li>Reduced test-cycle setup time and improved knowledge transfer across QA teams.</li>
+              </ul>
+            </div>
+
           </div>
-          <div class="tag-row">
-            <span class="tag">Robot Framework</span><span class="tag">SOATest</span><span class="tag">Jenkins</span><span class="tag">dBeaver</span>
-          </div>
-          <ul class="duties">
-            <li>First QA on the project — built a unified framework integrating API, UI, and DB validation for end-to-end coverage.</li>
-          </ul>
-          <ul class="wins">
-            <li>Framework adopted as the foundation of the client's automated testing effort.</li>
-            <li>Reduced test-cycle setup time and improved knowledge transfer across QA teams.</li>
-          </ul>
-        </div>
+        </details>
 
       </div>
     </div>
@@ -200,6 +211,33 @@
           <div class="items">Claude Code, MCP tooling, prompt engineering, Anthropic Academy (10+ courses)</div>
         </div>
       </div>
+
+      <div class="skill-bars">
+        <div class="skill-bar">
+          <div class="skill-bar-head"><span>TestCafe</span><span class="skill-bar-pct">90%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="--target:90%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-head"><span>Playwright</span><span class="skill-bar-pct">85%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="--target:85%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-head"><span>SQL &amp; data validation</span><span class="skill-bar-pct">80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="--target:80%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-head"><span>Gatling / performance testing</span><span class="skill-bar-pct">70%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="--target:70%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-head"><span>Azure DevOps &amp; CI/CD</span><span class="skill-bar-pct">75%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="--target:75%"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-head"><span>AI-assisted testing tooling</span><span class="skill-bar-pct">80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="--target:80%"></div></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -219,6 +257,18 @@
           <span class="tag">Node.js</span><span class="tag">Claude Code</span><span class="tag">OpenAI</span><span class="tag">Z.ai</span><span class="tag">Kimi</span><span class="tag">MCP</span><span class="tag">Azure DevOps</span><span class="tag">Jira</span>
         </div>
         <p class="project-foot">Deployed against live tracker projects · shared publicly with the QA automation community</p>
+      </div>
+
+      <div class="project-card js-reveal" style="margin-top:20px;">
+        <div class="project-head">
+          <div class="project-title">QA Suite Runner — live CI results for this site</div>
+          <div class="project-meta-badge">This portfolio · self-hosted report</div>
+        </div>
+        <p class="project-desc">This portfolio ships with its own Playwright suite, and this site is the report viewer for it — real pass/fail results published by GitHub Actions on every deploy, broken down by browser, with a run history and replay links for anything that fails.</p>
+        <div class="tag-row">
+          <span class="tag">Playwright</span><span class="tag">GitHub Actions</span><span class="tag">Trace Viewer</span>
+        </div>
+        <p class="project-foot"><a class="btn btn-ghost" href="qa-suite.html">Open the suite runner →</a></p>
       </div>
     </div>
   </section>
@@ -242,6 +292,8 @@
     <span><a href="https://www.linkedin.com/in/mandovski/" target="_blank" rel="noopener">linkedin.com/in/mandovski</a></span>
   </footer>
 
-  <script src="assets/js/main.js?v=1"></script>
+  <a href="#contact" class="floating-cta" id="floatingCta">Let's talk <span aria-hidden="true">→</span></a>
+
+  <script src="assets/js/main.js?v=2"></script>
 </body>
 </html>

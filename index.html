@@ -1,379 +1,247 @@
-<title>Stefan Mandovski</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #f4f5f7;
-    --surface: #ffffff;
-    --surface-2: #eaedf1;
-    --ink: #171b21;
-    --ink-soft: #4b525c;
-    --line: #d9dee4;
-    --accent: #2f6f5e;
-    --accent-ink: #1c473c;
-    --warm: #b85c28;
-    --term-bg: #12161c;
-    --term-fg: #e9edf1;
-    --term-dim: #8992a1;
-    --term-accent: #5fd9a5;
-    --shadow: 0 1px 2px rgba(23,27,33,0.04), 0 8px 24px rgba(23,27,33,0.06);
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #15181d;
-      --surface: #1c2026;
-      --surface-2: #262b33;
-      --ink: #e8eaed;
-      --ink-soft: #a7aeb8;
-      --line: #333a44;
-      --accent: #6fcb9f;
-      --accent-ink: #bdf0d6;
-      --warm: #e2915a;
-      --term-bg: #0b0e12;
-      --term-fg: #e9edf1;
-      --term-dim: #7d8592;
-      --term-accent: #6fe3ac;
-      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #15181d;
-    --surface: #1c2026;
-    --surface-2: #262b33;
-    --ink: #e8eaed;
-    --ink-soft: #a7aeb8;
-    --line: #333a44;
-    --accent: #6fcb9f;
-    --accent-ink: #bdf0d6;
-    --warm: #e2915a;
-    --term-bg: #0b0e12;
-    --term-fg: #e9edf1;
-    --term-dim: #7d8592;
-    --term-accent: #6fe3ac;
-    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
-  }
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stefan Mandovski — Senior QA Automation Engineer</title>
+  <meta name="description" content="Portfolio of Stefan Mandovski, a senior QA automation engineer specializing in TestCafe, Playwright, performance testing, and AI-assisted QA tooling.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=1">
+</head>
+<body>
 
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    padding-inline: 20px;
-  }
-  a { color: var(--accent-ink); }
-  .wrap { max-width: 760px; margin: 0 auto; }
-  code, .mono { font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; }
-
-  h1, h2, h3 { text-wrap: balance; font-family: "IBM Plex Mono", ui-monospace, monospace; margin: 0; }
-
-  /* -------- nav -------- */
-  nav {
-    position: sticky; top: 0; z-index: 10;
-    background: color-mix(in srgb, var(--bg) 88%, transparent);
-    backdrop-filter: blur(6px);
-    border-bottom: 1px solid var(--line);
-    padding-block: 12px;
-    margin-inline: -20px; padding-inline: 20px;
-  }
-  .nav-row { max-width: 760px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-  .nav-mark { font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: 0.9rem; color: var(--ink); text-decoration: none; }
-  .nav-links { display: flex; gap: 18px; flex-wrap: wrap; list-style: none; margin: 0; padding: 0; }
-  .nav-links a { font-family: "IBM Plex Mono", monospace; font-size: 0.82rem; color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid transparent; }
-  .nav-links a:hover, .nav-links a:focus-visible { color: var(--accent-ink); border-bottom-color: var(--accent); }
-
-  /* -------- hero -------- */
-  header.hero { padding-block: 56px 36px; }
-  .eyebrow {
-    display: inline-flex; align-items: center; gap: 8px;
-    font-family: "IBM Plex Mono", monospace; font-size: 0.78rem; letter-spacing: 0.06em;
-    color: var(--accent-ink); text-transform: uppercase; margin-bottom: 18px;
-  }
-  .eyebrow::before { content: "●"; color: var(--accent); font-size: 0.6rem; }
-  h1.name { font-size: clamp(2.1rem, 5vw, 3rem); font-weight: 700; letter-spacing: -0.01em; }
-  p.role { font-size: 1.15rem; color: var(--ink-soft); margin: 10px 0 0; max-width: 46ch; }
-  .locale { margin-top: 14px; font-family: "IBM Plex Mono", monospace; font-size: 0.85rem; color: var(--ink-soft); }
-
-  /* -------- terminal -------- */
-  .term {
-    margin-top: 32px;
-    background: var(--term-bg);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    border: 1px solid rgba(255,255,255,0.06);
-  }
-  .term-bar { display: flex; align-items: center; gap: 7px; padding: 11px 14px; border-bottom: 1px solid rgba(255,255,255,0.08); }
-  .term-dot { width: 10px; height: 10px; border-radius: 50%; background: #4a515c; }
-  .term-title { margin-left: 8px; font-family: "IBM Plex Mono", monospace; font-size: 0.75rem; color: var(--term-dim); }
-  .term-body { padding: 18px 18px 22px; font-family: "IBM Plex Mono", monospace; font-size: 0.86rem; color: var(--term-fg); }
-  .term-line { display: flex; gap: 10px; margin-bottom: 8px; opacity: 0; animation: rise 0.5s ease forwards; }
-  .term-line:nth-child(1){animation-delay:.05s} .term-line:nth-child(2){animation-delay:.15s}
-  .term-line:nth-child(3){animation-delay:.25s} .term-line:nth-child(4){animation-delay:.35s}
-  .term-line:nth-child(5){animation-delay:.45s} .term-line:nth-child(6){animation-delay:.55s}
-  .term-line:nth-child(7){animation-delay:.68s}
-  .term-prompt { color: var(--term-dim); user-select: none; }
-  .term-ok { color: var(--term-accent); }
-  .term-line.summary { margin-top: 10px; padding-top: 12px; border-top: 1px dashed rgba(255,255,255,0.14); font-weight: 600; }
-  @keyframes rise { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
-  @media (prefers-reduced-motion: reduce) {
-    .term-line { animation: none; opacity: 1; }
-  }
-
-  /* -------- sections -------- */
-  section { padding-block: 44px; border-top: 1px solid var(--line); }
-  .sec-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 22px; }
-  .sec-head .mono { font-size: 0.78rem; color: var(--ink-soft); }
-  h2.sec-title { font-size: 1.5rem; }
-
-  .about p { max-width: 66ch; color: var(--ink-soft); }
-  .about p + p { margin-top: 14px; }
-  .about strong { color: var(--ink); }
-
-  /* -------- experience -------- */
-  .job { padding-block: 26px; border-top: 1px solid var(--line); }
-  .job:first-of-type { border-top: none; padding-top: 0; }
-  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
-  .job-title { font-size: 1.08rem; font-weight: 600; font-family: "IBM Plex Sans", sans-serif; }
-  .job-meta { font-family: "IBM Plex Mono", monospace; font-size: 0.78rem; color: var(--ink-soft); white-space: nowrap; }
-  .job-client { color: var(--ink-soft); font-size: 0.92rem; margin-top: 2px; }
-  .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 14px; }
-  .tag { font-family: "IBM Plex Mono", monospace; font-size: 0.72rem; padding: 3px 8px; border-radius: 5px; background: var(--surface-2); color: var(--ink-soft); border: 1px solid var(--line); }
-  .job-current .tag.current { background: color-mix(in srgb, var(--warm) 16%, var(--surface-2)); color: var(--warm); border-color: color-mix(in srgb, var(--warm) 40%, var(--line)); }
-  ul.duties { margin: 0 0 14px; padding-left: 1.1em; color: var(--ink-soft); }
-  ul.duties li { margin-bottom: 6px; }
-  ul.checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; }
-  ul.checks li { display: flex; gap: 9px; align-items: flex-start; font-size: 0.95rem; }
-  ul.checks li::before { content: "✓"; color: var(--accent); font-family: "IBM Plex Mono", monospace; font-weight: 700; flex-shrink: 0; }
-
-  /* -------- skills -------- */
-  .skill-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
-  .skill-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
-  .skill-key { font-family: "IBM Plex Mono", monospace; font-size: 0.74rem; color: var(--accent-ink); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
-  .skill-val { color: var(--ink-soft); font-size: 0.92rem; line-height: 1.55; }
-
-  /* -------- projects -------- */
-  .project-card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 24px; box-shadow: var(--shadow); }
-  .project-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; }
-  .project-title { font-size: 1.15rem; font-weight: 700; font-family: "IBM Plex Sans", sans-serif; }
-  .project-badge { font-family: "IBM Plex Mono", monospace; font-size: 0.7rem; color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line)); padding: 3px 8px; border-radius: 999px; white-space: nowrap; }
-  .project-desc { color: var(--ink-soft); margin: 12px 0 0; max-width: 62ch; }
-  .project-meta { font-family: "IBM Plex Mono", monospace; font-size: 0.76rem; color: var(--ink-soft); margin-top: 10px; }
-
-  /* -------- contact -------- */
-  .contact-box { background: var(--term-bg); border-radius: 12px; padding: 30px 28px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
-  .contact-cmd { font-family: "IBM Plex Mono", monospace; color: var(--term-fg); font-size: 0.98rem; }
-  .contact-cmd .term-prompt { color: var(--term-dim); }
-  .btn {
-    font-family: "IBM Plex Mono", monospace; font-size: 0.88rem; font-weight: 600;
-    background: var(--term-accent); color: #0b1410; padding: 11px 18px; border-radius: 7px;
-    text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
-    transition: transform 0.15s ease;
-  }
-  .btn:hover, .btn:focus-visible { transform: translateY(-1px); }
-
-  footer { padding-block: 30px 50px; color: var(--ink-soft); font-size: 0.82rem; font-family: "IBM Plex Mono", monospace; }
-
-  @media (max-width: 480px) {
-    .job-head { flex-direction: column; }
-    .contact-box { flex-direction: column; align-items: flex-start; }
-  }
-</style>
-
-<div class="wrap">
-
-  <nav>
-    <div class="nav-row">
-      <a class="nav-mark" href="#top">SM_</a>
-      <ul class="nav-links">
-        <li><a href="#about">About.md</a></li>
-        <li><a href="#experience">Experience.log</a></li>
-        <li><a href="#skills">Skills.json</a></li>
-        <li><a href="#projects">Projects/</a></li>
-        <li><a href="#contact">Contact.sh</a></li>
+  <nav class="site-nav">
+    <div class="container">
+      <a class="wordmark" href="#top">Stefan Mandovski</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-cv" href="cv.html">View / Download CV</a></li>
       </ul>
     </div>
   </nav>
 
-  <header class="hero" id="top">
-    <div class="eyebrow">Bitola, North Macedonia</div>
-    <h1 class="name">Stefan Mandovski</h1>
-    <p class="role">Senior QA Automation Engineer &amp; SDET — TestCafe and Playwright, performance and API testing, and AI-assisted QA tooling.</p>
-    <div class="locale">10+ yrs · e-commerce, energy, transport &amp; education platforms</div>
+  <header class="hero container" id="top">
+    <div class="hero-grid">
+      <div class="avatar" aria-hidden="true">SM</div>
+      <div class="hero-text">
+        <p class="eyebrow">Bitola, North Macedonia</p>
+        <h1>Senior QA Automation Engineer &amp; SDET</h1>
+        <p class="role">I build test automation and AI-assisted QA tooling that teams can actually trust — TestCafe and Playwright day to day, Gatling for performance, and increasingly, agentic tools that work alongside the test suite instead of around it.</p>
+        <p class="locale">10+ years across e-commerce, energy, transport &amp; education platforms</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#experience">View experience</a>
+          <a class="btn btn-ghost" href="cv.html">Download CV</a>
+        </div>
+      </div>
+    </div>
 
-    <div class="term">
-      <div class="term-bar">
-        <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
-        <span class="term-title">career --summary</span>
-      </div>
-      <div class="term-body">
-        <div class="term-line"><span class="term-prompt">$</span><span>run career --summary</span></div>
-        <div class="term-line"><span class="term-ok">✓</span><span>10+ years automation &amp; QA leadership</span></div>
-        <div class="term-line"><span class="term-ok">✓</span><span>4 platforms shipped — e-commerce, energy, transport, education</span></div>
-        <div class="term-line"><span class="term-ok">✓</span><span>regression suite: 32h → 3h (parallelized, ~800 tests)</span></div>
-        <div class="term-line"><span class="term-ok">✓</span><span>post-deploy validation time cut 70% via CI-integrated automation</span></div>
-        <div class="term-line"><span class="term-ok">✓</span><span>shipped Shift Board — AI-assisted QA workflow tooling</span></div>
-        <div class="term-line summary"><span class="term-ok">BUILD PASSING</span><span class="term-dim" style="color:var(--term-dim)">— 0 failed</span></div>
-      </div>
+    <div class="stats">
+      <div class="stat"><div class="num">10+</div><div class="label">years in QA &amp; automation</div></div>
+      <div class="stat"><div class="num">32h → 3h</div><div class="label">regression suite, parallelized</div></div>
+      <div class="stat"><div class="num">70%</div><div class="label">faster post-deploy validation</div></div>
+      <div class="stat"><div class="num">4</div><div class="label">industries: retail, energy, transport, education</div></div>
     </div>
   </header>
 
-  <section id="about" class="about">
-    <div class="sec-head"><span class="mono">01</span><h2 class="sec-title">About.md</h2></div>
-    <p>I'm a senior QA automation engineer based in Bitola, North Macedonia, with <strong>10+ years</strong> turning fragile manual test cycles into pipelines a team can actually trust. My background spans high-traffic US e-commerce — order flows from cart through fulfillment and returns, a suite of roughly 800 UI and API tests parallelized from a 32-hour run down to 3 — and, more recently, UK education software, where <strong>TestCafe</strong> is now my primary framework with <strong>Playwright</strong> alongside it.</p>
-    <p>I lead by building: test plans and frameworks first, and increasingly, AI-assisted tooling. <strong>Shift Board</strong>, a workflow board I built wrapping Claude Code and other AI providers with MCP tracker integrations, is the clearest expression of that — letting QA engineers work <em>through</em> their trackers with agentic help instead of around them.</p>
+  <section id="about">
+    <div class="container-narrow">
+      <div class="sec-head js-reveal">
+        <p class="eyebrow">About</p>
+        <h2>Testing as a craft, not a checkbox</h2>
+      </div>
+      <div class="about js-reveal">
+        <p>I'm a senior QA automation engineer based in Bitola, North Macedonia, with <strong>10+ years</strong> turning fragile manual test cycles into pipelines a team can actually rely on. My background spans high-traffic US e-commerce — order flows from cart through fulfillment and returns, a suite of roughly 800 UI and API tests parallelized from a 32-hour run down to 3 — and, more recently, UK education software, where <strong>TestCafe</strong> is now my primary framework with <strong>Playwright</strong> alongside it.</p>
+        <p>I lead by building: test plans and frameworks first, and increasingly, AI-assisted tooling. <strong>Shift&nbsp;Board</strong>, a workflow board I built wrapping Claude Code and other AI providers with MCP tracker integrations, is the clearest expression of that — letting QA engineers work <em>through</em> their trackers with agentic help instead of around them.</p>
+      </div>
+    </div>
   </section>
 
   <section id="experience">
-    <div class="sec-head"><span class="mono">02</span><h2 class="sec-title">Experience.log</h2></div>
+    <div class="container-narrow">
+      <div class="sec-head js-reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Where I've worked</h2>
+      </div>
 
-    <div class="job job-current">
-      <div class="job-head">
-        <div>
-          <div class="job-title">Sr. QA Consultant — School Management Platform</div>
-          <div class="job-client">Client: Education Sector</div>
-        </div>
-        <div class="job-meta">Oct 2025 — Present</div>
-      </div>
-      <div class="tag-row">
-        <span class="tag current">current</span>
-        <span class="tag">TestCafe</span><span class="tag">Playwright</span><span class="tag">Gatling</span>
-        <span class="tag">Azure SQL</span><span class="tag">Azure DevOps</span><span class="tag">PowerShell</span>
-      </div>
-      <ul class="duties">
-        <li>QA automation on a UK-based school management platform — TestCafe as the primary framework, Playwright for select suites, applying DRY/SOLID/Clean Code as coverage grows.</li>
-        <li>Initiated a Gatling (Java) performance-testing effort against core API endpoints, defining SMART goals and baseline load scenarios.</li>
-        <li>SQL-based data validation via SSMS and Azure SQL; working inside Azure DevOps for planning and pipeline visibility.</li>
-      </ul>
-      <ul class="checks">
-        <li>Established a Gatling-based performance-testing capability from scratch for the platform's core APIs.</li>
-        <li>Introduced AI-assisted testing practices to the team through hands-on internal demos.</li>
-        <li>Built and shared Shift Board, a personal AI-assisted QA workflow tool, as a public engineering initiative.</li>
-      </ul>
-    </div>
+      <div class="timeline">
 
-    <div class="job">
-      <div class="job-head">
-        <div>
-          <div class="job-title">Sr. QA Consultant — Electricity Auction Platform</div>
-          <div class="job-client">Client: Energy Sector · 4 QAs (Lead)</div>
+        <div class="tl-item current js-reveal">
+          <div class="tl-dot"></div>
+          <div class="job-head">
+            <div>
+              <div class="job-title">Sr. QA Consultant — School Management Platform<span class="badge-current">Current</span></div>
+              <div class="job-client">Client: Education Sector</div>
+            </div>
+            <div class="job-when">Oct 2025 — Present</div>
+          </div>
+          <div class="tag-row">
+            <span class="tag">TestCafe</span><span class="tag">Playwright</span><span class="tag">Gatling</span>
+            <span class="tag">Azure SQL</span><span class="tag">Azure DevOps</span><span class="tag">PowerShell</span>
+          </div>
+          <ul class="duties">
+            <li>QA automation on a UK-based school management platform — TestCafe as the primary framework, Playwright for select suites, applying DRY/SOLID/Clean Code as coverage grows.</li>
+            <li>Initiated a Gatling (Scala) performance-testing effort against core API endpoints, defining SMART goals and baseline load scenarios.</li>
+            <li>SQL-based data validation via SSMS and Azure SQL; working inside Azure DevOps for planning and pipeline visibility.</li>
+          </ul>
+          <ul class="wins">
+            <li>Established a Gatling-based performance-testing capability from scratch for the platform's core APIs.</li>
+            <li>Introduced AI-assisted testing practices to the team through hands-on internal demos.</li>
+            <li>Built and shared Shift Board, a personal AI-assisted QA workflow tool, as a public engineering initiative.</li>
+          </ul>
         </div>
-        <div class="job-meta">2024 — 2025</div>
-      </div>
-      <div class="tag-row">
-        <span class="tag">Playwright</span><span class="tag">Robot Framework</span><span class="tag">Jenkins</span><span class="tag">GitLab CI</span>
-      </div>
-      <ul class="duties">
-        <li>Led QA for a national electricity-bidding auction platform — test plans, smoke/regression suites, and automated pipelines.</li>
-        <li>Built a Robot Framework automation solution, later migrated to Playwright for performance and maintainability.</li>
-      </ul>
-      <ul class="checks">
-        <li>Reduced post-deployment validation time by 70% through CI-integrated automation.</li>
-        <li>Led the Playwright migration in within estimated delivery time.</li>
-      </ul>
-    </div>
 
-    <div class="job">
-      <div class="job-head">
-        <div>
-          <div class="job-title">QA Lead — E-Commerce Platform (US Pet Retailer)</div>
-          <div class="job-client">Retail / E-Commerce · Offshore team of 20 (Lead)</div>
+        <div class="tl-item js-reveal">
+          <div class="tl-dot"></div>
+          <div class="job-head">
+            <div>
+              <div class="job-title">Sr. QA Consultant — Electricity Auction Platform</div>
+              <div class="job-client">Client: Energy Sector · 4 QAs (Lead)</div>
+            </div>
+            <div class="job-when">2024 — 2025</div>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Playwright</span><span class="tag">Robot Framework</span><span class="tag">Jenkins</span><span class="tag">GitLab CI</span>
+          </div>
+          <ul class="duties">
+            <li>Led QA for a national electricity-bidding auction platform — test plans, smoke/regression suites, and automated pipelines.</li>
+            <li>Built a Robot Framework automation solution, later migrated to Playwright for performance and maintainability.</li>
+          </ul>
+          <ul class="wins">
+            <li>Reduced post-deployment validation time by 70% through CI-integrated automation.</li>
+            <li>Led the Playwright migration in within estimated delivery time.</li>
+          </ul>
         </div>
-        <div class="job-meta">2018 — 2023</div>
-      </div>
-      <div class="tag-row">
-        <span class="tag">Selenium</span><span class="tag">Appium</span><span class="tag">SQL Server</span><span class="tag">Docker</span><span class="tag">Jenkins</span>
-      </div>
-      <ul class="duties">
-        <li>End-to-end order-lifecycle testing — cart/checkout (WCS) through fulfillment, shipping, and returns (OMS).</li>
-        <li>~800-test UI + API framework, optimized via parallel execution; mobile testing on SauceLabs; JMeter baseline load tests ahead of holiday season.</li>
-      </ul>
-      <ul class="checks">
-        <li>Validated full WCS-to-OMS integration across order placement, fulfillment, cancellations, returns, and PSP migrations.</li>
-        <li>Cut manual regression workload 80% via automation — full run down from 32 hours to 3.</li>
-        <li>Delivered coverage for critical workflows while mentoring a fast-scaling team of 20.</li>
-      </ul>
-    </div>
 
-    <div class="job">
-      <div class="job-head">
-        <div>
-          <div class="job-title">QA Engineer — NS NL (Transport &amp; Logistics)</div>
-          <div class="job-client">Transportation · solo → mentoring 3 onsite QAs</div>
+        <div class="tl-item js-reveal">
+          <div class="tl-dot"></div>
+          <div class="job-head">
+            <div>
+              <div class="job-title">QA Lead — E-Commerce Platform (US Pet Retailer)</div>
+              <div class="job-client">Retail / E-Commerce · Offshore team of 20 (Lead)</div>
+            </div>
+            <div class="job-when">2018 — 2023</div>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Selenium</span><span class="tag">Appium</span><span class="tag">SQL Server</span><span class="tag">Docker</span><span class="tag">Jenkins</span>
+          </div>
+          <ul class="duties">
+            <li>End-to-end order-lifecycle testing — cart/checkout (WCS) through fulfillment, shipping, and returns (OMS).</li>
+            <li>~800-test UI + API framework, optimized via parallel execution; mobile testing on SauceLabs; JMeter baseline load tests ahead of holiday season.</li>
+          </ul>
+          <ul class="wins">
+            <li>Validated full WCS-to-OMS integration across order placement, fulfillment, cancellations, returns, and PSP migrations.</li>
+            <li>Cut manual regression workload 80% via automation — full run down from 32 hours to 3.</li>
+            <li>Delivered coverage for critical workflows while mentoring a fast-scaling team of 20.</li>
+          </ul>
         </div>
-        <div class="job-meta">2017 — 2018</div>
+
+        <div class="tl-item js-reveal">
+          <div class="tl-dot"></div>
+          <div class="job-head">
+            <div>
+              <div class="job-title">QA Engineer — NS NL (Transport &amp; Logistics)</div>
+              <div class="job-client">Transportation · solo → mentoring 3 onsite QAs</div>
+            </div>
+            <div class="job-when">2017 — 2018</div>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Robot Framework</span><span class="tag">SOATest</span><span class="tag">Jenkins</span><span class="tag">dBeaver</span>
+          </div>
+          <ul class="duties">
+            <li>First QA on the project — built a unified framework integrating API, UI, and DB validation for end-to-end coverage.</li>
+          </ul>
+          <ul class="wins">
+            <li>Framework adopted as the foundation of the client's automated testing effort.</li>
+            <li>Reduced test-cycle setup time and improved knowledge transfer across QA teams.</li>
+          </ul>
+        </div>
+
       </div>
-      <div class="tag-row">
-        <span class="tag">Robot Framework</span><span class="tag">SOATest</span><span class="tag">Jenkins</span><span class="tag">dBeaver</span>
-      </div>
-      <ul class="duties">
-        <li>First QA on the project — built a unified framework integrating API, UI, and DB validation for end-to-end coverage.</li>
-      </ul>
-      <ul class="checks">
-        <li>Framework adopted as the foundation of the client's automated testing effort.</li>
-        <li>Reduced test-cycle setup time and improved knowledge transfer across QA teams.</li>
-      </ul>
     </div>
   </section>
 
   <section id="skills">
-    <div class="sec-head"><span class="mono">03</span><h2 class="sec-title">Skills.json</h2></div>
-    <div class="skill-grid">
-      <div class="skill-card">
-        <div class="skill-key">automation &amp; frameworks</div>
-        <div class="skill-val">TestCafe, Playwright, Selenium (Java), Appium (Java), Robot Framework (Python)</div>
+    <div class="container">
+      <div class="sec-head js-reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools &amp; technologies</h2>
       </div>
-      <div class="skill-card">
-        <div class="skill-key">performance &amp; API</div>
-        <div class="skill-val">Gatling (Java), JMeter, Postman, SOATest, XRAY</div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-key">data &amp; platforms</div>
-        <div class="skill-val">SQL Server, Azure SQL, Oracle, Docker</div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-key">CI/CD &amp; DevOps</div>
-        <div class="skill-val">Jenkins, GitLab CI, Azure DevOps, Git</div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-key">languages</div>
-        <div class="skill-val">JavaScript, Java, Python, SQL, XML/XSD, HTML/CSS</div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-key">AI-assisted QA</div>
-        <div class="skill-val">Claude Code, MCP tooling, prompt engineering, Anthropic Academy (10+ courses)</div>
+      <div class="skill-grid js-reveal">
+        <div class="skill-card">
+          <h3>Automation &amp; frameworks</h3>
+          <div class="items">TestCafe, Playwright, Selenium (Java), Appium (Java), Robot Framework (Python)</div>
+        </div>
+        <div class="skill-card">
+          <h3>Performance &amp; API</h3>
+          <div class="items">Gatling (Scala), JMeter, Postman, SOATest, XRAY</div>
+        </div>
+        <div class="skill-card">
+          <h3>Data &amp; platforms</h3>
+          <div class="items">SQL Server, Azure SQL, Oracle, Docker</div>
+        </div>
+        <div class="skill-card">
+          <h3>CI/CD &amp; DevOps</h3>
+          <div class="items">Jenkins, GitLab CI, Azure DevOps, Git</div>
+        </div>
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <div class="items">JavaScript, Java, Python, SQL, XML/XSD, HTML/CSS</div>
+        </div>
+        <div class="skill-card">
+          <h3>AI-assisted QA</h3>
+          <div class="items">Claude Code, MCP tooling, prompt engineering, Anthropic Academy (10+ courses)</div>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="projects">
-    <div class="sec-head"><span class="mono">04</span><h2 class="sec-title">Projects/</h2></div>
-    <div class="project-card">
-      <div class="project-head">
-        <div class="project-title">Shift Board — AI-Assisted QA Workflow Tool</div>
-        <span class="project-badge">personal · 2025 — present</span>
+    <div class="container-narrow">
+      <div class="sec-head js-reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>What I've built</h2>
       </div>
-      <p class="project-desc">A Node.js application that wraps AI coding agents — Claude Code, and now also ChatGPT (OpenAI), Z.ai, and Grok — with MCP tracker integrations (Azure DevOps, Jira, GitHub, GitLab, Linear) into a single QA workflow board. Generates test-plan CSVs straight from tracker work items, maintains a per-domain business-rules knowledge base, and files bugs directly from natural-language descriptions.</p>
-      <div class="tag-row">
-        <span class="tag">Node.js</span><span class="tag">Claude Code</span><span class="tag">ChatGPT</span><span class="tag">Z.ai</span><span class="tag">Grok</span><span class="tag">MCP</span><span class="tag">Azure DevOps</span><span class="tag">Jira</span>
+      <div class="project-card js-reveal">
+        <div class="project-head">
+          <div class="project-title">Shift Board — AI-Assisted QA Workflow Tool</div>
+          <div class="project-meta-badge">Personal project · 2026 — Ongoing</div>
+        </div>
+        <p class="project-desc">A Node.js application that wraps AI coding agents — Claude Code, and now also OpenAI, Z.ai, and Kimi — with MCP tracker integrations (Azure DevOps, Jira, GitHub, GitLab, Linear) into a single QA workflow board. It generates test-plan CSVs straight from tracker work items, maintains a per-domain business-rules knowledge base, and files bugs directly from natural-language descriptions.</p>
+        <div class="tag-row">
+          <span class="tag">Node.js</span><span class="tag">Claude Code</span><span class="tag">OpenAI</span><span class="tag">Z.ai</span><span class="tag">Kimi</span><span class="tag">MCP</span><span class="tag">Azure DevOps</span><span class="tag">Jira</span>
+        </div>
+        <p class="project-foot">Deployed against live tracker projects · shared publicly with the QA automation community</p>
       </div>
-      <div class="project-meta">Deployed against live tracker projects · shared publicly with the QA automation community</div>
     </div>
   </section>
 
   <section id="contact">
-    <div class="sec-head"><span class="mono">05</span><h2 class="sec-title">Contact.sh</h2></div>
-    <div class="contact-box">
-      <div class="contact-cmd"><span class="term-prompt">$</span> open linkedin.com/in/mandovski</div>
-      <a class="btn" href="https://www.linkedin.com/in/mandovski/" target="_blank" rel="noopener">Connect on LinkedIn →</a>
+    <div class="container-narrow">
+      <div class="contact-card js-reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's talk testing</h2>
+        <p>Open to conversations about QA leadership, automation architecture, and AI-assisted testing. The fastest way to reach me is LinkedIn.</p>
+        <div class="contact-ctas">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/mandovski/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+          <a class="btn btn-ghost" href="cv.html">View CV</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer>
-    Stefan Mandovski · Senior QA Automation Engineer · built with a keyboard, not a template.
+  <footer class="container">
+    <span>© <span id="year"></span> Stefan Mandovski</span>
+    <span><a href="https://www.linkedin.com/in/mandovski/" target="_blank" rel="noopener">linkedin.com/in/mandovski</a></span>
   </footer>
 
-</div>
+  <script src="assets/js/main.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+[
+  {
+    "generatedAt": "2026-09-11T22:04:06.787Z",
+    "source": "local",
+    "commitShort": "b91e073",
+    "total": 236,
+    "passed": 212,
+    "failed": 0,
+    "flaky": 0,
+    "skipped": 24,
+    "passRate": 100
+  }
+]

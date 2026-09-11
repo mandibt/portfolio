@@ -4,13 +4,17 @@
   "private": true,
   "description": "Personal portfolio and CV for Stefan Mandovski",
   "scripts": {
-    "serve": "python3 -m http.server 8000 --bind 127.0.0.1",
-    "serve:win": "python -m http.server 8000 --bind 127.0.0.1",
+    "serve": "node scripts/serve.mjs 8000",
     "test": "playwright test",
-    "test:headed": "playwright test --headed",
-    "playwright:install:chromium": "playwright install --with-deps chromium",
-    "qa:build-report": "node scripts/build-qa-report.js",
-    "qa:seed-report": "node scripts/seed-qa-report.js"
+    "test:headed": "playwright test --headed --project=desktop-chromium",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:a11y": "playwright test --grep @a11y",
+    "test:print": "playwright test --grep @print",
+    "test:perf": "playwright test --grep @perf",
+    "test:dashboard": "playwright test --grep @dashboard",
+    "qa:report": "playwright test --reporter=list,./reporters/qa-dashboard-reporter.ts",
+    "cv:pdf": "node scripts/build-cv-pdf.mjs",
+    "playwright:install": "playwright install chromium firefox webkit"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.13.0",

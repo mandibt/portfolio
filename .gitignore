@@ -1,0 +1,11 @@
+node_modules/
+playwright-report/
+test-results/
+blob-report/
+all-blob-reports/
+_site/
+# Traces/videos are handed from the report job to the deploy job as a
+# workflow artifact, not committed — see .github/workflows/ci.yml.
+assets/qa/artifacts/
+.DS_Store
+initial-context.md

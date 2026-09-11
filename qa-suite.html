@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QA Suite Runner — Stefan Mandovski</title>
+  <meta name="description" content="Live Playwright test results for this portfolio, published by its own GitHub Actions CI on every deploy.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=2">
+</head>
+<body>
+
+  <div class="cv-toolbar no-print">
+    <a class="back" href="index.html#projects">← Back to portfolio</a>
+    <a class="btn btn-ghost" id="rawReportLink" href="assets/qa/report.json" target="_blank" rel="noopener">View raw report.json</a>
+  </div>
+
+  <article class="qa-page">
+
+    <header class="qa-head">
+      <h1>QA Suite Runner</h1>
+      <p class="role">This is the Playwright suite that tests this portfolio, testing itself. Every deploy runs the suite in GitHub Actions and publishes the results here — the same JSON you'd see in a real CI dashboard, rendered as a static page.</p>
+      <div class="qa-meta" id="qaMeta"></div>
+      <div id="qaBanner"></div>
+    </header>
+
+    <div id="qaContent">
+      <p class="qa-empty-state">Loading the latest run…</p>
+    </div>
+
+  </article>
+
+  <script src="assets/js/qa-suite.js?v=1"></script>
+</body>
+</html>

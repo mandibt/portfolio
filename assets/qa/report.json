@@ -1,15 +1,15 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-11T23:04:26.215Z",
+  "generatedAt": "2026-09-12T07:14:39.502Z",
   "source": "ci",
-  "commit": "69f4ba0e1528b25af89c45e08f07deb0351e7219",
-  "commitShort": "69f4ba0",
-  "runUrl": "https://github.com/mandibt/portfolio/actions/runs/34656306205",
-  "durationMs": 225206,
+  "commit": "5ba0ac18a47027de8f8d1bef87c1bd91710c41d5",
+  "commitShort": "5ba0ac1",
+  "runUrl": "https://github.com/mandibt/portfolio/actions/runs/34680129950",
+  "durationMs": 65865,
   "summary": {
     "total": 236,
-    "passed": 136,
-    "failed": 76,
+    "passed": 212,
+    "failed": 0,
     "flaky": 0,
     "skipped": 24
   },
@@ -17,32 +17,32 @@
     {
       "name": "desktop-chromium",
       "total": 59,
-      "passed": 37,
-      "failed": 20,
+      "passed": 57,
+      "failed": 0,
       "flaky": 0,
       "skipped": 2
     },
     {
       "name": "desktop-firefox",
       "total": 59,
-      "passed": 34,
-      "failed": 18,
+      "passed": 52,
+      "failed": 0,
       "flaky": 0,
       "skipped": 7
     },
     {
       "name": "desktop-webkit",
       "total": 59,
-      "passed": 31,
-      "failed": 19,
+      "passed": 50,
+      "failed": 0,
       "flaky": 0,
       "skipped": 9
     },
     {
       "name": "mobile-chromium",
       "total": 59,
-      "passed": 34,
-      "failed": 19,
+      "passed": 53,
+      "failed": 0,
       "flaky": 0,
       "skipped": 6
     }
@@ -86,7 +86,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1983,
+      "durationMs": 2035,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -103,7 +103,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1810,
+      "durationMs": 1732,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -119,20 +119,11 @@
       "tags": [
         "@a11y"
       ],
-      "status": "failed",
-      "durationMs": 5642,
-      "retries": 1,
-      "error": "Error: expect(locator).toBeVisible() failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/ab9298b1b8ea/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/ab9298b1b8ea/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 4200,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "e84c91527f14",
@@ -146,7 +137,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 866,
+      "durationMs": 824,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -163,7 +154,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 446,
+      "durationMs": 369,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -180,7 +171,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 423,
+      "durationMs": 299,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -197,7 +188,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 639,
+      "durationMs": 701,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -214,7 +205,7 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 452,
+      "durationMs": 439,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -232,7 +223,7 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 963,
+      "durationMs": 887,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -250,7 +241,7 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 1001,
+      "durationMs": 989,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -267,7 +258,7 @@
         "@perf"
       ],
       "status": "passed",
-      "durationMs": 1843,
+      "durationMs": 2045,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -284,7 +275,7 @@
         "@perf"
       ],
       "status": "passed",
-      "durationMs": 1761,
+      "durationMs": 1951,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -300,20 +291,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5693,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/711aab6fecd4/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/711aab6fecd4/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 560,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "430b940b0db3",
@@ -327,7 +309,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 471,
+      "durationMs": 686,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -344,7 +326,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 522,
+      "durationMs": 829,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -360,20 +342,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5654,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/3d094ef07c4f/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/3d094ef07c4f/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 520,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "a529e178d798",
@@ -386,20 +359,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5649,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/a529e178d798/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/a529e178d798/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 593,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "5c4662407d6a",
@@ -412,20 +376,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5644,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/5c4662407d6a/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/5c4662407d6a/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 509,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "b82c4c0b9870",
@@ -438,20 +393,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 31448,
-      "retries": 1,
-      "error": "Test timeout of 30000ms exceeded.",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/b82c4c0b9870/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/b82c4c0b9870/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 656,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "cfcead3146fb",
@@ -464,20 +410,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5637,
-      "retries": 1,
-      "error": "Error: expect(locator).toBeVisible() failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/cfcead3146fb/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/cfcead3146fb/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 558,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "df6622fcac02",
@@ -490,20 +427,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5644,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/df6622fcac02/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/df6622fcac02/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 495,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "d02dfd9ed600",
@@ -516,20 +444,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5639,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveClass(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/d02dfd9ed600/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/d02dfd9ed600/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 514,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "914e9c8e2b21",
@@ -542,20 +461,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5623,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveClass(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/914e9c8e2b21/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/914e9c8e2b21/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 556,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "a95db4a30ba1",
@@ -568,20 +478,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5698,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/a95db4a30ba1/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/a95db4a30ba1/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 511,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "c458c625a41d",
@@ -594,20 +495,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5714,
-      "retries": 1,
-      "error": "Error: expect(locator).toContainText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/c458c625a41d/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/c458c625a41d/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 487,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "e121148a660f",
@@ -620,20 +512,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 31200,
-      "retries": 1,
-      "error": "Test timeout of 30000ms exceeded.",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/e121148a660f/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/e121148a660f/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 722,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "b77bb354a02b",
@@ -646,20 +529,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5638,
-      "retries": 1,
-      "error": "Error: expect(locator).toContainText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/b77bb354a02b/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/b77bb354a02b/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 438,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "05f6c491d548",
@@ -672,20 +546,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5700,
-      "retries": 1,
-      "error": "Error: expect(locator).toBeVisible() failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/05f6c491d548/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/05f6c491d548/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 632,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "3f757e128fdb",
@@ -698,20 +563,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5647,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/3f757e128fdb/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/3f757e128fdb/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 572,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "0c1b35639203",
@@ -724,20 +580,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5649,
-      "retries": 1,
-      "error": "Error: expect(locator).toContainText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/0c1b35639203/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/0c1b35639203/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 498,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "bdf08178b3b5",
@@ -750,20 +597,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5844,
-      "retries": 1,
-      "error": "Error: expect(locator).toBeVisible() failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/bdf08178b3b5/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/bdf08178b3b5/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 388,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "2d9b8ec0d186",
@@ -776,10 +614,10 @@
       "tags": [
         "@showcase"
       ],
-      "status": "failed",
-      "durationMs": 9522,
-      "retries": 1,
-      "error": "Error: expect(locator).toBeVisible() failed",
+      "status": "passed",
+      "durationMs": 5323,
+      "retries": 0,
+      "error": null,
       "publishedAttachments": [
         {
           "type": "video",
@@ -803,7 +641,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 512,
+      "durationMs": 554,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -819,20 +657,11 @@
       "tags": [
         "@smoke"
       ],
-      "status": "failed",
-      "durationMs": 776,
-      "retries": 1,
-      "error": "Error: expect(received).toEqual(expected) // deep equality",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/5f7b19ab64ed/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/5f7b19ab64ed/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 649,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "475a27e48990",
@@ -846,7 +675,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1797,
+      "durationMs": 1708,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -863,7 +692,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 465,
+      "durationMs": 489,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -880,7 +709,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 425,
+      "durationMs": 463,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -897,7 +726,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 460,
+      "durationMs": 477,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -914,7 +743,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 469,
+      "durationMs": 451,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -931,7 +760,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 490,
+      "durationMs": 425,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -948,7 +777,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 639,
+      "durationMs": 408,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -965,7 +794,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 567,
+      "durationMs": 403,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -982,7 +811,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 796,
+      "durationMs": 589,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -999,7 +828,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 939,
+      "durationMs": 903,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1016,7 +845,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 560,
+      "durationMs": 458,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1033,7 +862,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 693,
+      "durationMs": 539,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1050,7 +879,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 696,
+      "durationMs": 609,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1067,7 +896,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 624,
+      "durationMs": 538,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1084,7 +913,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 601,
+      "durationMs": 560,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1101,7 +930,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 527,
+      "durationMs": 416,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1118,7 +947,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 226,
+      "durationMs": 283,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1135,7 +964,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 632,
+      "durationMs": 555,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1152,7 +981,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 520,
+      "durationMs": 393,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1169,7 +998,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 364,
+      "durationMs": 349,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1186,7 +1015,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 615,
+      "durationMs": 589,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1203,7 +1032,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 453,
+      "durationMs": 309,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1220,7 +1049,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 774,
+      "durationMs": 785,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1237,7 +1066,7 @@
         "@smoke"
       ],
       "status": "skipped",
-      "durationMs": 257,
+      "durationMs": 260,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1254,7 +1083,7 @@
         "@smoke"
       ],
       "status": "skipped",
-      "durationMs": 228,
+      "durationMs": 221,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1271,7 +1100,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 3024,
+      "durationMs": 3880,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1288,7 +1117,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 2774,
+      "durationMs": 3611,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1304,20 +1133,11 @@
       "tags": [
         "@a11y"
       ],
-      "status": "failed",
-      "durationMs": 6267,
-      "retries": 1,
-      "error": "Error: expect(locator).toBeVisible() failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/e8bbf4951372/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/e8bbf4951372/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 5469,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "4ad5a91bf27d",
@@ -1331,7 +1151,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 860,
+      "durationMs": 1330,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1348,7 +1168,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 464,
+      "durationMs": 706,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1365,7 +1185,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 459,
+      "durationMs": 647,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1382,7 +1202,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 617,
+      "durationMs": 883,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1399,7 +1219,7 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 553,
+      "durationMs": 862,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1417,7 +1237,7 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 258,
+      "durationMs": 482,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1435,7 +1255,7 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 283,
+      "durationMs": 439,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1452,7 +1272,7 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 271,
+      "durationMs": 347,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1469,7 +1289,7 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 1491,
+      "durationMs": 365,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1485,20 +1305,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6581,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/ba7231155b25/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/ba7231155b25/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 1048,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "9a1599fc472c",
@@ -1512,7 +1323,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1144,
+      "durationMs": 2744,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1529,7 +1340,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 655,
+      "durationMs": 1122,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1545,20 +1356,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6167,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/78a1e106605c/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/78a1e106605c/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 633,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "b5c6ce5aea98",
@@ -1571,20 +1373,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6335,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/b5c6ce5aea98/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/b5c6ce5aea98/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 693,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "d3bf94cef1a2",
@@ -1597,20 +1390,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6130,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/d3bf94cef1a2/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/d3bf94cef1a2/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 976,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "bf0bf2b17d20",
@@ -1623,20 +1407,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 30258,
-      "retries": 1,
-      "error": "Test timeout of 30000ms exceeded.",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/bf0bf2b17d20/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/bf0bf2b17d20/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 995,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "fd0aaa80e9f9",
@@ -1649,20 +1424,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 7066,
-      "retries": 1,
-      "error": "Error: expect(locator).toBeVisible() failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/fd0aaa80e9f9/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/fd0aaa80e9f9/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 729,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "6935856362d2",
@@ -1675,20 +1441,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6160,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/6935856362d2/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/6935856362d2/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 787,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "b92857c84dc8",
@@ -1701,20 +1458,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6177,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveClass(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/b92857c84dc8/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/b92857c84dc8/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 719,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "6f2932310c7d",
@@ -1727,20 +1475,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6539,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveClass(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/6f2932310c7d/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/6f2932310c7d/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 2362,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "94d16a8e066e",
@@ -1753,20 +1492,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6509,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/94d16a8e066e/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/94d16a8e066e/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 792,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "3e0577a6721c",
@@ -1779,20 +1509,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6395,
-      "retries": 1,
-      "error": "Error: expect(locator).toContainText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/3e0577a6721c/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/3e0577a6721c/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 598,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "4758dc1102e5",
@@ -1805,20 +1526,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 30255,
-      "retries": 1,
-      "error": "Test timeout of 30000ms exceeded.",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/4758dc1102e5/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/4758dc1102e5/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 870,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "084ac7b33d60",
@@ -1831,20 +1543,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6182,
-      "retries": 1,
-      "error": "Error: expect(locator).toContainText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/084ac7b33d60/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/084ac7b33d60/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 1059,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "2a6c0d33de59",
@@ -1857,20 +1560,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6352,
-      "retries": 1,
-      "error": "Error: expect(locator).toBeVisible() failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/2a6c0d33de59/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/2a6c0d33de59/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 914,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "a47e02528813",
@@ -1883,20 +1577,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6167,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/a47e02528813/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/a47e02528813/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 710,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "70ba1e6375aa",
@@ -1909,20 +1594,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6185,
-      "retries": 1,
-      "error": "Error: expect(locator).toContainText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/70ba1e6375aa/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/70ba1e6375aa/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 708,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "8950850bddf6",
@@ -1935,20 +1611,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6649,
-      "retries": 1,
-      "error": "Error: expect(locator).toBeVisible() failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/8950850bddf6/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/8950850bddf6/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 673,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "123d805d8c86",
@@ -1962,7 +1629,7 @@
         "@showcase"
       ],
       "status": "skipped",
-      "durationMs": 986,
+      "durationMs": 1005,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1979,7 +1646,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1409,
+      "durationMs": 732,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1996,7 +1663,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 651,
+      "durationMs": 4008,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2013,7 +1680,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1536,
+      "durationMs": 1759,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2030,7 +1697,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 680,
+      "durationMs": 694,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2047,7 +1714,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 601,
+      "durationMs": 664,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2064,7 +1731,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 577,
+      "durationMs": 820,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2081,7 +1748,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 447,
+      "durationMs": 1316,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2098,7 +1765,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 440,
+      "durationMs": 591,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2115,7 +1782,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 445,
+      "durationMs": 720,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2132,7 +1799,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1757,
+      "durationMs": 838,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2149,7 +1816,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 750,
+      "durationMs": 4192,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2166,7 +1833,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 826,
+      "durationMs": 1046,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2183,7 +1850,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 503,
+      "durationMs": 608,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2200,7 +1867,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1965,
+      "durationMs": 737,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2217,7 +1884,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 712,
+      "durationMs": 791,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2234,7 +1901,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 712,
+      "durationMs": 806,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2251,7 +1918,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 683,
+      "durationMs": 1524,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2268,7 +1935,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 707,
+      "durationMs": 811,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2285,7 +1952,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 322,
+      "durationMs": 340,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2302,7 +1969,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 847,
+      "durationMs": 1007,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2319,7 +1986,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 761,
+      "durationMs": 5396,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2336,7 +2003,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 612,
+      "durationMs": 580,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2353,7 +2020,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 3944,
+      "durationMs": 795,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2370,7 +2037,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 490,
+      "durationMs": 537,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2387,7 +2054,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 774,
+      "durationMs": 1191,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2404,7 +2071,7 @@
         "@smoke"
       ],
       "status": "skipped",
-      "durationMs": 253,
+      "durationMs": 352,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2421,7 +2088,7 @@
         "@smoke"
       ],
       "status": "skipped",
-      "durationMs": 259,
+      "durationMs": 379,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2438,7 +2105,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 6018,
+      "durationMs": 6550,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2455,7 +2122,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 2897,
+      "durationMs": 2736,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2471,20 +2138,11 @@
       "tags": [
         "@a11y"
       ],
-      "status": "failed",
-      "durationMs": 5970,
-      "retries": 1,
-      "error": "Error: expect(locator).toBeVisible() failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/5e316dd0a5c7/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/5e316dd0a5c7/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 4716,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "affb5d761ce2",
@@ -2498,7 +2156,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1115,
+      "durationMs": 1402,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2515,7 +2173,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 822,
+      "durationMs": 1137,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2532,7 +2190,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 918,
+      "durationMs": 1034,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2549,7 +2207,7 @@
         "@a11y"
       ],
       "status": "skipped",
-      "durationMs": 420,
+      "durationMs": 586,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2566,7 +2224,7 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 1111,
+      "durationMs": 1319,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2584,7 +2242,7 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 459,
+      "durationMs": 417,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2602,7 +2260,7 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 396,
+      "durationMs": 566,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2619,7 +2277,7 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 330,
+      "durationMs": 470,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2636,7 +2294,7 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 370,
+      "durationMs": 565,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2652,20 +2310,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6036,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/d7fdd6edef80/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/d7fdd6edef80/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 1155,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "130c3e723827",
@@ -2679,7 +2328,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 603,
+      "durationMs": 1047,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2696,7 +2345,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1053,
+      "durationMs": 1780,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2712,20 +2361,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5969,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/46d086bb4043/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/46d086bb4043/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 1018,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "203c660519dc",
@@ -2738,20 +2378,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6063,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/203c660519dc/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/203c660519dc/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 1106,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "e5770733d968",
@@ -2764,20 +2395,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5989,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/e5770733d968/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/e5770733d968/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 1057,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "cf81f1b3b2a1",
@@ -2790,20 +2412,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 31364,
-      "retries": 1,
-      "error": "Test timeout of 30000ms exceeded.",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/cf81f1b3b2a1/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/cf81f1b3b2a1/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 1651,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "5abeca460014",
@@ -2816,20 +2429,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5850,
-      "retries": 1,
-      "error": "Error: expect(locator).toBeVisible() failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/5abeca460014/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/5abeca460014/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 948,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "ce0c66624527",
@@ -2842,20 +2446,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5876,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/ce0c66624527/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/ce0c66624527/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 995,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "bbb773091a71",
@@ -2868,20 +2463,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5881,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveClass(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/bbb773091a71/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/bbb773091a71/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 937,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "bd3f2814983c",
@@ -2894,20 +2480,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5841,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveClass(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/bd3f2814983c/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/bd3f2814983c/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 997,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "427f78651f0a",
@@ -2920,20 +2497,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6065,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/427f78651f0a/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/427f78651f0a/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 1082,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "4c305404ad02",
@@ -2946,20 +2514,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5942,
-      "retries": 1,
-      "error": "Error: expect(locator).toContainText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/4c305404ad02/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/4c305404ad02/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 932,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "7eb30abde97a",
@@ -2972,20 +2531,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 31365,
-      "retries": 1,
-      "error": "Test timeout of 30000ms exceeded.",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/7eb30abde97a/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/7eb30abde97a/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 1561,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "6642edfb4312",
@@ -2998,20 +2548,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5847,
-      "retries": 1,
-      "error": "Error: expect(locator).toContainText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/6642edfb4312/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/6642edfb4312/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 938,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "c38d265800d2",
@@ -3024,20 +2565,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5885,
-      "retries": 1,
-      "error": "Error: expect(locator).toBeVisible() failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/c38d265800d2/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/c38d265800d2/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 1123,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "e338c995d05c",
@@ -3050,20 +2582,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5869,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/e338c995d05c/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/e338c995d05c/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 953,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "5bd2dca7c2a0",
@@ -3076,20 +2599,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5852,
-      "retries": 1,
-      "error": "Error: expect(locator).toContainText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/5bd2dca7c2a0/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/5bd2dca7c2a0/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 847,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "0ac3083d9772",
@@ -3102,20 +2616,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 6127,
-      "retries": 1,
-      "error": "Error: expect(locator).toBeVisible() failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/0ac3083d9772/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/0ac3083d9772/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 797,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "a7e2e19af78a",
@@ -3129,7 +2634,7 @@
         "@showcase"
       ],
       "status": "skipped",
-      "durationMs": 605,
+      "durationMs": 566,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3146,7 +2651,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1008,
+      "durationMs": 960,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3162,20 +2667,11 @@
       "tags": [
         "@smoke"
       ],
-      "status": "failed",
-      "durationMs": 996,
-      "retries": 1,
-      "error": "Error: expect(received).toEqual(expected) // deep equality",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/dd238cce10f7/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/dd238cce10f7/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 1355,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "30a57735cb5b",
@@ -3189,7 +2685,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 3818,
+      "durationMs": 5317,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3206,7 +2702,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1394,
+      "durationMs": 1019,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3223,7 +2719,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1350,
+      "durationMs": 931,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3240,7 +2736,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1220,
+      "durationMs": 968,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3257,7 +2753,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1188,
+      "durationMs": 977,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3274,7 +2770,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1177,
+      "durationMs": 986,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3291,7 +2787,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1087,
+      "durationMs": 1023,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3308,7 +2804,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1126,
+      "durationMs": 941,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3325,7 +2821,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1340,
+      "durationMs": 1435,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3342,7 +2838,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1811,
+      "durationMs": 1723,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3359,7 +2855,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1127,
+      "durationMs": 1063,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3376,7 +2872,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1500,
+      "durationMs": 1448,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3393,7 +2889,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1426,
+      "durationMs": 1697,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3410,7 +2906,7 @@
         "@smoke"
       ],
       "status": "skipped",
-      "durationMs": 865,
+      "durationMs": 695,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3427,7 +2923,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1485,
+      "durationMs": 1205,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3444,7 +2940,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1332,
+      "durationMs": 1329,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3461,7 +2957,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 763,
+      "durationMs": 648,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3478,7 +2974,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1179,
+      "durationMs": 1054,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3495,7 +2991,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 971,
+      "durationMs": 1056,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3512,7 +3008,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 938,
+      "durationMs": 864,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3529,7 +3025,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1424,
+      "durationMs": 1326,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3546,7 +3042,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 692,
+      "durationMs": 801,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3563,7 +3059,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1403,
+      "durationMs": 1788,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3580,7 +3076,7 @@
         "@smoke"
       ],
       "status": "skipped",
-      "durationMs": 468,
+      "durationMs": 412,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3597,7 +3093,7 @@
         "@smoke"
       ],
       "status": "skipped",
-      "durationMs": 559,
+      "durationMs": 534,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3614,7 +3110,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1840,
+      "durationMs": 1841,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3631,7 +3127,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1630,
+      "durationMs": 1605,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3647,20 +3143,11 @@
       "tags": [
         "@a11y"
       ],
-      "status": "failed",
-      "durationMs": 5477,
-      "retries": 1,
-      "error": "Error: expect(locator).toBeVisible() failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/ae54a21bd36d/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/ae54a21bd36d/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 3779,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "3bea3f127c89",
@@ -3674,7 +3161,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 682,
+      "durationMs": 855,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3691,7 +3178,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 282,
+      "durationMs": 384,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3708,7 +3195,7 @@
         "@a11y"
       ],
       "status": "skipped",
-      "durationMs": 153,
+      "durationMs": 189,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3725,7 +3212,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 439,
+      "durationMs": 632,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3742,7 +3229,7 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 324,
+      "durationMs": 389,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3760,7 +3247,7 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 164,
+      "durationMs": 181,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3778,7 +3265,7 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 130,
+      "durationMs": 143,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3795,7 +3282,7 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 132,
+      "durationMs": 148,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3812,7 +3299,7 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 153,
+      "durationMs": 141,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3828,20 +3315,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5592,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/6f3b14d3f47a/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/6f3b14d3f47a/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 510,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "7969108764e1",
@@ -3855,7 +3333,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 358,
+      "durationMs": 548,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3872,7 +3350,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 494,
+      "durationMs": 587,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3888,20 +3366,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5586,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/088a52dd156e/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/088a52dd156e/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 412,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "cd6d1287521d",
@@ -3914,20 +3383,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5520,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/cd6d1287521d/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/cd6d1287521d/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 426,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "e19812c782b6",
@@ -3940,20 +3400,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5564,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/e19812c782b6/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/e19812c782b6/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 420,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "bcff90f40d2f",
@@ -3966,20 +3417,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 31012,
-      "retries": 1,
-      "error": "Test timeout of 30000ms exceeded.",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/bcff90f40d2f/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/bcff90f40d2f/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 513,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "7523ce5ec84b",
@@ -3992,20 +3434,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5495,
-      "retries": 1,
-      "error": "Error: expect(locator).toBeVisible() failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/7523ce5ec84b/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/7523ce5ec84b/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 431,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "642ec5471e97",
@@ -4018,20 +3451,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5502,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/642ec5471e97/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/642ec5471e97/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 415,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "1f948ed579fb",
@@ -4044,20 +3468,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5571,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveClass(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/1f948ed579fb/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/1f948ed579fb/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 406,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "4b5830b03f54",
@@ -4070,20 +3485,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5551,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveClass(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/4b5830b03f54/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/4b5830b03f54/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 396,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "3f138ee96c6a",
@@ -4096,20 +3502,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5569,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/3f138ee96c6a/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/3f138ee96c6a/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 383,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "ea1f1b360cb2",
@@ -4122,20 +3519,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5488,
-      "retries": 1,
-      "error": "Error: expect(locator).toContainText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/ea1f1b360cb2/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/ea1f1b360cb2/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 371,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "0dc832258f7e",
@@ -4148,20 +3536,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 30992,
-      "retries": 1,
-      "error": "Test timeout of 30000ms exceeded.",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/0dc832258f7e/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/0dc832258f7e/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 500,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "c436a238600d",
@@ -4174,20 +3553,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5556,
-      "retries": 1,
-      "error": "Error: expect(locator).toContainText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/c436a238600d/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/c436a238600d/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 363,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "8696b32b85b0",
@@ -4200,20 +3570,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5492,
-      "retries": 1,
-      "error": "Error: expect(locator).toBeVisible() failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/8696b32b85b0/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/8696b32b85b0/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 530,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "e7122eb43b42",
@@ -4226,20 +3587,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5577,
-      "retries": 1,
-      "error": "Error: expect(locator).toHaveText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/e7122eb43b42/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/e7122eb43b42/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 391,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "e460b5ac4af7",
@@ -4252,20 +3604,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5517,
-      "retries": 1,
-      "error": "Error: expect(locator).toContainText(expected) failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/e460b5ac4af7/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/e460b5ac4af7/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 400,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "c2093fc7674e",
@@ -4278,20 +3621,11 @@
       "tags": [
         "@dashboard"
       ],
-      "status": "failed",
-      "durationMs": 5547,
-      "retries": 1,
-      "error": "Error: expect(locator).toBeVisible() failed",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/c2093fc7674e/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/c2093fc7674e/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 391,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "a83d85d1ac0f",
@@ -4305,7 +3639,7 @@
         "@showcase"
       ],
       "status": "skipped",
-      "durationMs": 394,
+      "durationMs": 401,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4322,7 +3656,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 429,
+      "durationMs": 404,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4338,20 +3672,11 @@
       "tags": [
         "@smoke"
       ],
-      "status": "failed",
-      "durationMs": 804,
-      "retries": 1,
-      "error": "Error: expect(received).toEqual(expected) // deep equality",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/d2913cd7f3f5/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/d2913cd7f3f5/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 675,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "0780ec1fb56a",
@@ -4365,7 +3690,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 2391,
+      "durationMs": 2166,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4382,7 +3707,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 587,
+      "durationMs": 386,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4399,7 +3724,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 385,
+      "durationMs": 386,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4416,7 +3741,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 426,
+      "durationMs": 396,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4433,7 +3758,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 384,
+      "durationMs": 353,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4450,7 +3775,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 381,
+      "durationMs": 382,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4467,7 +3792,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 341,
+      "durationMs": 324,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4484,7 +3809,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 417,
+      "durationMs": 393,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4501,7 +3826,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 478,
+      "durationMs": 503,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4518,7 +3843,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 763,
+      "durationMs": 711,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4535,7 +3860,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 397,
+      "durationMs": 424,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4552,7 +3877,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 508,
+      "durationMs": 499,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4569,7 +3894,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 491,
+      "durationMs": 447,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4586,7 +3911,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 505,
+      "durationMs": 493,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4603,7 +3928,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 467,
+      "durationMs": 431,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4620,7 +3945,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 351,
+      "durationMs": 437,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4637,7 +3962,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 235,
+      "durationMs": 188,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4654,7 +3979,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 476,
+      "durationMs": 501,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4671,7 +3996,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 399,
+      "durationMs": 359,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4688,7 +4013,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 373,
+      "durationMs": 280,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4705,7 +4030,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 527,
+      "durationMs": 467,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4722,7 +4047,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 277,
+      "durationMs": 260,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4739,7 +4064,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 600,
+      "durationMs": 787,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4756,7 +4081,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 429,
+      "durationMs": 457,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4773,7 +4098,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 309,
+      "durationMs": 351,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4793,6 +4118,14 @@
       "violations": 0,
       "passes": 12,
       "incomplete": 0,
+      "rules": [],
+      "project": "desktop-chromium"
+    },
+    {
+      "page": "/qa-suite.html",
+      "violations": 0,
+      "passes": 27,
+      "incomplete": 1,
       "rules": [],
       "project": "desktop-chromium"
     },
@@ -4817,6 +4150,14 @@
       "violations": 0,
       "passes": 12,
       "incomplete": 0,
+      "rules": [],
+      "project": "desktop-firefox"
+    },
+    {
+      "page": "/qa-suite.html",
+      "violations": 0,
+      "passes": 27,
+      "incomplete": 1,
       "rules": [],
       "project": "desktop-firefox"
     },
@@ -4841,6 +4182,14 @@
       "violations": 0,
       "passes": 12,
       "incomplete": 0,
+      "rules": [],
+      "project": "desktop-webkit"
+    },
+    {
+      "page": "/qa-suite.html",
+      "violations": 0,
+      "passes": 27,
+      "incomplete": 1,
       "rules": [],
       "project": "desktop-webkit"
     },
@@ -4869,6 +4218,14 @@
       "project": "mobile-chromium"
     },
     {
+      "page": "/qa-suite.html",
+      "violations": 0,
+      "passes": 28,
+      "incomplete": 1,
+      "rules": [],
+      "project": "mobile-chromium"
+    },
+    {
       "page": "/404.html",
       "violations": 0,
       "passes": 9,
@@ -4880,8 +4237,8 @@
   "performance": [
     {
       "page": "/",
-      "lcpMs": 660,
-      "fcpMs": 660,
+      "lcpMs": 720,
+      "fcpMs": 720,
       "cls": 0,
       "transferKb": 47,
       "budget": {
@@ -4893,8 +4250,8 @@
     },
     {
       "page": "/cv.html",
-      "lcpMs": 572,
-      "fcpMs": 572,
+      "lcpMs": 628,
+      "fcpMs": 628,
       "cls": 0,
       "transferKb": 40,
       "budget": {
@@ -4905,5 +4262,10 @@
       "project": "desktop-chromium"
     }
   ],
-  "showcase": null
+  "showcase": {
+    "title": "A recruiter's first minute on the site",
+    "project": "desktop-chromium",
+    "trace": "assets/qa/artifacts/2d9b8ec0d186/trace.zip",
+    "video": "assets/qa/artifacts/2d9b8ec0d186/video.webm"
+  }
 }

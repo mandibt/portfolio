@@ -6,11 +6,30 @@ name: CI
 #   desktop-firefox  ─┤
 #   desktop-webkit   ─┼─→ report (merge blobs → HTML report + dashboard data) ─→ deploy (main only)
 #   mobile-chromium  ─┘
+#
+# Manual runs: Actions → CI → "Run workflow". Pick one browser or all, optionally
+# narrow to a tag (@a11y, @smoke, ...), and choose whether a run on main
+# publishes. Only a full run (all browsers, no filter) can publish, so the
+# dashboard never shows a partial suite as if it were the whole thing.
 on:
   push:
     branches: ["**"]
   pull_request:
   workflow_dispatch:
+    inputs:
+      projects:
+        description: Browsers to run
+        type: choice
+        default: all
+        options: [all, desktop-chromium, desktop-firefox, desktop-webkit, mobile-chromium]
+      grep:
+        description: Only tests matching this tag or regex (e.g. @a11y). Empty runs everything.
+        type: string
+        default: ""
+      publish:
+        description: On main, commit the dashboard data and deploy to Pages (full runs only)
+        type: boolean
+        default: true
 
 concurrency:
   group: ci-${{ github.ref }}
@@ -28,20 +47,17 @@ jobs:
       # One browser failing is a result about that browser; keep the others.
       fail-fast: false
       matrix:
-        include:
-          - { project: desktop-chromium, browser: chromium }
-          - { project: desktop-firefox, browser: firefox }
-          - { project: desktop-webkit, browser: webkit }
-          - { project: mobile-chromium, browser: chromium }
+        project: ${{ fromJSON(github.event_name == 'workflow_dispatch' && inputs.projects != 'all' && format('["{0}"]', inputs.projects) || '["desktop-chromium","desktop-firefox","desktop-webkit","mobile-chromium"]') }}
     env:
-      # Names the blob file (playwright.config.ts) so the four don't collide.
+      # Names the blob file (playwright.config.ts) so the jobs don't collide.
       PW_PROJECT: ${{ matrix.project }}
+      BROWSER: ${{ contains(matrix.project, 'firefox') && 'firefox' || (contains(matrix.project, 'webkit') && 'webkit' || 'chromium') }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - run: npm ci
@@ -52,25 +68,30 @@ jobs:
 
       - name: Restore the browser from cache
         id: browser-cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.cache/ms-playwright
-          key: ms-playwright-${{ runner.os }}-${{ steps.pw.outputs.version }}-${{ matrix.browser }}
+          key: ms-playwright-${{ runner.os }}-${{ steps.pw.outputs.version }}-${{ env.BROWSER }}
 
-      - name: Install ${{ matrix.browser }}
+      - name: Install ${{ env.BROWSER }}
         if: steps.browser-cache.outputs.cache-hit != 'true'
-        run: npx playwright install --with-deps ${{ matrix.browser }}
+        run: npx playwright install --with-deps "$BROWSER"
 
       - name: Install system dependencies only (browser came from cache)
         if: steps.browser-cache.outputs.cache-hit == 'true'
-        run: npx playwright install-deps ${{ matrix.browser }}
+        run: npx playwright install-deps "$BROWSER"
 
       - name: Run the suite on ${{ matrix.project }}
-        run: npx playwright test --project=${{ matrix.project }}
+        env:
+          GREP: ${{ inputs.grep }}
+        run: |
+          args=(--project="$PW_PROJECT")
+          if [ -n "$GREP" ]; then args+=(--grep "$GREP"); fi
+          npx playwright test "${args[@]}"
 
       - name: Upload blob report
         if: ${{ !cancelled() }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: blob-${{ matrix.project }}
           path: blob-report
@@ -85,22 +106,24 @@ jobs:
     timeout-minutes: 10
     permissions:
       contents: write
+    env:
+      PUBLISH: ${{ github.ref == 'refs/heads/main' && (github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.publish && inputs.grep == '' && inputs.projects == 'all')) }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
-          # On a push, check out the branch itself (not a detached SHA) so the
-          # dashboard data can be committed back to it.
-          ref: ${{ github.event_name == 'push' && github.ref || '' }}
+          # When publishing, check out the branch itself (not a detached SHA) so
+          # the dashboard data can be committed back to it.
+          ref: ${{ github.event_name != 'pull_request' && github.ref || '' }}
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - run: npm ci
 
       - name: Collect blob reports
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           pattern: blob-*
           path: all-blob-reports
@@ -113,7 +136,7 @@ jobs:
         run: npx playwright merge-reports --reporter html,./reporters/qa-dashboard-reporter.ts ./all-blob-reports
 
       - name: Upload HTML report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: playwright-report
           path: playwright-report
@@ -122,7 +145,7 @@ jobs:
       # Traces and videos travel to the deploy job as an artifact rather than
       # being committed, so the repository doesn't grow by megabytes per run.
       - name: Upload dashboard artifacts (traces, videos)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: qa-artifacts
           path: assets/qa/artifacts
@@ -130,7 +153,7 @@ jobs:
           retention-days: 14
 
       - name: Commit dashboard data to main
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        if: env.PUBLISH == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -147,7 +170,8 @@ jobs:
     name: Deploy to GitHub Pages
     # needs → only when every browser job and the report job succeeded.
     needs: [test, report]
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    # Same rule as PUBLISH above (job-level `if` can't read env).
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.publish && inputs.grep == '' && inputs.projects == 'all'))
     runs-on: ubuntu-latest
     timeout-minutes: 10
     concurrency:
@@ -160,12 +184,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: main # includes the dashboard data the report job just committed
 
       - name: Fetch traces and videos
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         continue-on-error: true
         with:
           name: qa-artifacts
@@ -176,11 +200,11 @@ jobs:
           mkdir -p _site
           cp -r index.html cv.html qa-suite.html 404.html assets _site/
 
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

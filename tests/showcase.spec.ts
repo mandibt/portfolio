@@ -1,12 +1,9 @@
 import { test, expect } from "./fixtures";
+import { PROFILE, ROLES, SKILLS } from "./data/site";
 
 /**
- * One journey recorded on every run — trace and video even when it passes —
- * so the dashboard can offer a real Playwright Trace Viewer session to anyone
- * visiting the site, not only when something breaks.
- *
- * These options force a dedicated worker, which Playwright only allows at the
- * top level of a file — hence a file of its own.
+ * Records one full visit - trace and video - on every run, even when it passes.
+ * The dashboard shows this recording so visitors can watch a real Playwright run.
  */
 test.use({
   trace: "on",
@@ -16,46 +13,46 @@ test.use({
 });
 
 test.describe("showcase", { tag: "@showcase" }, () => {
-  test.skip(({ browserName, isMobile }) => browserName !== "chromium" || isMobile, "one recorded journey is enough");
+  test.skip(({ browserName, isMobile }) => browserName !== "chromium" || isMobile, "recorded once, on desktop Chrome");
 
-  test("a recruiter's first minute on the site", async ({ page }, testInfo) => {
-    testInfo.annotations.push({ type: "qa:showcase", description: "A recruiter's first minute on the site" });
+  test("a recruiter's first minute on the site", async ({ homePage, cvPage, dashboard }, testInfo) => {
+    testInfo.annotations.push({ type: "qa:showcase", description: testInfo.title });
 
     await test.step("lands on the home page", async () => {
-      await page.goto("/");
-      await expect(page.getByRole("heading", { level: 1 })).toContainText("Senior QA Automation Engineer");
+      await homePage.goto();
+      await expect(homePage.heading).toContainText(PROFILE.headline);
     });
 
     await test.step("reads the current role, then the earlier ones", async () => {
-      await page.getByRole("link", { name: "Experience", exact: true }).click();
-      await expect(page.locator(".tl-item.current .job-title")).toContainText("School Management Platform");
-      await page.getByText("Show earlier roles").click();
-      await expect(page.locator("#tlMore .job-title").first()).toBeVisible();
+      await homePage.nav.goTo("experience");
+      await expect(homePage.timeline.currentRoles).toContainText(ROLES[0]);
+      await homePage.timeline.showEarlierRoles();
+      await expect(homePage.timeline.earlierRoles.first()).toBeVisible();
     });
 
     await test.step("checks the Playwright skill level", async () => {
-      await page.getByRole("link", { name: "Skills", exact: true }).click();
-      const playwright = page.locator(".skill-bar", { hasText: "Playwright" });
+      await homePage.nav.goTo("skills");
+      const playwright = homePage.skills.bar("Playwright");
       await playwright.scrollIntoViewIfNeeded();
-      await expect(playwright.locator(".skill-bar-pct")).toHaveText("95%");
+      await expect(homePage.skills.percentage(playwright)).toHaveText(`${SKILLS.Playwright}%`);
     });
 
     await test.step("opens the live QA dashboard from Projects", async () => {
-      await page.getByRole("link", { name: /Open the suite runner/ }).click();
-      await expect(page.getByRole("heading", { level: 1 })).toHaveText("QA Suite Runner");
-      await expect(page.locator('[data-section="summary"]')).toBeVisible();
+      await homePage.suiteRunnerLink.click();
+      await expect(dashboard.heading).toHaveText("QA Suite Runner");
+      await expect(dashboard.section("summary")).toBeVisible();
     });
 
     await test.step("opens the CV", async () => {
-      await page.goto("/");
-      await page.locator("a.nav-cv").click();
-      await expect(page.locator(".cv-header h1")).toHaveText("Stefan Mandovski");
-      await expect(page.locator("a[download]")).toHaveAttribute("href", /\.pdf$/);
+      await homePage.goto();
+      await homePage.nav.cvLink.click();
+      await expect(cvPage.heading).toHaveText(PROFILE.name);
+      await expect(cvPage.downloadLink).toHaveAttribute("href", /\.pdf$/);
     });
 
     await test.step("finds the way to get in touch", async () => {
-      await page.goto("/#contact");
-      await expect(page.locator("#contact a.btn-primary")).toHaveAttribute("href", /linkedin\.com\/in\/mandovski/);
+      await homePage.goto("#contact");
+      await expect(homePage.contactLink).toHaveAttribute("href", PROFILE.linkedIn);
     });
   });
 });

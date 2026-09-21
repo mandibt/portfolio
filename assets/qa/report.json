@@ -293,7 +293,7 @@
       "id": "711aab6fecd4",
       "title": "renders the committed report with a per-browser breakdown",
       "path": [
-        "qa suite page — published report"
+        "qa suite page - published report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -319,7 +319,7 @@
       "id": "430b940b0db3",
       "title": "links back to the portfolio and to the raw report",
       "path": [
-        "qa suite page — published report"
+        "qa suite page - published report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -336,7 +336,7 @@
       "id": "5719e2ca5a84",
       "title": "the suite card on the portfolio opens the runner",
       "path": [
-        "qa suite page — published report"
+        "qa suite page - published report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -353,7 +353,7 @@
       "id": "3d094ef07c4f",
       "title": "a clean run shows its totals and every browser",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -379,7 +379,7 @@
       "id": "a529e178d798",
       "title": "a failing test links straight to its trace in Playwright's Trace Viewer",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -405,7 +405,7 @@
       "id": "5c4662407d6a",
       "title": "a flaky test is counted apart from passes and failures",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -431,7 +431,7 @@
       "id": "b82c4c0b9870",
       "title": "the showcase offers the recorded video and the trace",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -457,7 +457,7 @@
       "id": "cfcead3146fb",
       "title": "a run that recorded no showcase shows no empty player",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -483,7 +483,7 @@
       "id": "df6622fcac02",
       "title": "accessibility violations are called out rather than averaged away",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -509,7 +509,7 @@
       "id": "d02dfd9ed600",
       "title": "a clean accessibility gate says so",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -535,7 +535,7 @@
       "id": "914e9c8e2b21",
       "title": "a page over its performance budget is flagged on the metric that broke it",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -561,7 +561,7 @@
       "id": "a95db4a30ba1",
       "title": "tests that failed or retried in recent runs surface under Stability",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -587,7 +587,7 @@
       "id": "c458c625a41d",
       "title": "a test much slower than its usual pace is marked as regressed",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -613,7 +613,7 @@
       "id": "e121148a660f",
       "title": "tag chips filter the test list",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -639,7 +639,7 @@
       "id": "b77bb354a02b",
       "title": "results from a local run are labelled as such",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -665,7 +665,7 @@
       "id": "05f6c491d548",
       "title": "the trend waits for a second run before drawing a line",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -691,7 +691,7 @@
       "id": "3f757e128fdb",
       "title": "missing history files cost their panels, not the page",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -717,7 +717,7 @@
       "id": "0c1b35639203",
       "title": "a report that isn't there says so instead of showing a blank page",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -743,7 +743,7 @@
       "id": "bdf08178b3b5",
       "title": "an unreachable report says so too",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -1478,7 +1478,7 @@
       "id": "ba7231155b25",
       "title": "renders the committed report with a per-browser breakdown",
       "path": [
-        "qa suite page — published report"
+        "qa suite page - published report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1504,7 +1504,7 @@
       "id": "9a1599fc472c",
       "title": "links back to the portfolio and to the raw report",
       "path": [
-        "qa suite page — published report"
+        "qa suite page - published report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1521,7 +1521,7 @@
       "id": "308b4490b56d",
       "title": "the suite card on the portfolio opens the runner",
       "path": [
-        "qa suite page — published report"
+        "qa suite page - published report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1538,7 +1538,7 @@
       "id": "78a1e106605c",
       "title": "a clean run shows its totals and every browser",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1564,7 +1564,7 @@
       "id": "b5c6ce5aea98",
       "title": "a failing test links straight to its trace in Playwright's Trace Viewer",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1590,7 +1590,7 @@
       "id": "d3bf94cef1a2",
       "title": "a flaky test is counted apart from passes and failures",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1616,7 +1616,7 @@
       "id": "bf0bf2b17d20",
       "title": "the showcase offers the recorded video and the trace",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1642,7 +1642,7 @@
       "id": "fd0aaa80e9f9",
       "title": "a run that recorded no showcase shows no empty player",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1668,7 +1668,7 @@
       "id": "6935856362d2",
       "title": "accessibility violations are called out rather than averaged away",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1694,7 +1694,7 @@
       "id": "b92857c84dc8",
       "title": "a clean accessibility gate says so",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1720,7 +1720,7 @@
       "id": "6f2932310c7d",
       "title": "a page over its performance budget is flagged on the metric that broke it",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1746,7 +1746,7 @@
       "id": "94d16a8e066e",
       "title": "tests that failed or retried in recent runs surface under Stability",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1772,7 +1772,7 @@
       "id": "3e0577a6721c",
       "title": "a test much slower than its usual pace is marked as regressed",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1798,7 +1798,7 @@
       "id": "4758dc1102e5",
       "title": "tag chips filter the test list",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1824,7 +1824,7 @@
       "id": "084ac7b33d60",
       "title": "results from a local run are labelled as such",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1850,7 +1850,7 @@
       "id": "2a6c0d33de59",
       "title": "the trend waits for a second run before drawing a line",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1876,7 +1876,7 @@
       "id": "a47e02528813",
       "title": "missing history files cost their panels, not the page",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1902,7 +1902,7 @@
       "id": "70ba1e6375aa",
       "title": "a report that isn't there says so instead of showing a blank page",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1928,7 +1928,7 @@
       "id": "8950850bddf6",
       "title": "an unreachable report says so too",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -2645,7 +2645,7 @@
       "id": "d7fdd6edef80",
       "title": "renders the committed report with a per-browser breakdown",
       "path": [
-        "qa suite page — published report"
+        "qa suite page - published report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2671,7 +2671,7 @@
       "id": "130c3e723827",
       "title": "links back to the portfolio and to the raw report",
       "path": [
-        "qa suite page — published report"
+        "qa suite page - published report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2688,7 +2688,7 @@
       "id": "35147ec064c6",
       "title": "the suite card on the portfolio opens the runner",
       "path": [
-        "qa suite page — published report"
+        "qa suite page - published report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2705,7 +2705,7 @@
       "id": "46d086bb4043",
       "title": "a clean run shows its totals and every browser",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2731,7 +2731,7 @@
       "id": "203c660519dc",
       "title": "a failing test links straight to its trace in Playwright's Trace Viewer",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2757,7 +2757,7 @@
       "id": "e5770733d968",
       "title": "a flaky test is counted apart from passes and failures",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2783,7 +2783,7 @@
       "id": "cf81f1b3b2a1",
       "title": "the showcase offers the recorded video and the trace",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2809,7 +2809,7 @@
       "id": "5abeca460014",
       "title": "a run that recorded no showcase shows no empty player",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2835,7 +2835,7 @@
       "id": "ce0c66624527",
       "title": "accessibility violations are called out rather than averaged away",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2861,7 +2861,7 @@
       "id": "bbb773091a71",
       "title": "a clean accessibility gate says so",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2887,7 +2887,7 @@
       "id": "bd3f2814983c",
       "title": "a page over its performance budget is flagged on the metric that broke it",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2913,7 +2913,7 @@
       "id": "427f78651f0a",
       "title": "tests that failed or retried in recent runs surface under Stability",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2939,7 +2939,7 @@
       "id": "4c305404ad02",
       "title": "a test much slower than its usual pace is marked as regressed",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2965,7 +2965,7 @@
       "id": "7eb30abde97a",
       "title": "tag chips filter the test list",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2991,7 +2991,7 @@
       "id": "6642edfb4312",
       "title": "results from a local run are labelled as such",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -3017,7 +3017,7 @@
       "id": "c38d265800d2",
       "title": "the trend waits for a second run before drawing a line",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -3043,7 +3043,7 @@
       "id": "e338c995d05c",
       "title": "missing history files cost their panels, not the page",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -3069,7 +3069,7 @@
       "id": "5bd2dca7c2a0",
       "title": "a report that isn't there says so instead of showing a blank page",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -3095,7 +3095,7 @@
       "id": "0ac3083d9772",
       "title": "an unreachable report says so too",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -3821,7 +3821,7 @@
       "id": "6f3b14d3f47a",
       "title": "renders the committed report with a per-browser breakdown",
       "path": [
-        "qa suite page — published report"
+        "qa suite page - published report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3847,7 +3847,7 @@
       "id": "7969108764e1",
       "title": "links back to the portfolio and to the raw report",
       "path": [
-        "qa suite page — published report"
+        "qa suite page - published report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3864,7 +3864,7 @@
       "id": "9dfae6dcd8dd",
       "title": "the suite card on the portfolio opens the runner",
       "path": [
-        "qa suite page — published report"
+        "qa suite page - published report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3881,7 +3881,7 @@
       "id": "088a52dd156e",
       "title": "a clean run shows its totals and every browser",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3907,7 +3907,7 @@
       "id": "cd6d1287521d",
       "title": "a failing test links straight to its trace in Playwright's Trace Viewer",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3933,7 +3933,7 @@
       "id": "e19812c782b6",
       "title": "a flaky test is counted apart from passes and failures",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3959,7 +3959,7 @@
       "id": "bcff90f40d2f",
       "title": "the showcase offers the recorded video and the trace",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3985,7 +3985,7 @@
       "id": "7523ce5ec84b",
       "title": "a run that recorded no showcase shows no empty player",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -4011,7 +4011,7 @@
       "id": "642ec5471e97",
       "title": "accessibility violations are called out rather than averaged away",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -4037,7 +4037,7 @@
       "id": "1f948ed579fb",
       "title": "a clean accessibility gate says so",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -4063,7 +4063,7 @@
       "id": "4b5830b03f54",
       "title": "a page over its performance budget is flagged on the metric that broke it",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -4089,7 +4089,7 @@
       "id": "3f138ee96c6a",
       "title": "tests that failed or retried in recent runs surface under Stability",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -4115,7 +4115,7 @@
       "id": "ea1f1b360cb2",
       "title": "a test much slower than its usual pace is marked as regressed",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -4141,7 +4141,7 @@
       "id": "0dc832258f7e",
       "title": "tag chips filter the test list",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -4167,7 +4167,7 @@
       "id": "c436a238600d",
       "title": "results from a local run are labelled as such",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -4193,7 +4193,7 @@
       "id": "8696b32b85b0",
       "title": "the trend waits for a second run before drawing a line",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -4219,7 +4219,7 @@
       "id": "e7122eb43b42",
       "title": "missing history files cost their panels, not the page",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -4245,7 +4245,7 @@
       "id": "e460b5ac4af7",
       "title": "a report that isn't there says so instead of showing a blank page",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -4271,7 +4271,7 @@
       "id": "c2093fc7674e",
       "title": "an unreachable report says so too",
       "path": [
-        "qa suite page — rendering any run"
+        "qa suite page - rendering any run"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",

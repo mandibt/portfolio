@@ -1,6 +1,6 @@
-// QA Suite Runner — renders assets/qa/report.json (+ history.json and
+// QA Suite Runner - renders assets/qa/report.json (+ history.json and
 // test-history.json) as a CI dashboard. Written by
-// reporters/qa-dashboard-reporter.ts; shape in reporters/qa-report-types.ts.
+// reporters/qa-dashboard-reporter.ts, shape in reporters/qa-report-types.ts.
 // Only report.json is required: a missing optional file costs its panel, not
 // the page, and a missing report says so instead of staying blank.
 (function () {
@@ -25,7 +25,7 @@
   }
 
   function fmtMs(ms) {
-    if (ms == null) return "—";
+    if (ms == null) return "-";
     if (ms < 1000) return Math.round(ms) + " ms";
     if (ms < 60000) return (ms / 1000).toFixed(1) + " s";
     return Math.floor(ms / 60000) + "m " + Math.round((ms % 60000) / 1000) + "s";
@@ -99,7 +99,7 @@
       : "";
     return section("showcase", "Watch a real run",
       '<div class="qa-card qa-showcase"><div>' + media + "</div><div><h3>" + esc(showcase.title) + "</h3>" +
-      "<p>Recorded on every CI run — even when it passes — on " + esc(showcase.project) + ". The trace holds every action, network call, console message and a DOM snapshot per step.</p>" +
+      "<p>Recorded on every CI run - even when it passes - on " + esc(showcase.project) + ". The trace holds every action, network call, console message and a DOM snapshot per step.</p>" +
       trace + "</div></div>");
   }
 
@@ -115,7 +115,7 @@
       return '<tr class="qa-a11y-row" data-page="' + esc(r.page) + '" data-project="' + esc(r.project) + '">' +
         "<td>" + esc(r.page) + "</td><td>" + esc(r.project) + "</td>" +
         '<td class="qa-a11y-count ' + (r.violations ? "is-over" : "is-ok") + '">' + r.violations + "</td>" +
-        "<td>" + r.passes + "</td><td>" + esc((r.rules || []).join(", ") || "—") + "</td></tr>";
+        "<td>" + r.passes + "</td><td>" + esc((r.rules || []).join(", ") || "-") + "</td></tr>";
     }).join("");
     return section("accessibility", "Accessibility gate",
       '<div class="qa-card">' + headline + tableWrap("Accessibility results per page and browser", '<table class="qa-table"><thead><tr><th>Page</th><th>Browser</th><th>Violations</th><th>Rules passed</th><th>Failing rules</th></tr></thead><tbody>' + rows + "</tbody></table>") + "</div>",
@@ -217,7 +217,7 @@
     }).join("");
     var dots = points.map(function (p) {
       return '<circle cx="' + p.x.toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="3" fill="var(--accent)"><title>' +
-        esc(fmtDate(p.run.generatedAt)) + " — " + p.run.passRate + "%</title></circle>";
+        esc(fmtDate(p.run.generatedAt)) + " - " + p.run.passRate + "%</title></circle>";
     }).join("");
     return '<div class="qa-trend"><svg viewBox="0 0 ' + w + " " + h + '" role="img" aria-label="Pass rate across the last ' + n + ' runs">' +
       grid + '<path d="' + path + '" fill="none" stroke="var(--accent)" stroke-width="2"/>' + dots + "</svg>" +
@@ -250,7 +250,7 @@
 
     var groups = {}, order = [];
     tests.forEach(function (t) {
-      var key = (t.path && t.path.length ? t.path.join(" › ") : t.file) + " — " + t.project;
+      var key = (t.path && t.path.length ? t.path.join(" › ") : t.file) + " - " + t.project;
       if (!groups[key]) { groups[key] = []; order.push(key); }
       groups[key].push(t);
     });
@@ -311,7 +311,7 @@
             if (match) visible++;
           });
           group.hidden = visible === 0;
-          // A filter opens what it found; "All" restores the default state.
+          // A filter opens what it found, "All" restores the default state.
           group.open = tag ? visible > 0 : group.getAttribute("data-default-open") === "true";
         });
       });
@@ -324,7 +324,7 @@
       renderMeta(report);
 
       var noFailures = !report.summary.failed
-        ? '<p class="qa-trend-caption" style="margin-top:14px;">No failing tests right now — when one fails, a link to its trace in Playwright\'s Trace Viewer appears next to it.</p>'
+        ? '<p class="qa-trend-caption" style="margin-top:14px;">No failing tests right now - when one fails, a link to its trace in Playwright\'s Trace Viewer appears next to it.</p>'
         : "";
 
       contentEl.innerHTML =
@@ -342,7 +342,7 @@
     .catch(function (err) {
       contentEl.innerHTML =
         '<div class="qa-fetch-error" role="alert">Couldn\'t load the latest report (' + esc(err.message) + "). " +
-        "Served from the filesystem, fetch() can't read local JSON — use <code>npm run serve</code>. " +
+        "Served from the filesystem, fetch() can't read local JSON - use <code>npm run serve</code>. " +
         "On the published site it means no run has been published yet.</div>";
     });
 })();

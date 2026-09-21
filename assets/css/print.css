@@ -1,7 +1,7 @@
-/* Print rules for cv.html — screen chrome (toolbar, skip link) disappears and
+/* Print rules for cv.html - screen chrome (toolbar, skip link) disappears and
    the résumé is set for paper: tighter type and spacing than the screen
    layout, whose generous section padding would otherwise push it to 7 A4
-   pages. tests/cv-print.spec.ts holds the page count to a budget. */
+   pages. tests/cv-print.spec.ts holds the page count to a budget */
 @media print {
   .no-print { display: none !important; }
   html { scroll-behavior: auto; }
@@ -15,7 +15,7 @@
   .cv-contact { margin-top: 6pt; gap: 10pt; font-size: 9.5pt; }
   .cv-summary { max-width: none; margin-bottom: 0; }
 
-  /* cv-block is a <section>: undo the screen section padding and dividers. */
+  /* cv-block is a <section>: undo the screen section padding and dividers */
   section.cv-block { padding-block: 0; margin-top: 16pt; border-top: none; break-inside: auto; }
   .cv-block h2 { font-size: 11.5pt; margin-bottom: 8pt; }
 

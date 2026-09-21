@@ -1,4 +1,4 @@
-// Stefan Mandovski — Portfolio
+// Stefan Mandovski - Portfolio
 // Progressive enhancement only: every feature here degrades to a fully
 // visible, fully usable page if JavaScript fails to load.
 
@@ -27,11 +27,11 @@
 
   // Note: this used to include a scroll-reveal (fade/slide-in via
   // IntersectionObserver). It was removed after testing showed a timing
-  // race that could leave sections permanently invisible — not an
+  // race that could leave sections permanently invisible - not an
   // acceptable failure mode on a résumé site. Content is simply visible.
 
-  // Earlier-roles toggle label — the <details>/<summary> element already
-  // does the actual expand/collapse with zero JS; this only swaps the label.
+  // Earlier-roles toggle label - the <details>/<summary> element already
+  // does the actual expand/collapse with zero JS, this only swaps the label.
   var tlMore = document.getElementById("tlMore");
   if (tlMore) {
     var label = tlMore.querySelector(".tl-more-label");
@@ -42,7 +42,7 @@
     }
   }
 
-  // Floating CTA — visible by default (see CSS); JS only hides it once the
+  // Floating CTA - visible by default (see CSS). JS only hides it once the
   // Projects section is on screen. If this never runs, the CTA just stays
   // visible the whole time, which is a harmless degraded state rather than
   // a broken one.
@@ -63,7 +63,7 @@
   // Scroll position on reload: some browsers restore the previous scroll
   // offset on a plain reload. For a one-page résumé site that reads as a
   // bug ("where did I end up?"), so a reload with no hash always opens at
-  // the top; a reload with a hash still lets the browser's normal anchor
+  // the top. A reload with a hash still lets the browser's normal anchor
   // scrolling do its job.
   if ("scrollRestoration" in history) {
     history.scrollRestoration = "manual";
@@ -75,8 +75,8 @@
   // Section-hash routing: redirect a handful of retired anchors to where
   // that content lives now, and send anything unrecognized to the 404
   // page rather than silently doing nothing. Only applies to in-page
-  // section hashes on this page — cv.html and qa-suite.html are unaffected.
-  // "#main" is the skip link's target — without it here, keyboard users
+  // section hashes on this page - cv.html and qa-suite.html are unaffected.
+  // "#main" is the skip link's target - without it here, keyboard users
   // pressing "Skip to content" would be sent to the 404 page.
   var KNOWN_SECTIONS = ["#top", "#main", "#about", "#experience", "#skills", "#projects", "#contact"];
   var LEGACY_ANCHORS = { "#work": "#projects", "#resume": "cv.html", "#cv": "cv.html" };

@@ -4,7 +4,7 @@
  *
  * Replaces `python -m http.server` for two reasons:
  *   - one command on every OS (Windows ships a "python3" Store stub, Linux
- *     often has no "python"), and no Python dependency at all;
+ *     often has no "python"), and no Python dependency at all
  *   - an unknown path answers with 404.html and a real 404 status, the way
  *     GitHub Pages does, so the not-found behaviour can be tested locally.
  *
@@ -61,7 +61,7 @@ const server = createServer(async (req, res) => {
     res.writeHead(status, {
       "Content-Type": TYPES[extname(target).toLowerCase()] || "application/octet-stream",
       "Cache-Control": "no-cache",
-      // GitHub Pages sends this too; it is what lets trace.playwright.dev
+      // GitHub Pages sends this too - it is what lets trace.playwright.dev
       // fetch a published trace.zip.
       "Access-Control-Allow-Origin": "*",
     });

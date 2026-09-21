@@ -1,23 +1,19 @@
 import { test, expect } from "./fixtures";
+import { PERF_BUDGET, SITE_PAGES } from "./data/site";
 
-/** Budgets under the throttled profile below — roughly a mid-range phone on 4G. */
-const BUDGET = { lcpMs: 2500, cls: 0.1, transferKb: 150 };
+const PAGES = SITE_PAGES.filter(({ path }) => path === "/" || path === "/cv.html");
 
-const PAGES = [
-  { path: "/", name: "home" },
-  { path: "/cv.html", name: "CV" },
-];
-
-test.describe("performance budget", { tag: "@perf" }, () => {
-  // CDP is Chromium-only, and one desktop measurement is the meaningful one.
-  test.skip(({ browserName, isMobile }) => browserName !== "chromium" || isMobile, "Chromium desktop only");
+test.describe("performance", { tag: "@perf" }, () => {
+  // CDP is Chrome only
+  test.skip(({ browserName, isMobile }) => browserName !== "chromium" || isMobile, "desktop Chrome only");
 
   for (const target of PAGES) {
-    test(`the ${target.name} page stays inside its budget on a throttled connection`, async ({ page }, testInfo) => {
+    test(`the ${target.name} page loads within budget on slow 4G`, async ({ page }, testInfo) => {
       const cdp = await page.context().newCDPSession(page);
       await cdp.send("Network.enable");
-      // Google Fonts is blocked so the budget measures this site, not Google's CDN.
+      // Google Fonts is blocked to measure this site, not Google's.
       await cdp.send("Network.setBlockedURLs", { urls: ["*fonts.googleapis.com*", "*fonts.gstatic.com*"] });
+      // Lighthouse's "Slow 4G": 150 ms latency, 1.6 Mbps down, 4x slower CPU
       await cdp.send("Network.emulateNetworkConditions", {
         offline: false,
         latency: 150,
@@ -46,7 +42,7 @@ test.describe("performance budget", { tag: "@perf" }, () => {
                 if (!entry.hadRecentInput) cls += entry.value;
               }
             }).observe({ type: "layout-shift", buffered: true });
-            // Let late layout shifts land before reading.
+            // Wait a second so late layout changes still get counted.
             setTimeout(() => {
               const fcp = performance.getEntriesByName("first-contentful-paint")[0]?.startTime ?? 0;
               resolve({ lcpMs: Math.round(lcp), fcpMs: Math.round(fcp), cls: Math.round(cls * 1000) / 1000 });
@@ -57,14 +53,14 @@ test.describe("performance budget", { tag: "@perf" }, () => {
 
       testInfo.annotations.push({
         type: "qa:perf",
-        description: JSON.stringify({ page: target.path, ...result, budget: BUDGET }),
+        description: JSON.stringify({ page: target.path, ...result, budget: PERF_BUDGET }),
       });
 
-      // Soft assertions: a page over budget on LCP still reports CLS and weight.
-      expect.soft(result.lcpMs, "Largest Contentful Paint (ms)").toBeLessThanOrEqual(BUDGET.lcpMs);
-      expect.soft(result.cls, "Cumulative Layout Shift").toBeLessThanOrEqual(BUDGET.cls);
-      expect.soft(result.transferKb, "bytes over the wire (KB)").toBeLessThanOrEqual(BUDGET.transferKb);
       expect(result.lcpMs, "LCP was never observed").toBeGreaterThan(0);
+      // Soft checks, so one metric over budget doesn't fail the others.
+      expect.soft(result.lcpMs, "Largest Contentful Paint (ms)").toBeLessThanOrEqual(PERF_BUDGET.lcpMs);
+      expect.soft(result.cls, "Cumulative Layout Shift").toBeLessThanOrEqual(PERF_BUDGET.cls);
+      expect.soft(result.transferKb, "page weight (KB)").toBeLessThanOrEqual(PERF_BUDGET.transferKb);
     });
   }
 });

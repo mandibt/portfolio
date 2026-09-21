@@ -1,5 +1,5 @@
 /* ===========================================================
-   Stefan Mandovski — Portfolio
+   Stefan Mandovski - Portfolio
    Design tokens + layout. Palette: muted teal / warm plum on a
    quiet paper ground. Type: Spectral (display) + Work Sans (body).
    =========================================================== */
@@ -7,7 +7,7 @@
 :root {
   --ink: #23262b;
   --ink-soft: #5b6169;
-  /* #8b9096 read at ~3:1 on the page ground; axe flagged it. 4.5:1+ now. */
+  /* #8b9096 read at ~3:1 on the page ground and axe flagged it. 4.5:1+ now */
   --ink-faint: #666b72;
   --bg: #f7f7f5;
   --surface: #ffffff;
@@ -100,7 +100,7 @@ a { color: var(--accent-ink); text-decoration-color: color-mix(in srgb, var(--ac
 a:hover, a:focus-visible { text-decoration-color: var(--accent-ink); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
-/* Off-screen until focused: the first Tab stop on every page. */
+/* Off-screen until focused: the first Tab stop on every page */
 .skip-link {
   position: absolute; left: 12px; top: -80px; z-index: 100;
   background: var(--accent-ink); color: #fff; font-weight: 600; font-size: 0.92rem;
@@ -237,6 +237,10 @@ section + section { border-top: 1px solid var(--line); }
 .tl-item.current .tl-dot { background: var(--accent); }
 .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; flex-wrap: wrap; }
 .job-title { font-family: "Spectral", serif; font-size: 1.2rem; font-weight: 600; }
+/* Job and project titles are <h3>s so screen readers can jump between them,
+   but they keep the look they had as plain text: the surrounding colour (print
+   sets its own) and ordinary wrapping, not the balanced wrapping headings get */
+.job-title, .project-title { color: inherit; text-wrap: wrap; }
 .job-when { font-size: 0.86rem; color: var(--ink-faint); white-space: nowrap; }
 .job-client { color: var(--ink-soft); font-size: 0.95rem; margin-top: 3px; }
 .badge-current {
@@ -296,7 +300,7 @@ ul.wins li::before { content: "＋"; color: var(--accent-ink); font-weight: 700;
     to { width: var(--target); }
   }
   /* The global reduced-motion rule shortens durations, but a scroll-driven
-     animation has no duration to shorten — switch it off outright. */
+     animation has no duration to shorten - switch it off outright */
   @media (prefers-reduced-motion: reduce) {
     .skill-bar-fill { animation: none; }
   }
@@ -330,7 +334,7 @@ footer a { color: var(--ink-faint); }
 
 /* Note: an earlier scroll-reveal treatment (fade/slide-in via IntersectionObserver)
    was removed after testing showed a timing race that could leave sections
-   permanently invisible. Content on this site is always visible by default. */
+   permanently invisible. Content on this site is always visible by default */
 
 /* ---------------- floating CTA ---------------- */
 .floating-cta {
@@ -339,10 +343,15 @@ footer a { color: var(--ink-faint); }
   background: var(--accent); color: #fff; text-decoration: none;
   font-size: 0.9rem; font-weight: 600;
   padding: 13px 20px; border-radius: 999px; box-shadow: var(--shadow-md);
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s;
 }
 .floating-cta:hover, .floating-cta:focus-visible { background: var(--accent-ink); }
-.floating-cta.is-hidden { opacity: 0; transform: translateY(14px); pointer-events: none; }
+/* Hidden, not just transparent: visibility takes the link out of the tab order
+   and the accessibility tree, and only flips once the fade-out has finished */
+.floating-cta.is-hidden {
+  opacity: 0; transform: translateY(14px); pointer-events: none; visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s 0.2s;
+}
 @media (max-width: 560px) { .floating-cta { right: 16px; bottom: 16px; padding: 12px 18px; font-size: 0.86rem; } }
 
 @media (max-width: 560px) {
@@ -465,7 +474,7 @@ footer a { color: var(--ink-faint); }
 }
 
 /* dashboard v2: showcase, accessibility, performance, stability, tag filter */
-/* .qa-section is a <section>: drop the landing page's 60px section rhythm. */
+/* .qa-section is a <section>: drop the landing page's 60px section rhythm */
 section.qa-section { padding-block: 0; border-top: none; margin-top: 44px; }
 @media (max-width: 720px) {
   /* five stat tiles in a two-column grid: let the last one span the row */

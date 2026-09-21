@@ -1,159 +1,126 @@
 import { test, expect } from "./fixtures";
-
-const isMobile = (projectName: string) => projectName.startsWith("mobile");
+import { PROFILE, ROLES, SECTIONS, SHIFT_BOARD, SITE_PAGES, SKILLS, type SectionId } from "./data/site";
+import { stylesheetHref, stylesheetLoadedFromRoot } from "./pages/document";
 
 test.describe("home page", { tag: "@smoke" }, () => {
-  test("loads with the right title and hero content", async ({ page }) => {
-    await page.goto("/");
-    await expect(page).toHaveTitle(/Stefan Mandovski/);
-    await expect(page.getByRole("heading", { level: 1 })).toContainText("Senior QA Automation Engineer");
+  test("loads with the right title and hero content", async ({ page, homePage }) => {
+    await homePage.goto();
+    await expect(page).toHaveTitle(new RegExp(PROFILE.name));
+    await expect(homePage.heading).toContainText(PROFILE.headline);
   });
 
-  test("renders without console errors on any page", async ({ page }) => {
-    const errors: string[] = [];
-    page.on("console", (message) => {
-      // Google Fonts is a third party; a hiccup fetching it is not a defect here.
-      const thirdParty = /fonts\.(googleapis|gstatic)\.com/.test(message.location().url);
-      if (message.type() === "error" && !thirdParty) errors.push(`${page.url()}: ${message.text()}`);
-    });
-    for (const path of ["/", "/cv.html", "/qa-suite.html", "/404.html"]) {
-      await page.goto(path);
-      await page.waitForLoadState("load");
-    }
-    expect(errors).toEqual([]);
-  });
-
-  test("nav links resolve to real sections on the page", async ({ page }, testInfo) => {
-    await page.goto("/");
-    for (const id of ["about", "experience", "skills", "projects", "contact"]) {
-      if (isMobile(testInfo.project.name)) await page.locator("#navToggle").click();
-      await page.locator(`.nav-links a[href="#${id}"]`).click();
-      await expect(page.locator(`#${id}`)).toBeInViewport();
+  test("each nav link scrolls to its section", async ({ homePage }) => {
+    await homePage.goto();
+    for (const id of Object.keys(SECTIONS) as SectionId[]) {
+      await homePage.nav.goTo(id);
+      await expect(homePage.section(id)).toBeInViewport();
     }
   });
 
-  test("experience section lists all four roles in order", async ({ page }) => {
-    await page.goto("/");
-    const titles = page.locator("#experience .job-title");
-    await expect(titles).toHaveCount(4);
-    await expect(titles.nth(0)).toContainText("School Management Platform");
-    await expect(titles.nth(1)).toContainText("Electricity Auction Platform");
-    await expect(titles.nth(2)).toContainText("US Pet Retailer");
-    await expect(titles.nth(3)).toContainText("NS NL");
+  test("experience lists every role, newest first", async ({ homePage }) => {
+    await homePage.goto();
+    await homePage.timeline.showEarlierRoles();
+    await expect(homePage.timeline.visibleRoles).toHaveText(ROLES.map((role) => new RegExp(role)));
   });
 
-  test("current role carries the Current badge and the rest don't", async ({ page }) => {
-    await page.goto("/");
-    await expect(page.locator(".tl-item").first()).toHaveClass(/current/);
-    await expect(page.locator(".badge-current")).toHaveCount(1);
+  test("only the newest role is marked Current", async ({ homePage }) => {
+    await homePage.goto();
+    await expect(homePage.timeline.currentRoles).toHaveCount(1);
+    await expect(homePage.timeline.currentRoles).toContainText(ROLES[0]);
   });
 
-  test("projects section features Shift Board with its AI-provider tags", async ({ page }) => {
-    await page.goto("/");
-    const card = page.locator("#projects .project-card", { hasText: "Shift Board" });
+  test("Shift Board lists its AI providers", async ({ homePage }) => {
+    await homePage.goto();
+    const card = homePage.projectCard(SHIFT_BOARD.name);
     await expect(card).toHaveCount(1);
-    for (const provider of ["Claude Code", "OpenAI", "Z.ai", "Kimi"]) {
+    for (const provider of SHIFT_BOARD.providers) {
       await expect(card).toContainText(provider);
     }
   });
 
-  test("contact section links to LinkedIn in a new tab", async ({ page }) => {
-    await page.goto("/");
-    const link = page.locator("#contact a.btn-primary");
-    await expect(link).toHaveAttribute("href", "https://www.linkedin.com/in/mandovski/");
-    await expect(link).toHaveAttribute("target", "_blank");
-    await expect(link).toHaveAttribute("rel", /noopener/);
+  test("contact section links to LinkedIn in a new tab", async ({ homePage }) => {
+    await homePage.goto();
+    await expect(homePage.contactLink).toHaveAttribute("href", PROFILE.linkedIn);
+    await expect(homePage.contactLink).toHaveAttribute("target", "_blank");
+    await expect(homePage.contactLink).toHaveAttribute("rel", /noopener/);
   });
 
-  test("hero and nav both offer a way to reach the CV", async ({ page }) => {
-    await page.goto("/");
-    await expect(page.locator("a.nav-cv")).toHaveAttribute("href", "cv.html");
-    await expect(page.locator(".hero-ctas a", { hasText: "Download CV" })).toHaveAttribute("href", "cv.html");
+  test("the hero and nav both link to the CV", async ({ homePage }) => {
+    await homePage.goto();
+    await expect(homePage.nav.cvLink).toHaveAttribute("href", "cv.html");
+    await expect(homePage.heroCvLink).toHaveAttribute("href", "cv.html");
   });
 
-  test("footer LinkedIn link matches the contact link", async ({ page }) => {
-    await page.goto("/");
-    await expect(page.locator("footer a")).toHaveAttribute("href", "https://www.linkedin.com/in/mandovski/");
+  test("footer LinkedIn link matches the contact link", async ({ homePage }) => {
+    await homePage.goto();
+    await expect(homePage.footerLinkedIn).toHaveAttribute("href", PROFILE.linkedIn);
   });
 
-  test("the footer year comes from the visitor's clock", async ({ page }) => {
-    // page.clock pins Date for the page, so the test proves the year is
-    // computed at runtime rather than typed into the HTML.
+  test("the footer shows the current year", async ({ page, homePage }) => {
+    // Year is calculated at runtime and not hardcoded
     await page.clock.setFixedTime(new Date("2031-03-01T09:00:00Z"));
-    await page.goto("/");
-    await expect(page.locator("#year")).toHaveText("2031");
+    await homePage.goto();
+    await expect(homePage.footer).toContainText(`© 2031 ${PROFILE.name}`);
   });
 });
 
-test.describe("interactive features", { tag: "@smoke" }, () => {
-  test("earlier roles stay collapsed until asked for", async ({ page }) => {
-    await page.goto("/");
-    const older = page.locator("#tlMore .tl-item");
-    await expect(older).toHaveCount(2);
-    for (let i = 0; i < 2; i++) await expect(older.nth(i)).not.toBeVisible();
+test.describe("interactions", { tag: "@smoke" }, () => {
+  test("earlier roles are hidden until expanded", async ({ homePage }) => {
+    await homePage.goto();
+    const { timeline } = homePage;
+    // The two newest roles are always shown
+    const earlierRoleCount = ROLES.length - 2;
+    await expect(timeline.earlierRoles).toHaveCount(earlierRoleCount);
+    await expect(timeline.earlierRoles.filter({ visible: true })).toHaveCount(0);
 
-    await page.locator("#tlMore summary").click();
-    for (let i = 0; i < 2; i++) await expect(older.nth(i)).toBeVisible();
-    await expect(page.locator("#tlMore summary")).toContainText("Hide earlier roles");
+    await timeline.showEarlierRoles();
+    await expect(timeline.earlierRoles.filter({ visible: true })).toHaveCount(earlierRoleCount);
+    await expect(timeline.earlierRolesToggle).toContainText("Hide earlier roles");
   });
 
-  test("skill bars fill to the value each one declares", async ({ page }) => {
-    await page.goto("/");
-    const bars = page.locator(".skill-bar");
-    await expect(bars).toHaveCount(6);
-    await expect(bars.first().locator(".skill-bar-pct")).toHaveText("95%");
+  test("each skill bar fills to its percentage", async ({ homePage }) => {
+    await homePage.goto();
+    const { skills } = homePage;
+    await expect(skills.bars).toHaveCount(Object.keys(SKILLS).length);
+    await expect(skills.percentage(skills.bar("Playwright"))).toHaveText(`${SKILLS.Playwright}%`);
 
-    for (const bar of await bars.all()) {
-      // Centre the bar: in browsers with scroll-driven animations the fill
-      // completes once the bar is well inside the viewport.
-      await bar.evaluate((el) => el.scrollIntoView({ block: "center" }));
-      const declared = parseFloat((await bar.locator(".skill-bar-pct").textContent()) ?? "");
-      await expect
-        .poll(() =>
-          bar.evaluate((el) => {
-            const fill = el.querySelector<HTMLElement>(".skill-bar-fill")!;
-            const track = el.querySelector<HTMLElement>(".skill-bar-track")!;
-            return Math.round((fill.getBoundingClientRect().width / track.getBoundingClientRect().width) * 100);
-          }),
-        )
-        .toBeGreaterThanOrEqual(declared - 2);
+    for (const bar of await skills.bars.all()) {
+      await skills.centre(bar);
+      const declared = await skills.declaredPercent(bar);
+      await expect.poll(() => skills.fillPercent(bar)).toBeGreaterThanOrEqual(declared - 2);
     }
   });
 
-  test("reduced motion turns the skill bar animation off", async ({ page }) => {
+  test("reduced motion turns the skill bar animation off", async ({ page, homePage }) => {
     await page.emulateMedia({ reducedMotion: "reduce" });
-    await page.goto("/");
-    const running = await page
-      .locator(".skill-bar-fill")
-      .evaluateAll((fills) => fills.reduce((n, el) => n + el.getAnimations().length, 0));
-    expect(running).toBe(0);
+    await homePage.goto();
+    expect(await homePage.skills.runningAnimations()).toBe(0);
   });
 
-  test("a floating CTA is visible while browsing and steps aside at Projects", async ({ page }) => {
-    await page.goto("/");
-    const cta = page.locator("#floatingCta");
-    await expect(cta).toHaveCSS("opacity", "1");
+  test("the floating button hides at Projects", async ({ homePage }) => {
+    await homePage.goto();
+    await expect(homePage.floatingCta).toBeVisible();
 
-    await page.locator("#projects").scrollIntoViewIfNeeded();
-    await expect(cta).toHaveClass(/is-hidden/);
+    await homePage.section("projects").scrollIntoViewIfNeeded();
+    // Hidden from keyboard tabs
+    await expect(homePage.floatingCta).toBeHidden();
   });
 
-  test("a reload opens the page at the top, not where the last visit ended", async ({ page }) => {
-    await page.goto("/");
-    await page.locator("#contact").scrollIntoViewIfNeeded();
+  test("reloading opens the page at the top", async ({ page, homePage }) => {
+    await homePage.goto();
+    await homePage.section("contact").scrollIntoViewIfNeeded();
     await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(100);
 
     await page.reload();
     await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
   });
 
-  test("keyboard users can skip straight to the content", async ({ page, browserName }) => {
-    test.skip(browserName === "webkit", "WebKit only tabs to links when the OS setting allows it");
-    await page.goto("/");
+  test("keyboard users can skip straight to the content", async ({ page, homePage, browserName }) => {
+    test.skip(browserName === "webkit", "Safari skips links on Tab by default");
+    await homePage.goto();
     await page.keyboard.press("Tab");
-    const skip = page.getByRole("link", { name: "Skip to content" });
-    await expect(skip).toBeFocused();
-    await expect(skip).toBeInViewport();
+    await expect(homePage.skipLink).toBeFocused();
+    await expect(homePage.skipLink).toBeInViewport();
 
     await page.keyboard.press("Enter");
     await expect(page).toHaveURL(/#main$/);
@@ -161,100 +128,113 @@ test.describe("interactive features", { tag: "@smoke" }, () => {
   });
 });
 
-test.describe("addresses", { tag: "@smoke" }, () => {
-  test("a retired anchor still reaches the section it now lives in", async ({ page }) => {
-    await page.goto("/#work");
+test.describe("URLs", { tag: "@smoke" }, () => {
+  test("the old #work link goes to Projects", async ({ page, homePage }) => {
+    await homePage.goto("#work");
     await expect(page).toHaveURL(/#projects$/);
   });
 
-  test("an unknown section in the address lands on the not found page", async ({ page }) => {
-    await page.goto("/#totally-not-a-section");
+  test("an unknown #section goes to the 404 page", async ({ page, homePage, notFoundPage }) => {
+    await homePage.goto("#totally-not-a-section");
     await expect(page).toHaveURL(/404\.html$/);
-    await expect(page.locator(".code")).toHaveText("404");
+    await expect(notFoundPage.code).toHaveText("404");
   });
 
-  test("an unknown path answers with a real 404 status", async ({ request }) => {
+  test("an unknown page returns 404", async ({ request }) => {
     const response = await request.get("/no-such-page");
     expect(response.status()).toBe(404);
     expect(await response.text()).toContain("wandered off the test plan");
   });
 
-  test("a deep unknown path still renders the styled not found page", async ({ page }) => {
-    const response = await page.goto("/some/deeply/nested/missing/page");
+  test("the 404 page keeps its styling on nested paths", async ({ page, homePage, notFoundPage }) => {
+    const response = await notFoundPage.goto("/some/deeply/nested/missing/page");
     expect(response?.status()).toBe(404);
-    // Styled means the stylesheet resolved from the site root, not from
-    // /some/deeply/nested/ — the accent colour only exists in styles.css.
-    await expect(page.locator(".code")).toHaveCSS("color", "rgb(44, 79, 66)");
-    await page.getByRole("link", { name: "Back to the portfolio" }).click();
-    await expect(page.getByRole("heading", { level: 1 })).toContainText("Senior QA Automation Engineer");
+    expect(await stylesheetLoadedFromRoot(page), "stylesheet loads on nested paths").toBe(true);
+
+    await notFoundPage.backLink.click();
+    await expect(homePage.heading).toContainText(PROFILE.headline);
   });
 });
 
 test.describe("cv page", { tag: "@smoke" }, () => {
-  test("renders the résumé with a working PDF download link", async ({ page }) => {
-    await page.goto("/cv.html");
-    await expect(page).toHaveTitle(/CV — Stefan Mandovski/);
-    await expect(page.locator(".cv-header h1")).toContainText("Stefan Mandovski");
+  test("the PDF download works", async ({ page, cvPage }) => {
+    await cvPage.goto();
+    await expect(page).toHaveTitle(`CV - ${PROFILE.name}`);
+    await expect(cvPage.heading).toHaveText(PROFILE.name);
 
-    const pdfLink = page.locator("a[download]");
-    await expect(pdfLink).toHaveAttribute("href", "assets/cv/Stefan-Mandovski-CV.pdf");
+    await expect(cvPage.downloadLink).toHaveAttribute("href", PROFILE.cvPdf);
+    await expect(cvPage.downloadLink).toHaveAttribute("download");
 
-    const response = await page.request.get("/assets/cv/Stefan-Mandovski-CV.pdf");
-    expect(response.ok()).toBeTruthy();
+    const response = await page.request.get(`/${PROFILE.cvPdf}`);
+    await expect(response).toBeOK();
     expect(response.headers()["content-type"]).toContain("pdf");
   });
 
-  test("lists all four experience entries and the certifications block", async ({ page }) => {
-    await page.goto("/cv.html");
-    await expect(page.locator(".cv-entry .job-title")).toHaveCount(5); // 4 roles + Shift Board project entry
+  test("lists every role, Shift Board and the certifications", async ({ page, cvPage }) => {
+    await cvPage.goto();
+    // The four roles, then the Shift Board entry under Personal Projects.
+    await expect(cvPage.entryTitles).toHaveText([...ROLES.map((role) => new RegExp(role)), /Shift Board/]);
     await expect(page.getByText("Anthropic Academy")).toBeVisible();
   });
 
-  test("back link returns to the portfolio", async ({ page }) => {
-    await page.goto("/cv.html");
-    await page.locator(".cv-toolbar a.back").click();
+  test("back link returns to the portfolio", async ({ page, cvPage }) => {
+    await cvPage.goto();
+    await cvPage.backLink.click();
     await expect(page).toHaveURL(/index\.html$|\/$/);
   });
 });
 
 test.describe("404 page", { tag: "@smoke" }, () => {
-  test("shows a friendly not-found message with a way back", async ({ page }) => {
-    await page.goto("/404.html");
-    await expect(page.locator(".code")).toHaveText("404");
-    await expect(page.locator("a.btn-primary")).toHaveAttribute("href", "index.html");
+  test("shows 404 and a link home", async ({ notFoundPage }) => {
+    await notFoundPage.goto();
+    await expect(notFoundPage.code).toHaveText("404");
+    await expect(notFoundPage.backLink).toHaveAttribute("href", "index.html");
   });
 });
 
-test.describe("asset versions", { tag: "@smoke" }, () => {
-  test("every page asks for the same stylesheet version", async ({ page }) => {
-    const hrefs: string[] = [];
-    for (const path of ["/index.html", "/cv.html", "/qa-suite.html", "/404.html"]) {
+test.describe("every page", { tag: "@smoke" }, () => {
+  test("renders without console errors", async ({ page }) => {
+    const errors: string[] = [];
+    page.on("console", (message) => {
+      const thirdParty = /fonts\.(googleapis|gstatic)\.com/.test(message.location().url);
+      if (message.type() === "error" && !thirdParty) errors.push(`${page.url()}: ${message.text()}`);
+    });
+    for (const { path } of SITE_PAGES) {
       await page.goto(path);
-      hrefs.push((await page.locator('link[rel="stylesheet"][href*="styles.css"]').getAttribute("href")) ?? "");
+    }
+    expect(errors).toEqual([]);
+  });
+
+  test("asks for the same stylesheet version", async ({ page }) => {
+    const hrefs: string[] = [];
+    for (const { path } of SITE_PAGES) {
+      await page.goto(path);
+      hrefs.push((await stylesheetHref(page)) ?? "");
     }
     expect(hrefs[0]).toMatch(/\?v=\d+$/);
     expect(new Set(hrefs).size, `stylesheet links: ${hrefs.join(", ")}`).toBe(1);
   });
 });
 
-test.describe("mobile viewport", { tag: "@smoke" }, () => {
-  // Only meaningful on the mobile-chromium project (see playwright.config.ts).
-  test.beforeEach(({}, testInfo) => {
-    test.skip(!isMobile(testInfo.project.name), "mobile viewport only");
+// Runs only on the mobile project: desktop projects filter out @mobile (playwright.config.ts).
+test.describe("mobile viewport", { tag: ["@smoke", "@mobile"] }, () => {
+  test("the nav opens from the menu button", async ({ homePage }) => {
+    await homePage.goto();
+    const { nav } = homePage;
+    await expect(nav.toggle).toHaveAttribute("aria-expanded", "false");
+    await expect(nav.link("about")).toBeHidden();
+
+    await nav.openMenu();
+    await expect(nav.toggle).toHaveAttribute("aria-expanded", "true");
+    await expect(nav.link("about")).toBeVisible();
   });
 
-  test("nav collapses behind a toggle and opens on tap", async ({ page }) => {
-    await page.goto("/");
-    const links = page.locator("#navLinks");
-    await expect(links).not.toHaveClass(/open/);
-    await page.locator("#navToggle").click();
-    await expect(links).toHaveClass(/open/);
-  });
-
-  test("hero content is visible without horizontal scroll", async ({ page }) => {
-    await page.goto("/");
-    const scrollWidth = await page.evaluate(() => document.documentElement.scrollWidth);
-    const clientWidth = await page.evaluate(() => document.documentElement.clientWidth);
+  test("the page doesn't scroll sideways on a phone", async ({ page, homePage }) => {
+    await homePage.goto();
+    const [scrollWidth, clientWidth] = await page.evaluate(() => [
+      document.documentElement.scrollWidth,
+      document.documentElement.clientWidth,
+    ]);
     expect(scrollWidth).toBeLessThanOrEqual(clientWidth + 1);
   });
 });

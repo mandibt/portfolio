@@ -1,9 +1,10 @@
 name: CI
 
-# One pipeline for every branch and pull request; publishing only happens on main.
+# One pipeline for every branch and pull request. Publishing only happens on main.
 #
-#   desktop-chromium ─┐
-#   desktop-firefox  ─┤
+#   lint (tsc + eslint + unit) ───────────────────────────────────────────────┐
+#   desktop-chromium ─┐                                                        │
+#   desktop-firefox  ─┤                                                        ▼
 #   desktop-webkit   ─┼─→ report (merge blobs → HTML report + dashboard data) ─→ deploy (main only)
 #   mobile-chromium  ─┘
 #
@@ -11,6 +12,8 @@ name: CI
 # narrow to a tag (@a11y, @smoke, ...), and choose whether a run on main
 # publishes. Only a full run (all browsers, no filter) can publish, so the
 # dashboard never shows a partial suite as if it were the whole thing.
+# "update_snapshots" runs none of that: it re-renders the @visual screenshot
+# baselines and commits them to the branch.
 on:
   push:
     branches: ["**"]
@@ -30,6 +33,10 @@ on:
         description: On main, commit the dashboard data and deploy to Pages (full runs only)
         type: boolean
         default: true
+      update_snapshots:
+        description: Only re-render the @visual screenshot baselines and commit them to this branch
+        type: boolean
+        default: false
 
 concurrency:
   group: ci-${{ github.ref }}
@@ -39,12 +46,39 @@ permissions:
   contents: read
 
 jobs:
+  lint:
+    name: Type-check, lint & unit tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # Playwright transpiles TypeScript without checking it, so a type error
+      # never fails a test run on its own.
+      - name: Type-check
+        run: npm run typecheck
+
+      - name: Lint (eslint-plugin-playwright, warnings fail)
+        run: npm run lint
+
+      # The dashboard reporter and the report schema - plain Node, no browser.
+      - name: Unit tests
+        run: npm run test:unit
+
   test:
     name: ${{ matrix.project }}
+    if: ${{ !inputs.update_snapshots }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     strategy:
-      # One browser failing is a result about that browser; keep the others.
+      # One browser failing is a result about that browser, so keep the others.
       fail-fast: false
       matrix:
         project: ${{ fromJSON(github.event_name == 'workflow_dispatch' && inputs.projects != 'all' && format('["{0}"]', inputs.projects) || '["desktop-chromium","desktop-firefox","desktop-webkit","mobile-chromium"]') }}
@@ -100,8 +134,8 @@ jobs:
   report:
     name: Merge reports & build dashboard
     needs: test
-    # Runs when tests fail too — a red run is exactly when the report matters.
-    if: ${{ !cancelled() }}
+    # Runs when tests fail too - a red run is exactly when the report matters.
+    if: ${{ !cancelled() && !inputs.update_snapshots }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -168,8 +202,8 @@ jobs:
 
   deploy:
     name: Deploy to GitHub Pages
-    # needs → only when every browser job and the report job succeeded.
-    needs: [test, report]
+    # needs → only when lint, every browser job and the report job succeeded.
+    needs: [lint, test, report]
     # Same rule as PUBLISH above (job-level `if` can't read env).
     if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.publish && inputs.grep == '' && inputs.projects == 'all'))
     runs-on: ubuntu-latest
@@ -208,3 +242,43 @@ jobs:
 
       - id: deployment
         uses: actions/deploy-pages@v5
+
+  visual-baselines:
+    name: Update visual baselines
+    # Manual only: Actions → CI → Run workflow → "update_snapshots". Renders the
+    # @visual screenshots on the same runner image the test jobs compare on, and
+    # commits them to the branch the workflow ran on.
+    if: ${{ inputs.update_snapshots }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Render the baselines
+        run: npx playwright test --grep @visual --project=desktop-chromium --project=mobile-chromium --update-snapshots=all
+
+      - name: Commit them to the branch
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tests/visual.spec.ts-snapshots
+          if git diff --cached --quiet; then
+            echo "The baselines already match."
+            exit 0
+          fi
+          git commit -m "test: update visual baselines"
+          git push origin "HEAD:$BRANCH"

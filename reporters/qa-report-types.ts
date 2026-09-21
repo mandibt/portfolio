@@ -1,7 +1,6 @@
 /**
- * The shape of the files qa-suite.html reads. Written by
- * reporters/qa-dashboard-reporter.ts, and built by hand in the dashboard tests
- * (tests/support/qa-dashboard.ts) so both sides compile against one definition.
+ * Shape of the dashboard files, shared by the reporter and the dashboard test
+ * data (tests/data/qa-report.ts). qa-report-schema.ts checks it at runtime.
  */
 
 export type QaStatus = "passed" | "failed" | "flaky" | "skipped";
@@ -33,7 +32,7 @@ export interface QaCounts {
   skipped: number;
 }
 
-/** Recorded by tests/a11y.spec.ts through a "qa:a11y" annotation. */
+// Recorded by tests/a11y.spec.ts through a "qa:a11y" annotation.
 export interface QaAccessibilityResult {
   page: string;
   project: string;
@@ -43,7 +42,7 @@ export interface QaAccessibilityResult {
   rules: string[];
 }
 
-/** Recorded by tests/performance.spec.ts through a "qa:perf" annotation. */
+// Recorded by tests/performance.spec.ts through a "qa:perf" annotation.
 export interface QaPerformanceResult {
   page: string;
   project: string;
@@ -85,7 +84,7 @@ export interface QaHistoryEntry extends QaCounts {
   passRate: number | null;
 }
 
-/** Per-test outcomes across recent runs — what the Stability panel is built from. */
+// Per-test outcomes across recent runs, for the Stability panel.
 export interface QaTestHistory {
   runs: number;
   tests: Record<
@@ -94,7 +93,7 @@ export interface QaTestHistory {
       title: string;
       project: string;
       file: string;
-      /** One letter per run, oldest first: p passed, f failed, k flaky, s skipped. */
+      // One letter per run, oldest first: p passed, f failed, k flaky, s skipped.
       outcomes: string;
       durations: number[];
     }

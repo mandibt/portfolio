@@ -5,6 +5,9 @@
   "description": "Personal portfolio and CV for Stefan Mandovski",
   "scripts": {
     "serve": "node scripts/serve.mjs 8000",
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run lint",
     "test": "playwright test",
     "test:headed": "playwright test --headed --project=desktop-chromium",
     "test:smoke": "playwright test --grep @smoke",
@@ -12,12 +15,20 @@
     "test:print": "playwright test --grep @print",
     "test:perf": "playwright test --grep @perf",
     "test:dashboard": "playwright test --grep @dashboard",
+    "test:unit": "playwright test --project=unit",
     "qa:report": "playwright test --reporter=list,./reporters/qa-dashboard-reporter.ts",
     "cv:pdf": "node scripts/build-cv-pdf.mjs",
     "playwright:install": "playwright install chromium firefox webkit"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.13.0",
-    "@playwright/test": "^1.49.0"
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.63.0",
+    "@types/node": "22.20.2",
+    "eslint": "10.10.0",
+    "eslint-plugin-playwright": "2.12.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.70.0",
+    "zod": "4.6.5"
   }
 }

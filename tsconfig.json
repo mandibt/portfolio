@@ -1,0 +1,17 @@
+{
+  // Type-check only: Playwright transpiles the TypeScript itself and never
+  // reports type errors, so `npm run typecheck` is what catches them.
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "preserve",
+    "types": ["node"],
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": ["playwright.config.ts", "tests/**/*.ts", "reporters/**/*.ts"]
+}

@@ -24,7 +24,6 @@ scripts/serve.mjs          static server for tests and previews (404s like GitHu
 scripts/build-cv-pdf.mjs   renders cv.html to the PDF with Playwright
 tests/                     Playwright specs, page objects, components, test data
 eslint.config.mjs          lint rules for the suite; tsconfig.json for tsc --noEmit
-docs/decisions/            why things are built the way they are
 ```
 
 ## Run locally
@@ -83,7 +82,6 @@ tests/visual.spec.ts-snapshots/  screenshot baselines, rendered by CI
   that can't find an element means a screen reader can't either. CSS is kept
   for layout with no semantics, and only inside `tests/pages` and
   `tests/components` - `playwright/no-raw-locators` fails a spec that uses it.
-  See [ADR 006](docs/decisions/006-role-first-locators-and-page-objects.md).
 - **Page objects return locators and perform actions; specs assert.** They
   never navigate on their own, so a test can set up the clock, media or routes
   first.
@@ -143,8 +141,6 @@ design change:
 2. Actions → CI → **Run workflow** on that branch, with **update_snapshots**. It
    renders the screenshots and commits them to the branch.
 3. Review the new images in the pull request, then merge.
-
-See [ADR 007](docs/decisions/007-visual-baselines-from-ci.md).
 
 ## CI and deployment
 
@@ -215,10 +211,7 @@ Real defects this setup caught before they shipped:
   unknown-hash handler. Caught by the keyboard test.
 - Rewriting the locators with `getByRole` showed the **job and project titles
   were `<div>`s** and the sections had no names - nothing for a screen reader
-  to jump between. They're `<h3>`s and named regions now
-  ([ADR 006](docs/decisions/006-role-first-locators-and-page-objects.md)).
+  to jump between. They're `<h3>`s and named regions now.
 - The floating CTA **faded out but stayed focusable**, so keyboard users could
   tab onto a link they couldn't see. Asserting `toBeHidden()` instead of a
   class name caught it; it now hides with `visibility`.
-
-See [docs/decisions](docs/decisions) for the reasoning behind the larger choices.

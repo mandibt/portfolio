@@ -1,15 +1,15 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-21T13:31:08.952Z",
+  "generatedAt": "2026-09-21T13:37:41.052Z",
   "source": "ci",
-  "commit": "14cf28f48b2bafc5eec1b9f9b4372025dda75eb3",
-  "commitShort": "14cf28f",
-  "runUrl": "https://github.com/mandibt/portfolio/actions/runs/35605890836",
-  "durationMs": 77372,
+  "commit": "5e0760e509a715cb0e85a16257b85de4064f7ef2",
+  "commitShort": "5e0760e",
+  "runUrl": "https://github.com/mandibt/portfolio/actions/runs/35606603849",
+  "durationMs": 82053,
   "summary": {
     "total": 253,
-    "passed": 228,
-    "failed": 8,
+    "passed": 236,
+    "failed": 0,
     "flaky": 0,
     "skipped": 17
   },
@@ -17,8 +17,8 @@
     {
       "name": "desktop-chromium",
       "total": 65,
-      "passed": 61,
-      "failed": 4,
+      "passed": 65,
+      "failed": 0,
       "flaky": 0,
       "skipped": 0
     },
@@ -41,8 +41,8 @@
     {
       "name": "mobile-chromium",
       "total": 66,
-      "passed": 57,
-      "failed": 4,
+      "passed": 61,
+      "failed": 0,
       "flaky": 0,
       "skipped": 5
     }
@@ -98,7 +98,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 2067,
+      "durationMs": 1891,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -115,7 +115,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1867,
+      "durationMs": 1678,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -132,7 +132,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 2768,
+      "durationMs": 3064,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -149,7 +149,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 920,
+      "durationMs": 1088,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -166,7 +166,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 470,
+      "durationMs": 553,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -184,7 +184,7 @@
         "@desktop"
       ],
       "status": "passed",
-      "durationMs": 420,
+      "durationMs": 474,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -201,7 +201,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 677,
+      "durationMs": 880,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -218,7 +218,7 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 585,
+      "durationMs": 738,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -236,7 +236,7 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 464,
+      "durationMs": 469,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -254,7 +254,7 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 440,
+      "durationMs": 581,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -271,7 +271,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 439,
+      "durationMs": 498,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -288,7 +288,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 377,
+      "durationMs": 546,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -305,7 +305,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 537,
+      "durationMs": 664,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -322,7 +322,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 372,
+      "durationMs": 346,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -339,7 +339,7 @@
         "@perf"
       ],
       "status": "passed",
-      "durationMs": 1922,
+      "durationMs": 1972,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -356,7 +356,7 @@
         "@perf"
       ],
       "status": "passed",
-      "durationMs": 1881,
+      "durationMs": 1850,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -373,7 +373,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 616,
+      "durationMs": 673,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -390,7 +390,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 547,
+      "durationMs": 630,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -407,7 +407,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 683,
+      "durationMs": 834,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -424,7 +424,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 499,
+      "durationMs": 509,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -441,7 +441,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 467,
+      "durationMs": 576,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -458,7 +458,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 453,
+      "durationMs": 544,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -475,7 +475,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 524,
+      "durationMs": 664,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -492,7 +492,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 431,
+      "durationMs": 577,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -509,7 +509,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 476,
+      "durationMs": 606,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -526,7 +526,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 487,
+      "durationMs": 513,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -543,7 +543,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 479,
+      "durationMs": 473,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -560,7 +560,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 477,
+      "durationMs": 478,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -577,7 +577,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 459,
+      "durationMs": 512,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -594,7 +594,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 596,
+      "durationMs": 638,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -611,7 +611,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 458,
+      "durationMs": 415,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -628,7 +628,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 635,
+      "durationMs": 638,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -645,7 +645,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 445,
+      "durationMs": 465,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -662,7 +662,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 393,
+      "durationMs": 407,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -679,7 +679,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 369,
+      "durationMs": 360,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -696,7 +696,7 @@
         "@showcase"
       ],
       "status": "passed",
-      "durationMs": 5384,
+      "durationMs": 5471,
       "retries": 0,
       "error": null,
       "publishedAttachments": [
@@ -722,7 +722,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 405,
+      "durationMs": 440,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -739,7 +739,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1702,
+      "durationMs": 1767,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -756,7 +756,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 603,
+      "durationMs": 626,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -773,7 +773,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 501,
+      "durationMs": 504,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -790,7 +790,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 510,
+      "durationMs": 525,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -807,7 +807,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 469,
+      "durationMs": 545,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -824,7 +824,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 433,
+      "durationMs": 469,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -841,7 +841,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 432,
+      "durationMs": 452,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -858,7 +858,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 427,
+      "durationMs": 448,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -892,7 +892,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 900,
+      "durationMs": 861,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -909,7 +909,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 490,
+      "durationMs": 536,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -926,7 +926,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 791,
+      "durationMs": 809,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -943,7 +943,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 596,
+      "durationMs": 623,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -960,7 +960,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 552,
+      "durationMs": 623,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -977,7 +977,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 505,
+      "durationMs": 508,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -994,7 +994,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 436,
+      "durationMs": 420,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1011,7 +1011,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 237,
+      "durationMs": 253,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1028,7 +1028,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 554,
+      "durationMs": 575,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1045,7 +1045,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 371,
+      "durationMs": 400,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1062,7 +1062,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 330,
+      "durationMs": 433,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1079,7 +1079,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 549,
+      "durationMs": 576,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1096,7 +1096,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 302,
+      "durationMs": 311,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1113,7 +1113,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 712,
+      "durationMs": 762,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1130,7 +1130,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 884,
+      "durationMs": 834,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1146,20 +1146,11 @@
       "tags": [
         "@visual"
       ],
-      "status": "failed",
-      "durationMs": 803,
-      "retries": 1,
-      "error": "Error: A snapshot doesn't exist at /home/runner/work/portfolio/portfolio/tests/visual.spec.ts-snapshots/home-desktop-chromium-linux.png.",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/4e5967770289/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/4e5967770289/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 1475,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "161ab3aea0eb",
@@ -1172,20 +1163,11 @@
       "tags": [
         "@visual"
       ],
-      "status": "failed",
-      "durationMs": 659,
-      "retries": 1,
-      "error": "Error: A snapshot doesn't exist at /home/runner/work/portfolio/portfolio/tests/visual.spec.ts-snapshots/cv-screen-desktop-chromium-linux.png.",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/161ab3aea0eb/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/161ab3aea0eb/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 1827,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "832d39a8cec1",
@@ -1198,20 +1180,11 @@
       "tags": [
         "@visual"
       ],
-      "status": "failed",
-      "durationMs": 574,
-      "retries": 1,
-      "error": "Error: A snapshot doesn't exist at /home/runner/work/portfolio/portfolio/tests/visual.spec.ts-snapshots/not-found-desktop-chromium-linux.png.",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/832d39a8cec1/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/832d39a8cec1/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 476,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "91a7d0fdf8b7",
@@ -1224,20 +1197,11 @@
       "tags": [
         "@visual"
       ],
-      "status": "failed",
-      "durationMs": 739,
-      "retries": 1,
-      "error": "Error: A snapshot doesn't exist at /home/runner/work/portfolio/portfolio/tests/visual.spec.ts-snapshots/dashboard-desktop-chromium-linux.png.",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/91a7d0fdf8b7/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/91a7d0fdf8b7/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 1010,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "3f1e799bea40",
@@ -1251,7 +1215,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 4440,
+      "durationMs": 4196,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1268,7 +1232,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 4214,
+      "durationMs": 3611,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1285,7 +1249,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 4142,
+      "durationMs": 4025,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1302,7 +1266,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1685,
+      "durationMs": 1559,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1319,7 +1283,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 770,
+      "durationMs": 774,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1337,7 +1301,7 @@
         "@desktop"
       ],
       "status": "passed",
-      "durationMs": 715,
+      "durationMs": 726,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1354,7 +1318,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1320,
+      "durationMs": 1085,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1371,7 +1335,7 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 884,
+      "durationMs": 907,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1389,7 +1353,7 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 323,
+      "durationMs": 476,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1407,7 +1371,7 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 375,
+      "durationMs": 446,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1424,7 +1388,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 868,
+      "durationMs": 836,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1441,7 +1405,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 800,
+      "durationMs": 852,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1458,7 +1422,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 942,
+      "durationMs": 954,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1475,7 +1439,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 725,
+      "durationMs": 660,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1492,7 +1456,7 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 401,
+      "durationMs": 457,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1509,7 +1473,7 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 413,
+      "durationMs": 2252,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1526,7 +1490,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 2864,
+      "durationMs": 949,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1543,7 +1507,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 918,
+      "durationMs": 746,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1560,7 +1524,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 879,
+      "durationMs": 1151,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1577,7 +1541,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 2337,
+      "durationMs": 1149,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1594,7 +1558,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 847,
+      "durationMs": 2473,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1611,7 +1575,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 646,
+      "durationMs": 835,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1628,7 +1592,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1107,
+      "durationMs": 770,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1645,7 +1609,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 807,
+      "durationMs": 601,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1662,7 +1626,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 732,
+      "durationMs": 704,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1679,7 +1643,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 802,
+      "durationMs": 1201,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1696,7 +1660,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 795,
+      "durationMs": 798,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1713,7 +1677,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 757,
+      "durationMs": 836,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1730,7 +1694,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 781,
+      "durationMs": 761,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1747,7 +1711,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 939,
+      "durationMs": 947,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1764,7 +1728,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 780,
+      "durationMs": 782,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1781,7 +1745,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 966,
+      "durationMs": 932,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1798,7 +1762,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 773,
+      "durationMs": 805,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1815,7 +1779,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 742,
+      "durationMs": 694,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1832,7 +1796,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 675,
+      "durationMs": 3882,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1849,7 +1813,7 @@
         "@showcase"
       ],
       "status": "skipped",
-      "durationMs": 1038,
+      "durationMs": 1537,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1866,7 +1830,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 867,
+      "durationMs": 665,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1883,7 +1847,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 4498,
+      "durationMs": 1727,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1900,7 +1864,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 931,
+      "durationMs": 720,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1917,7 +1881,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 700,
+      "durationMs": 666,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1934,7 +1898,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 3044,
+      "durationMs": 1424,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1951,7 +1915,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1168,
+      "durationMs": 4271,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1968,7 +1932,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1277,
+      "durationMs": 716,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1985,7 +1949,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 767,
+      "durationMs": 631,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2002,7 +1966,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 700,
+      "durationMs": 619,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2019,7 +1983,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1095,
+      "durationMs": 778,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2036,7 +2000,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1416,
+      "durationMs": 1503,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2053,7 +2017,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 809,
+      "durationMs": 1602,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2070,7 +2034,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1242,
+      "durationMs": 1204,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2087,7 +2051,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 945,
+      "durationMs": 946,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2104,7 +2068,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1020,
+      "durationMs": 892,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2121,7 +2085,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 828,
+      "durationMs": 844,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2138,7 +2102,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 779,
+      "durationMs": 815,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2155,7 +2119,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 417,
+      "durationMs": 499,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2172,7 +2136,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 905,
+      "durationMs": 5732,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2189,7 +2153,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 758,
+      "durationMs": 941,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2206,7 +2170,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 709,
+      "durationMs": 705,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2223,7 +2187,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 945,
+      "durationMs": 959,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2240,7 +2204,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 4989,
+      "durationMs": 513,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2257,7 +2221,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 931,
+      "durationMs": 1219,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2274,7 +2238,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 4910,
+      "durationMs": 5746,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2291,7 +2255,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 6956,
+      "durationMs": 8887,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2308,7 +2272,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 2873,
+      "durationMs": 5776,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2325,7 +2289,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 3715,
+      "durationMs": 3454,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2342,7 +2306,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1441,
+      "durationMs": 1324,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2359,7 +2323,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 991,
+      "durationMs": 1084,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2377,7 +2341,7 @@
         "@desktop"
       ],
       "status": "passed",
-      "durationMs": 1232,
+      "durationMs": 1117,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2394,7 +2358,7 @@
         "@a11y"
       ],
       "status": "skipped",
-      "durationMs": 501,
+      "durationMs": 433,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2411,7 +2375,7 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 1306,
+      "durationMs": 1321,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2429,7 +2393,7 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 645,
+      "durationMs": 523,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2447,7 +2411,7 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 525,
+      "durationMs": 474,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2464,7 +2428,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1186,
+      "durationMs": 987,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2481,7 +2445,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 937,
+      "durationMs": 914,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2498,7 +2462,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1076,
+      "durationMs": 982,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2515,7 +2479,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 685,
+      "durationMs": 628,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2532,7 +2496,7 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 547,
+      "durationMs": 440,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2549,7 +2513,7 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 655,
+      "durationMs": 459,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2566,7 +2530,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1194,
+      "durationMs": 1143,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2583,7 +2547,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1041,
+      "durationMs": 991,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2600,7 +2564,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1627,
+      "durationMs": 1454,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2617,7 +2581,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 936,
+      "durationMs": 841,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2634,7 +2598,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 922,
+      "durationMs": 911,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2651,7 +2615,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 955,
+      "durationMs": 880,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2668,7 +2632,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1193,
+      "durationMs": 1306,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2685,7 +2649,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 905,
+      "durationMs": 804,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2702,7 +2666,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1014,
+      "durationMs": 914,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2719,7 +2683,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 888,
+      "durationMs": 944,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2736,7 +2700,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 897,
+      "durationMs": 923,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2753,7 +2717,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 871,
+      "durationMs": 842,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2770,7 +2734,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 944,
+      "durationMs": 827,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2787,7 +2751,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1535,
+      "durationMs": 1432,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2804,7 +2768,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 823,
+      "durationMs": 800,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2821,7 +2785,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1076,
+      "durationMs": 1192,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2838,7 +2802,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1026,
+      "durationMs": 936,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2855,7 +2819,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 811,
+      "durationMs": 692,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2872,7 +2836,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 805,
+      "durationMs": 755,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2889,7 +2853,7 @@
         "@showcase"
       ],
       "status": "skipped",
-      "durationMs": 602,
+      "durationMs": 551,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2906,7 +2870,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1117,
+      "durationMs": 896,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2923,7 +2887,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 4929,
+      "durationMs": 3743,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2940,7 +2904,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1228,
+      "durationMs": 1263,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2957,7 +2921,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 898,
+      "durationMs": 791,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2974,7 +2938,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 963,
+      "durationMs": 1101,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2991,7 +2955,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1133,
+      "durationMs": 1184,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3008,7 +2972,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1245,
+      "durationMs": 1000,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3025,7 +2989,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1085,
+      "durationMs": 885,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3042,7 +3006,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 950,
+      "durationMs": 1007,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3059,7 +3023,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1321,
+      "durationMs": 1308,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3076,7 +3040,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1707,
+      "durationMs": 1416,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3093,7 +3057,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1277,
+      "durationMs": 979,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3110,7 +3074,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 2304,
+      "durationMs": 2073,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3127,7 +3091,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1339,
+      "durationMs": 1136,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3144,7 +3108,7 @@
         "@smoke"
       ],
       "status": "skipped",
-      "durationMs": 577,
+      "durationMs": 366,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3161,7 +3125,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1022,
+      "durationMs": 910,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3178,7 +3142,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 927,
+      "durationMs": 1033,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3195,7 +3159,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 637,
+      "durationMs": 555,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3212,7 +3176,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1185,
+      "durationMs": 1019,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3229,7 +3193,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1043,
+      "durationMs": 1070,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3246,7 +3210,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 949,
+      "durationMs": 895,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3263,7 +3227,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1111,
+      "durationMs": 1159,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3280,7 +3244,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 775,
+      "durationMs": 675,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3297,7 +3261,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1272,
+      "durationMs": 1377,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3314,7 +3278,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1519,
+      "durationMs": 1457,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3331,7 +3295,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1445,
+      "durationMs": 1805,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3348,7 +3312,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1287,
+      "durationMs": 1644,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3365,7 +3329,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1945,
+      "durationMs": 2499,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3382,7 +3346,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 725,
+      "durationMs": 870,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3399,7 +3363,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 373,
+      "durationMs": 537,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3416,7 +3380,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 483,
+      "durationMs": 662,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3433,7 +3397,7 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 415,
+      "durationMs": 604,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3451,7 +3415,7 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 184,
+      "durationMs": 183,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3469,7 +3433,7 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 149,
+      "durationMs": 180,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3486,7 +3450,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 411,
+      "durationMs": 555,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3503,7 +3467,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 252,
+      "durationMs": 322,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3520,7 +3484,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 421,
+      "durationMs": 519,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3537,7 +3501,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 236,
+      "durationMs": 449,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3554,7 +3518,7 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 157,
+      "durationMs": 178,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3571,7 +3535,7 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 142,
+      "durationMs": 199,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3588,7 +3552,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 480,
+      "durationMs": 623,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3605,7 +3569,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 422,
+      "durationMs": 582,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3622,7 +3586,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 537,
+      "durationMs": 690,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3639,7 +3603,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 389,
+      "durationMs": 463,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3656,7 +3620,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 376,
+      "durationMs": 494,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3673,7 +3637,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 329,
+      "durationMs": 461,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3690,7 +3654,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 413,
+      "durationMs": 562,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3707,7 +3671,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 367,
+      "durationMs": 450,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3724,7 +3688,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 376,
+      "durationMs": 545,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3741,7 +3705,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 367,
+      "durationMs": 475,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3758,7 +3722,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 354,
+      "durationMs": 454,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3775,7 +3739,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 369,
+      "durationMs": 472,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3792,7 +3756,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 365,
+      "durationMs": 452,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3809,7 +3773,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 449,
+      "durationMs": 564,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3826,7 +3790,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 377,
+      "durationMs": 482,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3843,7 +3807,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 472,
+      "durationMs": 653,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3860,7 +3824,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 344,
+      "durationMs": 527,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3877,7 +3841,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 352,
+      "durationMs": 487,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3894,7 +3858,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 326,
+      "durationMs": 463,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3911,7 +3875,7 @@
         "@showcase"
       ],
       "status": "skipped",
-      "durationMs": 311,
+      "durationMs": 342,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3928,7 +3892,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 381,
+      "durationMs": 493,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3945,7 +3909,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 2379,
+      "durationMs": 2381,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3962,7 +3926,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 385,
+      "durationMs": 569,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3979,7 +3943,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 353,
+      "durationMs": 494,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3996,7 +3960,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 368,
+      "durationMs": 485,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4013,7 +3977,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 342,
+      "durationMs": 548,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4030,7 +3994,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 349,
+      "durationMs": 491,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4047,7 +4011,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 384,
+      "durationMs": 420,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4064,7 +4028,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 344,
+      "durationMs": 482,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4081,7 +4045,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 446,
+      "durationMs": 633,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4098,7 +4062,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 591,
+      "durationMs": 861,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4115,7 +4079,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 371,
+      "durationMs": 532,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4132,7 +4096,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 721,
+      "durationMs": 817,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4149,7 +4113,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 438,
+      "durationMs": 546,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4166,7 +4130,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 400,
+      "durationMs": 630,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4183,7 +4147,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 389,
+      "durationMs": 501,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4200,7 +4164,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 372,
+      "durationMs": 412,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4217,7 +4181,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 143,
+      "durationMs": 261,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4234,7 +4198,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 409,
+      "durationMs": 550,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4268,7 +4232,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 241,
+      "durationMs": 350,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4285,7 +4249,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 456,
+      "durationMs": 584,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4302,7 +4266,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 225,
+      "durationMs": 446,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4319,7 +4283,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 621,
+      "durationMs": 718,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4336,7 +4300,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 722,
+      "durationMs": 892,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4354,7 +4318,7 @@
         "@mobile"
       ],
       "status": "passed",
-      "durationMs": 416,
+      "durationMs": 563,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4372,7 +4336,7 @@
         "@mobile"
       ],
       "status": "passed",
-      "durationMs": 277,
+      "durationMs": 450,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4388,20 +4352,11 @@
       "tags": [
         "@visual"
       ],
-      "status": "failed",
-      "durationMs": 701,
-      "retries": 1,
-      "error": "Error: A snapshot doesn't exist at /home/runner/work/portfolio/portfolio/tests/visual.spec.ts-snapshots/home-mobile-chromium-linux.png.",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/5f7e4b49f0cb/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/5f7e4b49f0cb/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 972,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "b351d9148a54",
@@ -4414,20 +4369,11 @@
       "tags": [
         "@visual"
       ],
-      "status": "failed",
-      "durationMs": 603,
-      "retries": 1,
-      "error": "Error: A snapshot doesn't exist at /home/runner/work/portfolio/portfolio/tests/visual.spec.ts-snapshots/cv-screen-mobile-chromium-linux.png.",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/b351d9148a54/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/b351d9148a54/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 1209,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "c60b391ddc63",
@@ -4440,20 +4386,11 @@
       "tags": [
         "@visual"
       ],
-      "status": "failed",
-      "durationMs": 485,
-      "retries": 1,
-      "error": "Error: A snapshot doesn't exist at /home/runner/work/portfolio/portfolio/tests/visual.spec.ts-snapshots/not-found-mobile-chromium-linux.png.",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/c60b391ddc63/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/c60b391ddc63/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 452,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     },
     {
       "id": "10141a53d62d",
@@ -4466,20 +4403,11 @@
       "tags": [
         "@visual"
       ],
-      "status": "failed",
-      "durationMs": 581,
-      "retries": 1,
-      "error": "Error: A snapshot doesn't exist at /home/runner/work/portfolio/portfolio/tests/visual.spec.ts-snapshots/dashboard-mobile-chromium-linux.png.",
-      "publishedAttachments": [
-        {
-          "type": "video",
-          "path": "assets/qa/artifacts/10141a53d62d/video.webm"
-        },
-        {
-          "type": "trace",
-          "path": "assets/qa/artifacts/10141a53d62d/trace.zip"
-        }
-      ]
+      "status": "passed",
+      "durationMs": 823,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
     }
   ],
   "accessibility": [
@@ -4615,8 +4543,8 @@
   "performance": [
     {
       "page": "/",
-      "lcpMs": 652,
-      "fcpMs": 652,
+      "lcpMs": 684,
+      "fcpMs": 684,
       "cls": 0,
       "transferKb": 48,
       "budget": {
@@ -4628,8 +4556,8 @@
     },
     {
       "page": "/cv.html",
-      "lcpMs": 624,
-      "fcpMs": 624,
+      "lcpMs": 632,
+      "fcpMs": 632,
       "cls": 0,
       "transferKb": 41,
       "budget": {

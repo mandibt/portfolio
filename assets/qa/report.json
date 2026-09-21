@@ -1,60 +1,68 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-12T07:14:39.502Z",
+  "generatedAt": "2026-09-21T13:26:42.914Z",
   "source": "ci",
-  "commit": "5ba0ac18a47027de8f8d1bef87c1bd91710c41d5",
-  "commitShort": "5ba0ac1",
-  "runUrl": "https://github.com/mandibt/portfolio/actions/runs/34680129950",
-  "durationMs": 65865,
+  "commit": "bdc4314388f4c6b9a6529573a9368159bfd60721",
+  "commitShort": "bdc4314",
+  "runUrl": "https://github.com/mandibt/portfolio/actions/runs/35605461358",
+  "durationMs": 53931,
   "summary": {
-    "total": 236,
-    "passed": 212,
-    "failed": 0,
+    "total": 253,
+    "passed": 228,
+    "failed": 8,
     "flaky": 0,
-    "skipped": 24
+    "skipped": 17
   },
   "projects": [
     {
       "name": "desktop-chromium",
-      "total": 59,
-      "passed": 57,
-      "failed": 0,
+      "total": 65,
+      "passed": 61,
+      "failed": 4,
       "flaky": 0,
-      "skipped": 2
+      "skipped": 0
     },
     {
       "name": "desktop-firefox",
-      "total": 59,
-      "passed": 52,
+      "total": 61,
+      "passed": 56,
+      "failed": 0,
+      "flaky": 0,
+      "skipped": 5
+    },
+    {
+      "name": "desktop-webkit",
+      "total": 61,
+      "passed": 54,
       "failed": 0,
       "flaky": 0,
       "skipped": 7
     },
     {
-      "name": "desktop-webkit",
-      "total": 59,
-      "passed": 50,
-      "failed": 0,
-      "flaky": 0,
-      "skipped": 9
-    },
-    {
       "name": "mobile-chromium",
-      "total": 59,
-      "passed": 53,
-      "failed": 0,
+      "total": 66,
+      "passed": 57,
+      "failed": 4,
       "flaky": 0,
-      "skipped": 6
+      "skipped": 5
     }
   ],
   "tags": [
     {
       "tag": "@a11y",
-      "total": 28
+      "total": 27
     },
     {
       "tag": "@dashboard",
       "total": 76
+    },
+    {
+      "tag": "@desktop",
+      "total": 3
+    },
+    {
+      "tag": "@mobile",
+      "total": 2
     },
     {
       "tag": "@perf",
@@ -70,7 +78,11 @@
     },
     {
       "tag": "@smoke",
-      "total": 108
+      "total": 118
+    },
+    {
+      "tag": "@visual",
+      "total": 8
     }
   ],
   "tests": [
@@ -86,7 +98,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 2035,
+      "durationMs": 2049,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -103,7 +115,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1732,
+      "durationMs": 1734,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -120,7 +132,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 4200,
+      "durationMs": 2566,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -137,14 +149,14 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 824,
+      "durationMs": 901,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "da5423b74411",
-      "title": "the home page outline reads as a document to assistive technology",
+      "id": "05d959854a76",
+      "title": "the home page outline reads as a document to assistive readers",
       "path": [
         "accessibility"
       ],
@@ -154,7 +166,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 369,
+      "durationMs": 514,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -168,10 +180,11 @@
       "file": "tests/a11y.spec.ts",
       "project": "desktop-chromium",
       "tags": [
-        "@a11y"
+        "@a11y",
+        "@desktop"
       ],
       "status": "passed",
-      "durationMs": 299,
+      "durationMs": 430,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -188,7 +201,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 701,
+      "durationMs": 820,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -205,7 +218,7 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 439,
+      "durationMs": 700,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -223,14 +236,14 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 887,
+      "durationMs": 458,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "c00877cd9bd5",
-      "title": "the committed PDF is not stale against cv.html",
+      "id": "e5f4c974c29d",
+      "title": "compare the committed PDF against cv.html",
       "path": [
         "CV print & PDF",
         "rendered PDF"
@@ -241,106 +254,21 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 989,
+      "durationMs": 503,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "a371daf8b026",
-      "title": "the home page stays inside its budget on a throttled connection",
+      "id": "667181a84a3b",
+      "title": "the home page only links to things that exist",
       "path": [
-        "performance budget"
+        "links"
       ],
-      "file": "tests/performance.spec.ts",
+      "file": "tests/links.spec.ts",
       "project": "desktop-chromium",
       "tags": [
-        "@perf"
-      ],
-      "status": "passed",
-      "durationMs": 2045,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "1c9e4bd8065d",
-      "title": "the CV page stays inside its budget on a throttled connection",
-      "path": [
-        "performance budget"
-      ],
-      "file": "tests/performance.spec.ts",
-      "project": "desktop-chromium",
-      "tags": [
-        "@perf"
-      ],
-      "status": "passed",
-      "durationMs": 1951,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "711aab6fecd4",
-      "title": "renders the committed report with a per-browser breakdown",
-      "path": [
-        "qa suite page - published report"
-      ],
-      "file": "tests/qa-dashboard.spec.ts",
-      "project": "desktop-chromium",
-      "tags": [
-        "@dashboard"
-      ],
-      "status": "passed",
-      "durationMs": 560,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "430b940b0db3",
-      "title": "links back to the portfolio and to the raw report",
-      "path": [
-        "qa suite page - published report"
-      ],
-      "file": "tests/qa-dashboard.spec.ts",
-      "project": "desktop-chromium",
-      "tags": [
-        "@dashboard"
-      ],
-      "status": "passed",
-      "durationMs": 686,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "5719e2ca5a84",
-      "title": "the suite card on the portfolio opens the runner",
-      "path": [
-        "qa suite page - published report"
-      ],
-      "file": "tests/qa-dashboard.spec.ts",
-      "project": "desktop-chromium",
-      "tags": [
-        "@dashboard"
-      ],
-      "status": "passed",
-      "durationMs": 829,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "3d094ef07c4f",
-      "title": "a clean run shows its totals and every browser",
-      "path": [
-        "qa suite page - rendering any run"
-      ],
-      "file": "tests/qa-dashboard.spec.ts",
-      "project": "desktop-chromium",
-      "tags": [
-        "@dashboard"
+        "@smoke"
       ],
       "status": "passed",
       "durationMs": 520,
@@ -349,10 +277,95 @@
       "publishedAttachments": []
     },
     {
-      "id": "a529e178d798",
-      "title": "a failing test links straight to its trace in Playwright's Trace Viewer",
+      "id": "3932af8b4098",
+      "title": "the CV page only links to things that exist",
       "path": [
-        "qa suite page - rendering any run"
+        "links"
+      ],
+      "file": "tests/links.spec.ts",
+      "project": "desktop-chromium",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 380,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "ce529bb84594",
+      "title": "the QA suite runner page only links to things that exist",
+      "path": [
+        "links"
+      ],
+      "file": "tests/links.spec.ts",
+      "project": "desktop-chromium",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 574,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "bdeb94bc92e7",
+      "title": "the not found page only links to things that exist",
+      "path": [
+        "links"
+      ],
+      "file": "tests/links.spec.ts",
+      "project": "desktop-chromium",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 278,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "a022506a8806",
+      "title": "the home page loads within budget on slow 4G",
+      "path": [
+        "performance"
+      ],
+      "file": "tests/performance.spec.ts",
+      "project": "desktop-chromium",
+      "tags": [
+        "@perf"
+      ],
+      "status": "passed",
+      "durationMs": 1995,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "914c70f998ea",
+      "title": "the CV page loads within budget on slow 4G",
+      "path": [
+        "performance"
+      ],
+      "file": "tests/performance.spec.ts",
+      "project": "desktop-chromium",
+      "tags": [
+        "@perf"
+      ],
+      "status": "passed",
+      "durationMs": 1960,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "55c1d5fe66f9",
+      "title": "shows the real report's totals for each browser",
+      "path": [
+        "QA dashboard - real report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -360,16 +373,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 593,
+      "durationMs": 782,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "5c4662407d6a",
-      "title": "a flaky test is counted apart from passes and failures",
+      "id": "59714de95f41",
+      "title": "links back to the portfolio and to the raw report",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - real report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -377,16 +390,84 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 509,
+      "durationMs": 648,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "b82c4c0b9870",
+      "id": "02311b499eea",
+      "title": "the portfolio's QA suite card opens the dashboard",
+      "path": [
+        "QA dashboard - real report"
+      ],
+      "file": "tests/qa-dashboard.spec.ts",
+      "project": "desktop-chromium",
+      "tags": [
+        "@dashboard"
+      ],
+      "status": "passed",
+      "durationMs": 847,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "a201fc67cf49",
+      "title": "a clean run shows its totals and every browser",
+      "path": [
+        "QA dashboard - made-up report"
+      ],
+      "file": "tests/qa-dashboard.spec.ts",
+      "project": "desktop-chromium",
+      "tags": [
+        "@dashboard"
+      ],
+      "status": "passed",
+      "durationMs": 602,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "d2b407b016c9",
+      "title": "a failed test links to its trace",
+      "path": [
+        "QA dashboard - made-up report"
+      ],
+      "file": "tests/qa-dashboard.spec.ts",
+      "project": "desktop-chromium",
+      "tags": [
+        "@dashboard"
+      ],
+      "status": "passed",
+      "durationMs": 619,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "39f0be8d7475",
+      "title": "flaky tests are counted separately",
+      "path": [
+        "QA dashboard - made-up report"
+      ],
+      "file": "tests/qa-dashboard.spec.ts",
+      "project": "desktop-chromium",
+      "tags": [
+        "@dashboard"
+      ],
+      "status": "passed",
+      "durationMs": 565,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "353847fd0605",
       "title": "the showcase offers the recorded video and the trace",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -394,16 +475,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 656,
+      "durationMs": 693,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "cfcead3146fb",
-      "title": "a run that recorded no showcase shows no empty player",
+      "id": "8fbbe5c002ad",
+      "title": "no recording means no video player",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -411,16 +492,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 558,
+      "durationMs": 619,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "df6622fcac02",
-      "title": "accessibility violations are called out rather than averaged away",
+      "id": "c0409faf589d",
+      "title": "accessibility violations are shown per page",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -428,16 +509,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 495,
+      "durationMs": 543,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "d02dfd9ed600",
-      "title": "a clean accessibility gate says so",
+      "id": "cc9641e18b14",
+      "title": "no accessibility violations shows as passing",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -445,16 +526,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 514,
+      "durationMs": 522,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "914e9c8e2b21",
-      "title": "a page over its performance budget is flagged on the metric that broke it",
+      "id": "d8dc96bcdb1e",
+      "title": "only the metric over budget is flagged",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -462,16 +543,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 556,
+      "durationMs": 547,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "a95db4a30ba1",
-      "title": "tests that failed or retried in recent runs surface under Stability",
+      "id": "b0808c0cfac2",
+      "title": "recently failed or flaky tests show under Stability",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -479,16 +560,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 511,
+      "durationMs": 532,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "c458c625a41d",
-      "title": "a test much slower than its usual pace is marked as regressed",
+      "id": "09a36b8f5820",
+      "title": "a test much slower than usual is flagged",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -496,16 +577,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 487,
+      "durationMs": 548,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "e121148a660f",
+      "id": "35bd2b116abe",
       "title": "tag chips filter the test list",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -513,16 +594,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 722,
+      "durationMs": 673,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "b77bb354a02b",
-      "title": "results from a local run are labelled as such",
+      "id": "7ed7f8853fc9",
+      "title": "a local run is labelled as local",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -530,16 +611,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 438,
+      "durationMs": 513,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "05f6c491d548",
-      "title": "the trend waits for a second run before drawing a line",
+      "id": "6bbbbd2b641b",
+      "title": "the trend chart needs at least two runs",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -547,16 +628,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 632,
+      "durationMs": 728,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "3f757e128fdb",
-      "title": "missing history files cost their panels, not the page",
+      "id": "cbad197f813d",
+      "title": "missing history files only empty their own panels",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -570,10 +651,10 @@
       "publishedAttachments": []
     },
     {
-      "id": "0c1b35639203",
-      "title": "a report that isn't there says so instead of showing a blank page",
+      "id": "76905ad15132",
+      "title": "a missing report shows an error",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -581,16 +662,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 498,
+      "durationMs": 507,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "bdf08178b3b5",
-      "title": "an unreachable report says so too",
+      "id": "4ed087832a9d",
+      "title": "a report that can't be reached shows an error",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-chromium",
@@ -598,7 +679,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 388,
+      "durationMs": 506,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -615,7 +696,7 @@
         "@showcase"
       ],
       "status": "passed",
-      "durationMs": 5323,
+      "durationMs": 5421,
       "retries": 0,
       "error": null,
       "publishedAttachments": [
@@ -641,92 +722,75 @@
         "@smoke"
       ],
       "status": "passed",
+      "durationMs": 521,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "698506a7f642",
+      "title": "each nav link scrolls to its section",
+      "path": [
+        "home page"
+      ],
+      "file": "tests/smoke.spec.ts",
+      "project": "desktop-chromium",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 1937,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "4aab3a7ae04d",
+      "title": "experience lists every role, newest first",
+      "path": [
+        "home page"
+      ],
+      "file": "tests/smoke.spec.ts",
+      "project": "desktop-chromium",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 792,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "7e0f2a764f4a",
+      "title": "only the newest role is marked Current",
+      "path": [
+        "home page"
+      ],
+      "file": "tests/smoke.spec.ts",
+      "project": "desktop-chromium",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 647,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "9dd6696691bf",
+      "title": "Shift Board lists its AI providers",
+      "path": [
+        "home page"
+      ],
+      "file": "tests/smoke.spec.ts",
+      "project": "desktop-chromium",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
       "durationMs": 554,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "5f7b19ab64ed",
-      "title": "renders without console errors on any page",
-      "path": [
-        "home page"
-      ],
-      "file": "tests/smoke.spec.ts",
-      "project": "desktop-chromium",
-      "tags": [
-        "@smoke"
-      ],
-      "status": "passed",
-      "durationMs": 649,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "475a27e48990",
-      "title": "nav links resolve to real sections on the page",
-      "path": [
-        "home page"
-      ],
-      "file": "tests/smoke.spec.ts",
-      "project": "desktop-chromium",
-      "tags": [
-        "@smoke"
-      ],
-      "status": "passed",
-      "durationMs": 1708,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "7a929325d3a2",
-      "title": "experience section lists all four roles in order",
-      "path": [
-        "home page"
-      ],
-      "file": "tests/smoke.spec.ts",
-      "project": "desktop-chromium",
-      "tags": [
-        "@smoke"
-      ],
-      "status": "passed",
-      "durationMs": 489,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "131e1a118700",
-      "title": "current role carries the Current badge and the rest don't",
-      "path": [
-        "home page"
-      ],
-      "file": "tests/smoke.spec.ts",
-      "project": "desktop-chromium",
-      "tags": [
-        "@smoke"
-      ],
-      "status": "passed",
-      "durationMs": 463,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "cb09ba02a052",
-      "title": "projects section features Shift Board with its AI-provider tags",
-      "path": [
-        "home page"
-      ],
-      "file": "tests/smoke.spec.ts",
-      "project": "desktop-chromium",
-      "tags": [
-        "@smoke"
-      ],
-      "status": "passed",
-      "durationMs": 477,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -743,14 +807,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 451,
+      "durationMs": 554,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "a68199987f8f",
-      "title": "hero and nav both offer a way to reach the CV",
+      "id": "9e2142586b19",
+      "title": "the hero and nav both link to the CV",
       "path": [
         "home page"
       ],
@@ -760,7 +824,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 425,
+      "durationMs": 551,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -777,14 +841,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 408,
+      "durationMs": 583,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "056f580b4668",
-      "title": "the footer year comes from the visitor's clock",
+      "id": "1d606089bcaf",
+      "title": "the footer shows the current year",
       "path": [
         "home page"
       ],
@@ -794,16 +858,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 403,
+      "durationMs": 571,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "822d91629686",
-      "title": "earlier roles stay collapsed until asked for",
+      "id": "5fb21d1baa32",
+      "title": "earlier roles are hidden until expanded",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-chromium",
@@ -811,16 +875,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 589,
+      "durationMs": 709,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "d06f55f47e39",
-      "title": "skill bars fill to the value each one declares",
+      "id": "7747f80b16e9",
+      "title": "each skill bar fills to its percentage",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-chromium",
@@ -828,16 +892,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 903,
+      "durationMs": 1133,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "902738cc3706",
+      "id": "256d320963bb",
       "title": "reduced motion turns the skill bar animation off",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-chromium",
@@ -845,16 +909,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 458,
+      "durationMs": 577,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "f889fd063a72",
-      "title": "a floating CTA is visible while browsing and steps aside at Projects",
+      "id": "c95711a7f283",
+      "title": "the floating button hides at Projects",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-chromium",
@@ -862,16 +926,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 539,
+      "durationMs": 837,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "3a838c4ef667",
-      "title": "a reload opens the page at the top, not where the last visit ended",
+      "id": "2ebbbba21c27",
+      "title": "reloading opens the page at the top",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-chromium",
@@ -879,16 +943,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 609,
+      "durationMs": 540,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "8c727837af99",
+      "id": "9dbd428e772b",
       "title": "keyboard users can skip straight to the content",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-chromium",
@@ -896,16 +960,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 538,
+      "durationMs": 651,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "9ba7c0b8ae42",
-      "title": "a retired anchor still reaches the section it now lives in",
+      "id": "361180102709",
+      "title": "the old #work link goes to Projects",
       "path": [
-        "addresses"
+        "URLs"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-chromium",
@@ -913,16 +977,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 560,
+      "durationMs": 534,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "260720dacecd",
-      "title": "an unknown section in the address lands on the not found page",
+      "id": "7872b9b84491",
+      "title": "an unknown #section goes to the 404 page",
       "path": [
-        "addresses"
+        "URLs"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-chromium",
@@ -930,16 +994,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 416,
+      "durationMs": 451,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "ab6e6e2978b3",
-      "title": "an unknown path answers with a real 404 status",
+      "id": "080aa42a47cb",
+      "title": "an unknown page returns 404",
       "path": [
-        "addresses"
+        "URLs"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-chromium",
@@ -947,16 +1011,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 283,
+      "durationMs": 258,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "da652e6b4030",
-      "title": "a deep unknown path still renders the styled not found page",
+      "id": "b58e9d08279c",
+      "title": "the 404 page keeps its styling on nested paths",
       "path": [
-        "addresses"
+        "URLs"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-chromium",
@@ -964,31 +1028,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 555,
+      "durationMs": 614,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "bc63bf5aeb0a",
-      "title": "renders the résumé with a working PDF download link",
-      "path": [
-        "cv page"
-      ],
-      "file": "tests/smoke.spec.ts",
-      "project": "desktop-chromium",
-      "tags": [
-        "@smoke"
-      ],
-      "status": "passed",
-      "durationMs": 393,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "25daf9c6c42b",
-      "title": "lists all four experience entries and the certifications block",
+      "id": "a10da9870aeb",
+      "title": "the PDF download works",
       "path": [
         "cv page"
       ],
@@ -998,7 +1045,24 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 349,
+      "durationMs": 401,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "287b58ad20d0",
+      "title": "lists every role, Shift Board and the certifications",
+      "path": [
+        "cv page"
+      ],
+      "file": "tests/smoke.spec.ts",
+      "project": "desktop-chromium",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 417,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1015,14 +1079,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 589,
+      "durationMs": 619,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "d4b5815d67c1",
-      "title": "shows a friendly not-found message with a way back",
+      "id": "2d7506d189ee",
+      "title": "shows 404 and a link home",
       "path": [
         "404 page"
       ],
@@ -1032,16 +1096,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 309,
+      "durationMs": 315,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "008f46f8551e",
-      "title": "every page asks for the same stylesheet version",
+      "id": "f55df196b346",
+      "title": "renders without console errors",
       "path": [
-        "asset versions"
+        "every page"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-chromium",
@@ -1049,44 +1113,131 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 785,
+      "durationMs": 794,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "ad4884d14da5",
-      "title": "nav collapses behind a toggle and opens on tap",
+      "id": "a6342b0446cc",
+      "title": "asks for the same stylesheet version",
       "path": [
-        "mobile viewport"
+        "every page"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-chromium",
       "tags": [
         "@smoke"
       ],
-      "status": "skipped",
-      "durationMs": 260,
+      "status": "passed",
+      "durationMs": 926,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "0d5078785557",
-      "title": "hero content is visible without horizontal scroll",
+      "id": "4e5967770289",
+      "title": "the home page looks as designed",
       "path": [
-        "mobile viewport"
+        "visual"
       ],
-      "file": "tests/smoke.spec.ts",
+      "file": "tests/visual.spec.ts",
       "project": "desktop-chromium",
       "tags": [
-        "@smoke"
+        "@visual"
       ],
-      "status": "skipped",
-      "durationMs": 221,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
+      "status": "failed",
+      "durationMs": 834,
+      "retries": 1,
+      "error": "Error: A snapshot doesn't exist at /home/runner/work/portfolio/portfolio/tests/visual.spec.ts-snapshots/home-desktop-chromium-linux.png.",
+      "publishedAttachments": [
+        {
+          "type": "video",
+          "path": "assets/qa/artifacts/4e5967770289/video.webm"
+        },
+        {
+          "type": "trace",
+          "path": "assets/qa/artifacts/4e5967770289/trace.zip"
+        }
+      ]
+    },
+    {
+      "id": "161ab3aea0eb",
+      "title": "the CV looks as designed on screen and on paper",
+      "path": [
+        "visual"
+      ],
+      "file": "tests/visual.spec.ts",
+      "project": "desktop-chromium",
+      "tags": [
+        "@visual"
+      ],
+      "status": "failed",
+      "durationMs": 793,
+      "retries": 1,
+      "error": "Error: A snapshot doesn't exist at /home/runner/work/portfolio/portfolio/tests/visual.spec.ts-snapshots/cv-screen-desktop-chromium-linux.png.",
+      "publishedAttachments": [
+        {
+          "type": "video",
+          "path": "assets/qa/artifacts/161ab3aea0eb/video.webm"
+        },
+        {
+          "type": "trace",
+          "path": "assets/qa/artifacts/161ab3aea0eb/trace.zip"
+        }
+      ]
+    },
+    {
+      "id": "832d39a8cec1",
+      "title": "the not-found page looks as designed",
+      "path": [
+        "visual"
+      ],
+      "file": "tests/visual.spec.ts",
+      "project": "desktop-chromium",
+      "tags": [
+        "@visual"
+      ],
+      "status": "failed",
+      "durationMs": 607,
+      "retries": 1,
+      "error": "Error: A snapshot doesn't exist at /home/runner/work/portfolio/portfolio/tests/visual.spec.ts-snapshots/not-found-desktop-chromium-linux.png.",
+      "publishedAttachments": [
+        {
+          "type": "video",
+          "path": "assets/qa/artifacts/832d39a8cec1/video.webm"
+        },
+        {
+          "type": "trace",
+          "path": "assets/qa/artifacts/832d39a8cec1/trace.zip"
+        }
+      ]
+    },
+    {
+      "id": "91a7d0fdf8b7",
+      "title": "the dashboard looks as designed with failures, flakes and skips",
+      "path": [
+        "visual"
+      ],
+      "file": "tests/visual.spec.ts",
+      "project": "desktop-chromium",
+      "tags": [
+        "@visual"
+      ],
+      "status": "failed",
+      "durationMs": 733,
+      "retries": 1,
+      "error": "Error: A snapshot doesn't exist at /home/runner/work/portfolio/portfolio/tests/visual.spec.ts-snapshots/dashboard-desktop-chromium-linux.png.",
+      "publishedAttachments": [
+        {
+          "type": "video",
+          "path": "assets/qa/artifacts/91a7d0fdf8b7/video.webm"
+        },
+        {
+          "type": "trace",
+          "path": "assets/qa/artifacts/91a7d0fdf8b7/trace.zip"
+        }
+      ]
     },
     {
       "id": "3f1e799bea40",
@@ -1100,7 +1251,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 3880,
+      "durationMs": 4516,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1117,7 +1268,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 3611,
+      "durationMs": 3537,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1134,7 +1285,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 5469,
+      "durationMs": 3651,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1151,14 +1302,14 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1330,
+      "durationMs": 1431,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "93a8020c833d",
-      "title": "the home page outline reads as a document to assistive technology",
+      "id": "091c5b7f64b9",
+      "title": "the home page outline reads as a document to assistive readers",
       "path": [
         "accessibility"
       ],
@@ -1168,7 +1319,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 706,
+      "durationMs": 762,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1182,10 +1333,11 @@
       "file": "tests/a11y.spec.ts",
       "project": "desktop-firefox",
       "tags": [
-        "@a11y"
+        "@a11y",
+        "@desktop"
       ],
       "status": "passed",
-      "durationMs": 647,
+      "durationMs": 830,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1202,7 +1354,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 883,
+      "durationMs": 1282,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1219,7 +1371,7 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 862,
+      "durationMs": 1028,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1237,14 +1389,14 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 482,
+      "durationMs": 426,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "ef41b15ff01b",
-      "title": "the committed PDF is not stale against cv.html",
+      "id": "ee76752d8ef3",
+      "title": "compare the committed PDF against cv.html",
       "path": [
         "CV print & PDF",
         "rendered PDF"
@@ -1255,16 +1407,84 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 439,
+      "durationMs": 457,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "1e1afa4eb188",
-      "title": "the home page stays inside its budget on a throttled connection",
+      "id": "0835adef7354",
+      "title": "the home page only links to things that exist",
       "path": [
-        "performance budget"
+        "links"
+      ],
+      "file": "tests/links.spec.ts",
+      "project": "desktop-firefox",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 1016,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "94c56a39f979",
+      "title": "the CV page only links to things that exist",
+      "path": [
+        "links"
+      ],
+      "file": "tests/links.spec.ts",
+      "project": "desktop-firefox",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 818,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "2393201c59f5",
+      "title": "the QA suite runner page only links to things that exist",
+      "path": [
+        "links"
+      ],
+      "file": "tests/links.spec.ts",
+      "project": "desktop-firefox",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 849,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "410b891ef830",
+      "title": "the not found page only links to things that exist",
+      "path": [
+        "links"
+      ],
+      "file": "tests/links.spec.ts",
+      "project": "desktop-firefox",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 660,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "14e0a57f4d40",
+      "title": "the home page loads within budget on slow 4G",
+      "path": [
+        "performance"
       ],
       "file": "tests/performance.spec.ts",
       "project": "desktop-firefox",
@@ -1272,16 +1492,16 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 347,
+      "durationMs": 357,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "aee42fdc6503",
-      "title": "the CV page stays inside its budget on a throttled connection",
+      "id": "25d091a21693",
+      "title": "the CV page loads within budget on slow 4G",
       "path": [
-        "performance budget"
+        "performance"
       ],
       "file": "tests/performance.spec.ts",
       "project": "desktop-firefox",
@@ -1289,16 +1509,16 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 365,
+      "durationMs": 393,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "ba7231155b25",
-      "title": "renders the committed report with a per-browser breakdown",
+      "id": "01822bb2043d",
+      "title": "shows the real report's totals for each browser",
       "path": [
-        "qa suite page - published report"
+        "QA dashboard - real report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1306,16 +1526,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1048,
+      "durationMs": 970,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "9a1599fc472c",
+      "id": "2ff371674ab3",
       "title": "links back to the portfolio and to the raw report",
       "path": [
-        "qa suite page - published report"
+        "QA dashboard - real report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1323,16 +1543,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 2744,
+      "durationMs": 2793,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "308b4490b56d",
-      "title": "the suite card on the portfolio opens the runner",
+      "id": "0658e8cb9b7b",
+      "title": "the portfolio's QA suite card opens the dashboard",
       "path": [
-        "qa suite page - published report"
+        "QA dashboard - real report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1340,16 +1560,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1122,
+      "durationMs": 936,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "78a1e106605c",
+      "id": "20550bdb2764",
       "title": "a clean run shows its totals and every browser",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1357,16 +1577,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 633,
+      "durationMs": 2412,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "b5c6ce5aea98",
-      "title": "a failing test links straight to its trace in Playwright's Trace Viewer",
+      "id": "f2e8314ecc11",
+      "title": "a failed test links to its trace",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1374,16 +1594,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 693,
+      "durationMs": 890,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "d3bf94cef1a2",
-      "title": "a flaky test is counted apart from passes and failures",
+      "id": "0e187d36644d",
+      "title": "flaky tests are counted separately",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1391,16 +1611,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 976,
+      "durationMs": 637,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "bf0bf2b17d20",
+      "id": "73bc97c04c9b",
       "title": "the showcase offers the recorded video and the trace",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1408,16 +1628,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 995,
+      "durationMs": 1114,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "fd0aaa80e9f9",
-      "title": "a run that recorded no showcase shows no empty player",
+      "id": "12cecd8b092a",
+      "title": "no recording means no video player",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1425,16 +1645,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 729,
+      "durationMs": 759,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "6935856362d2",
-      "title": "accessibility violations are called out rather than averaged away",
+      "id": "aa0088aa860b",
+      "title": "accessibility violations are shown per page",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1442,16 +1662,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 787,
+      "durationMs": 818,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "b92857c84dc8",
-      "title": "a clean accessibility gate says so",
+      "id": "fcad39a412d8",
+      "title": "no accessibility violations shows as passing",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1459,16 +1679,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 719,
+      "durationMs": 797,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "6f2932310c7d",
-      "title": "a page over its performance budget is flagged on the metric that broke it",
+      "id": "91ea09d6a34f",
+      "title": "only the metric over budget is flagged",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1476,16 +1696,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 2362,
+      "durationMs": 811,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "94d16a8e066e",
-      "title": "tests that failed or retried in recent runs surface under Stability",
+      "id": "ce470f42e2cc",
+      "title": "recently failed or flaky tests show under Stability",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1493,16 +1713,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 792,
+      "durationMs": 755,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "3e0577a6721c",
-      "title": "a test much slower than its usual pace is marked as regressed",
+      "id": "c4cd7bbc48c2",
+      "title": "a test much slower than usual is flagged",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1510,16 +1730,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 598,
+      "durationMs": 773,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "4758dc1102e5",
+      "id": "876b308f9c8e",
       "title": "tag chips filter the test list",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1527,16 +1747,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 870,
+      "durationMs": 1067,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "084ac7b33d60",
-      "title": "results from a local run are labelled as such",
+      "id": "5e75e65ced5f",
+      "title": "a local run is labelled as local",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1544,16 +1764,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1059,
+      "durationMs": 793,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "2a6c0d33de59",
-      "title": "the trend waits for a second run before drawing a line",
+      "id": "2c0710c4e6f6",
+      "title": "the trend chart needs at least two runs",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1561,16 +1781,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 914,
+      "durationMs": 1020,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "a47e02528813",
-      "title": "missing history files cost their panels, not the page",
+      "id": "addda6515e11",
+      "title": "missing history files only empty their own panels",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1578,16 +1798,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 710,
+      "durationMs": 765,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "70ba1e6375aa",
-      "title": "a report that isn't there says so instead of showing a blank page",
+      "id": "6275cc00b48f",
+      "title": "a missing report shows an error",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1595,16 +1815,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 708,
+      "durationMs": 752,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "8950850bddf6",
-      "title": "an unreachable report says so too",
+      "id": "a73a9652014a",
+      "title": "a report that can't be reached shows an error",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-firefox",
@@ -1612,7 +1832,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 673,
+      "durationMs": 658,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1629,7 +1849,7 @@
         "@showcase"
       ],
       "status": "skipped",
-      "durationMs": 1005,
+      "durationMs": 1048,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1646,14 +1866,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 732,
+      "durationMs": 788,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "1cff2a82de09",
-      "title": "renders without console errors on any page",
+      "id": "fdd9c1b7fca6",
+      "title": "each nav link scrolls to its section",
       "path": [
         "home page"
       ],
@@ -1663,14 +1883,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 4008,
+      "durationMs": 4644,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "aab48a098b06",
-      "title": "nav links resolve to real sections on the page",
+      "id": "13cb2ebdb7bc",
+      "title": "experience lists every role, newest first",
       "path": [
         "home page"
       ],
@@ -1680,14 +1900,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1759,
+      "durationMs": 945,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "95cc97fb999b",
-      "title": "experience section lists all four roles in order",
+      "id": "33a745996bdc",
+      "title": "only the newest role is marked Current",
       "path": [
         "home page"
       ],
@@ -1697,14 +1917,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 694,
+      "durationMs": 653,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "3e5b6e799f39",
-      "title": "current role carries the Current badge and the rest don't",
+      "id": "d3f4383bd933",
+      "title": "Shift Board lists its AI providers",
       "path": [
         "home page"
       ],
@@ -1714,24 +1934,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 664,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "065782355c64",
-      "title": "projects section features Shift Board with its AI-provider tags",
-      "path": [
-        "home page"
-      ],
-      "file": "tests/smoke.spec.ts",
-      "project": "desktop-firefox",
-      "tags": [
-        "@smoke"
-      ],
-      "status": "passed",
-      "durationMs": 820,
+      "durationMs": 3441,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1748,14 +1951,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1316,
+      "durationMs": 1209,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "671b96ad8f1a",
-      "title": "hero and nav both offer a way to reach the CV",
+      "id": "9efe058a4862",
+      "title": "the hero and nav both link to the CV",
       "path": [
         "home page"
       ],
@@ -1765,7 +1968,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 591,
+      "durationMs": 753,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -1782,14 +1985,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 720,
+      "durationMs": 1453,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "047f0ead3059",
-      "title": "the footer year comes from the visitor's clock",
+      "id": "2ab3c545edb1",
+      "title": "the footer shows the current year",
       "path": [
         "home page"
       ],
@@ -1799,16 +2002,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 838,
+      "durationMs": 746,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "84b2df83cfe3",
-      "title": "earlier roles stay collapsed until asked for",
+      "id": "b88fc0cb5635",
+      "title": "earlier roles are hidden until expanded",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-firefox",
@@ -1816,16 +2019,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 4192,
+      "durationMs": 1121,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "bb59585438e1",
-      "title": "skill bars fill to the value each one declares",
+      "id": "e99f3868fc22",
+      "title": "each skill bar fills to its percentage",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-firefox",
@@ -1833,16 +2036,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1046,
+      "durationMs": 1643,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "97a246dd2896",
+      "id": "d7d8e4cca0d3",
       "title": "reduced motion turns the skill bar animation off",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-firefox",
@@ -1850,16 +2053,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 608,
+      "durationMs": 821,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "74b15c459ef3",
-      "title": "a floating CTA is visible while browsing and steps aside at Projects",
+      "id": "bcbdf31c466f",
+      "title": "the floating button hides at Projects",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-firefox",
@@ -1867,16 +2070,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 737,
+      "durationMs": 1320,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "2e8a2fef0c95",
-      "title": "a reload opens the page at the top, not where the last visit ended",
+      "id": "327512596acf",
+      "title": "reloading opens the page at the top",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-firefox",
@@ -1884,16 +2087,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 791,
+      "durationMs": 990,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "876cdfb13f92",
+      "id": "092bd6aafa97",
       "title": "keyboard users can skip straight to the content",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-firefox",
@@ -1901,16 +2104,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 806,
+      "durationMs": 943,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "72d4e33ad96b",
-      "title": "a retired anchor still reaches the section it now lives in",
+      "id": "f2683fc9cd34",
+      "title": "the old #work link goes to Projects",
       "path": [
-        "addresses"
+        "URLs"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-firefox",
@@ -1918,16 +2121,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1524,
+      "durationMs": 810,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "d4cb94d36bd6",
-      "title": "an unknown section in the address lands on the not found page",
+      "id": "ee92ac41833c",
+      "title": "an unknown #section goes to the 404 page",
       "path": [
-        "addresses"
+        "URLs"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-firefox",
@@ -1935,16 +2138,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 811,
+      "durationMs": 823,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "3e950cc99066",
-      "title": "an unknown path answers with a real 404 status",
+      "id": "a865e94e8fc6",
+      "title": "an unknown page returns 404",
       "path": [
-        "addresses"
+        "URLs"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-firefox",
@@ -1952,16 +2155,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 340,
+      "durationMs": 423,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "203451d99c2f",
-      "title": "a deep unknown path still renders the styled not found page",
+      "id": "7592dc8096bb",
+      "title": "the 404 page keeps its styling on nested paths",
       "path": [
-        "addresses"
+        "URLs"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-firefox",
@@ -1969,31 +2172,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1007,
+      "durationMs": 992,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "9295d8917f28",
-      "title": "renders the résumé with a working PDF download link",
-      "path": [
-        "cv page"
-      ],
-      "file": "tests/smoke.spec.ts",
-      "project": "desktop-firefox",
-      "tags": [
-        "@smoke"
-      ],
-      "status": "passed",
-      "durationMs": 5396,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "2bffdecf0a65",
-      "title": "lists all four experience entries and the certifications block",
+      "id": "a1046a6ec7ac",
+      "title": "the PDF download works",
       "path": [
         "cv page"
       ],
@@ -2003,7 +2189,24 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 580,
+      "durationMs": 765,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "d05f529f6aca",
+      "title": "lists every role, Shift Board and the certifications",
+      "path": [
+        "cv page"
+      ],
+      "file": "tests/smoke.spec.ts",
+      "project": "desktop-firefox",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 748,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2020,14 +2223,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 795,
+      "durationMs": 1010,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "952e6d29cf4f",
-      "title": "shows a friendly not-found message with a way back",
+      "id": "963290382e2b",
+      "title": "shows 404 and a link home",
       "path": [
         "404 page"
       ],
@@ -2037,16 +2240,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 537,
+      "durationMs": 675,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "9947cf7c628d",
-      "title": "every page asks for the same stylesheet version",
+      "id": "be4b1772cd2f",
+      "title": "renders without console errors",
       "path": [
-        "asset versions"
+        "every page"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-firefox",
@@ -2054,41 +2257,24 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1191,
+      "durationMs": 5262,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "8846a5573cc2",
-      "title": "nav collapses behind a toggle and opens on tap",
+      "id": "09102952b648",
+      "title": "asks for the same stylesheet version",
       "path": [
-        "mobile viewport"
+        "every page"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-firefox",
       "tags": [
         "@smoke"
       ],
-      "status": "skipped",
-      "durationMs": 352,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "90883ffc78c1",
-      "title": "hero content is visible without horizontal scroll",
-      "path": [
-        "mobile viewport"
-      ],
-      "file": "tests/smoke.spec.ts",
-      "project": "desktop-firefox",
-      "tags": [
-        "@smoke"
-      ],
-      "status": "skipped",
-      "durationMs": 379,
+      "status": "passed",
+      "durationMs": 5122,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2105,7 +2291,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 6550,
+      "durationMs": 9716,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2122,7 +2308,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 2736,
+      "durationMs": 5853,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2139,7 +2325,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 4716,
+      "durationMs": 3096,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2156,14 +2342,14 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1402,
+      "durationMs": 1436,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "0576c1918e73",
-      "title": "the home page outline reads as a document to assistive technology",
+      "id": "29487e015df8",
+      "title": "the home page outline reads as a document to assistive readers",
       "path": [
         "accessibility"
       ],
@@ -2173,7 +2359,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1137,
+      "durationMs": 986,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2187,10 +2373,11 @@
       "file": "tests/a11y.spec.ts",
       "project": "desktop-webkit",
       "tags": [
-        "@a11y"
+        "@a11y",
+        "@desktop"
       ],
       "status": "passed",
-      "durationMs": 1034,
+      "durationMs": 1224,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2207,7 +2394,7 @@
         "@a11y"
       ],
       "status": "skipped",
-      "durationMs": 586,
+      "durationMs": 534,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2224,7 +2411,7 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 1319,
+      "durationMs": 1175,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2242,14 +2429,14 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 417,
+      "durationMs": 487,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "a5c3098a673a",
-      "title": "the committed PDF is not stale against cv.html",
+      "id": "e5ca7a09ed42",
+      "title": "compare the committed PDF against cv.html",
       "path": [
         "CV print & PDF",
         "rendered PDF"
@@ -2260,16 +2447,84 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 566,
+      "durationMs": 512,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "26aeadca7dbb",
-      "title": "the home page stays inside its budget on a throttled connection",
+      "id": "2f7f3e0d03c0",
+      "title": "the home page only links to things that exist",
       "path": [
-        "performance budget"
+        "links"
+      ],
+      "file": "tests/links.spec.ts",
+      "project": "desktop-webkit",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 1148,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "3cdfbe7476a6",
+      "title": "the CV page only links to things that exist",
+      "path": [
+        "links"
+      ],
+      "file": "tests/links.spec.ts",
+      "project": "desktop-webkit",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 947,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "19b4a39cc5be",
+      "title": "the QA suite runner page only links to things that exist",
+      "path": [
+        "links"
+      ],
+      "file": "tests/links.spec.ts",
+      "project": "desktop-webkit",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 1048,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "74ed342d7812",
+      "title": "the not found page only links to things that exist",
+      "path": [
+        "links"
+      ],
+      "file": "tests/links.spec.ts",
+      "project": "desktop-webkit",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 814,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "de2f528bbd68",
+      "title": "the home page loads within budget on slow 4G",
+      "path": [
+        "performance"
       ],
       "file": "tests/performance.spec.ts",
       "project": "desktop-webkit",
@@ -2277,16 +2532,16 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 470,
+      "durationMs": 497,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "4eedc1b33edd",
-      "title": "the CV page stays inside its budget on a throttled connection",
+      "id": "e28c4e7005f6",
+      "title": "the CV page loads within budget on slow 4G",
       "path": [
-        "performance budget"
+        "performance"
       ],
       "file": "tests/performance.spec.ts",
       "project": "desktop-webkit",
@@ -2294,16 +2549,16 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 565,
+      "durationMs": 521,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "d7fdd6edef80",
-      "title": "renders the committed report with a per-browser breakdown",
+      "id": "bb39c4fbcb0e",
+      "title": "shows the real report's totals for each browser",
       "path": [
-        "qa suite page - published report"
+        "QA dashboard - real report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2311,16 +2566,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1155,
+      "durationMs": 1109,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "130c3e723827",
+      "id": "f33edd71a85a",
       "title": "links back to the portfolio and to the raw report",
       "path": [
-        "qa suite page - published report"
+        "QA dashboard - real report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2328,16 +2583,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1047,
+      "durationMs": 1081,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "35147ec064c6",
-      "title": "the suite card on the portfolio opens the runner",
+      "id": "ab58d0459cab",
+      "title": "the portfolio's QA suite card opens the dashboard",
       "path": [
-        "qa suite page - published report"
+        "QA dashboard - real report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2345,16 +2600,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1780,
+      "durationMs": 1538,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "46d086bb4043",
+      "id": "ae757556843f",
       "title": "a clean run shows its totals and every browser",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2362,16 +2617,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1018,
+      "durationMs": 779,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "203c660519dc",
-      "title": "a failing test links straight to its trace in Playwright's Trace Viewer",
+      "id": "4ee46791f4ed",
+      "title": "a failed test links to its trace",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2379,16 +2634,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1106,
+      "durationMs": 918,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "e5770733d968",
-      "title": "a flaky test is counted apart from passes and failures",
+      "id": "70d97cdd80c0",
+      "title": "flaky tests are counted separately",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2396,16 +2651,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1057,
+      "durationMs": 894,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "cf81f1b3b2a1",
+      "id": "f0664d3faf93",
       "title": "the showcase offers the recorded video and the trace",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2413,16 +2668,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1651,
+      "durationMs": 1162,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "5abeca460014",
-      "title": "a run that recorded no showcase shows no empty player",
+      "id": "ddc18f010823",
+      "title": "no recording means no video player",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2430,16 +2685,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 948,
+      "durationMs": 1015,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "ce0c66624527",
-      "title": "accessibility violations are called out rather than averaged away",
+      "id": "3aa2e54e790a",
+      "title": "accessibility violations are shown per page",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2447,16 +2702,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 995,
+      "durationMs": 946,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "bbb773091a71",
-      "title": "a clean accessibility gate says so",
+      "id": "d138f9c5288f",
+      "title": "no accessibility violations shows as passing",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2464,16 +2719,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 937,
+      "durationMs": 846,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "bd3f2814983c",
-      "title": "a page over its performance budget is flagged on the metric that broke it",
+      "id": "81374b3f23f8",
+      "title": "only the metric over budget is flagged",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2481,16 +2736,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 997,
+      "durationMs": 905,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "427f78651f0a",
-      "title": "tests that failed or retried in recent runs surface under Stability",
+      "id": "af5978e96027",
+      "title": "recently failed or flaky tests show under Stability",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2498,16 +2753,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1082,
+      "durationMs": 831,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "4c305404ad02",
-      "title": "a test much slower than its usual pace is marked as regressed",
+      "id": "8a6644ee4cee",
+      "title": "a test much slower than usual is flagged",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2515,16 +2770,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 932,
+      "durationMs": 930,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "7eb30abde97a",
+      "id": "a87c6f9863fb",
       "title": "tag chips filter the test list",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2532,16 +2787,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1561,
+      "durationMs": 1641,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "6642edfb4312",
-      "title": "results from a local run are labelled as such",
+      "id": "c6bdd07567b8",
+      "title": "a local run is labelled as local",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2549,16 +2804,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 938,
+      "durationMs": 904,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "c38d265800d2",
-      "title": "the trend waits for a second run before drawing a line",
+      "id": "0b4283dbc798",
+      "title": "the trend chart needs at least two runs",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2566,16 +2821,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 1123,
+      "durationMs": 1167,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "e338c995d05c",
-      "title": "missing history files cost their panels, not the page",
+      "id": "f8d0a3688c4c",
+      "title": "missing history files only empty their own panels",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2583,16 +2838,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 953,
+      "durationMs": 910,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "5bd2dca7c2a0",
-      "title": "a report that isn't there says so instead of showing a blank page",
+      "id": "42984d11eb21",
+      "title": "a missing report shows an error",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2600,16 +2855,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 847,
+      "durationMs": 804,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "0ac3083d9772",
-      "title": "an unreachable report says so too",
+      "id": "7983d67c3dd9",
+      "title": "a report that can't be reached shows an error",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "desktop-webkit",
@@ -2617,7 +2872,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 797,
+      "durationMs": 738,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2634,7 +2889,7 @@
         "@showcase"
       ],
       "status": "skipped",
-      "durationMs": 566,
+      "durationMs": 575,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2651,14 +2906,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 960,
+      "durationMs": 979,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "dd238cce10f7",
-      "title": "renders without console errors on any page",
+      "id": "1b893bb17750",
+      "title": "each nav link scrolls to its section",
       "path": [
         "home page"
       ],
@@ -2668,14 +2923,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1355,
+      "durationMs": 4498,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "30a57735cb5b",
-      "title": "nav links resolve to real sections on the page",
+      "id": "c814e48551fb",
+      "title": "experience lists every role, newest first",
       "path": [
         "home page"
       ],
@@ -2685,14 +2940,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 5317,
+      "durationMs": 1288,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "81182d213597",
-      "title": "experience section lists all four roles in order",
+      "id": "0e9d1c948c05",
+      "title": "only the newest role is marked Current",
       "path": [
         "home page"
       ],
@@ -2702,14 +2957,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1019,
+      "durationMs": 887,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "8909c26fd9d2",
-      "title": "current role carries the Current badge and the rest don't",
+      "id": "37148400e869",
+      "title": "Shift Board lists its AI providers",
       "path": [
         "home page"
       ],
@@ -2719,24 +2974,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 931,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "96822a3970ec",
-      "title": "projects section features Shift Board with its AI-provider tags",
-      "path": [
-        "home page"
-      ],
-      "file": "tests/smoke.spec.ts",
-      "project": "desktop-webkit",
-      "tags": [
-        "@smoke"
-      ],
-      "status": "passed",
-      "durationMs": 968,
+      "durationMs": 971,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2753,14 +2991,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 977,
+      "durationMs": 1191,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "f0d1ab87fc35",
-      "title": "hero and nav both offer a way to reach the CV",
+      "id": "57bfb4380b41",
+      "title": "the hero and nav both link to the CV",
       "path": [
         "home page"
       ],
@@ -2770,7 +3008,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 986,
+      "durationMs": 1136,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -2787,14 +3025,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1023,
+      "durationMs": 970,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "6df045723e88",
-      "title": "the footer year comes from the visitor's clock",
+      "id": "5f516de4e91a",
+      "title": "the footer shows the current year",
       "path": [
         "home page"
       ],
@@ -2804,16 +3042,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 941,
+      "durationMs": 973,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "b2cd6088a36e",
-      "title": "earlier roles stay collapsed until asked for",
+      "id": "954fd47c911c",
+      "title": "earlier roles are hidden until expanded",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-webkit",
@@ -2821,16 +3059,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1435,
+      "durationMs": 1302,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "5afdece26701",
-      "title": "skill bars fill to the value each one declares",
+      "id": "7cb65fbc1e42",
+      "title": "each skill bar fills to its percentage",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-webkit",
@@ -2838,16 +3076,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1723,
+      "durationMs": 1689,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "cadd5f9a0c8b",
+      "id": "80e45847f159",
       "title": "reduced motion turns the skill bar animation off",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-webkit",
@@ -2855,16 +3093,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1063,
+      "durationMs": 1192,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "33effb836493",
-      "title": "a floating CTA is visible while browsing and steps aside at Projects",
+      "id": "0be24930435b",
+      "title": "the floating button hides at Projects",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-webkit",
@@ -2872,16 +3110,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1448,
+      "durationMs": 2271,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "90026988c182",
-      "title": "a reload opens the page at the top, not where the last visit ended",
+      "id": "f1b8b0000ef3",
+      "title": "reloading opens the page at the top",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-webkit",
@@ -2889,16 +3127,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1697,
+      "durationMs": 1375,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "84aa81738d78",
+      "id": "e8381c7a75f8",
       "title": "keyboard users can skip straight to the content",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-webkit",
@@ -2906,16 +3144,16 @@
         "@smoke"
       ],
       "status": "skipped",
-      "durationMs": 695,
+      "durationMs": 487,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "596eb0352005",
-      "title": "a retired anchor still reaches the section it now lives in",
+      "id": "6c7352d6c0df",
+      "title": "the old #work link goes to Projects",
       "path": [
-        "addresses"
+        "URLs"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-webkit",
@@ -2923,16 +3161,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1205,
+      "durationMs": 955,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "79b38037f69b",
-      "title": "an unknown section in the address lands on the not found page",
+      "id": "d8cde91b5a3a",
+      "title": "an unknown #section goes to the 404 page",
       "path": [
-        "addresses"
+        "URLs"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-webkit",
@@ -2940,16 +3178,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1329,
+      "durationMs": 1105,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "055c999390b2",
-      "title": "an unknown path answers with a real 404 status",
+      "id": "84c17413cbe7",
+      "title": "an unknown page returns 404",
       "path": [
-        "addresses"
+        "URLs"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-webkit",
@@ -2957,16 +3195,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 648,
+      "durationMs": 667,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "3c1a1185390e",
-      "title": "a deep unknown path still renders the styled not found page",
+      "id": "5a6de5ae67df",
+      "title": "the 404 page keeps its styling on nested paths",
       "path": [
-        "addresses"
+        "URLs"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-webkit",
@@ -2974,31 +3212,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1054,
+      "durationMs": 1193,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "53334a42f9b3",
-      "title": "renders the résumé with a working PDF download link",
-      "path": [
-        "cv page"
-      ],
-      "file": "tests/smoke.spec.ts",
-      "project": "desktop-webkit",
-      "tags": [
-        "@smoke"
-      ],
-      "status": "passed",
-      "durationMs": 1056,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "ebe0b005fafb",
-      "title": "lists all four experience entries and the certifications block",
+      "id": "fbd62654ea7f",
+      "title": "the PDF download works",
       "path": [
         "cv page"
       ],
@@ -3008,7 +3229,24 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 864,
+      "durationMs": 1046,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "afb783cf291a",
+      "title": "lists every role, Shift Board and the certifications",
+      "path": [
+        "cv page"
+      ],
+      "file": "tests/smoke.spec.ts",
+      "project": "desktop-webkit",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 915,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3025,14 +3263,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1326,
+      "durationMs": 1131,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "98c90e911d34",
-      "title": "shows a friendly not-found message with a way back",
+      "id": "9b150431fe8e",
+      "title": "shows 404 and a link home",
       "path": [
         "404 page"
       ],
@@ -3042,16 +3280,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 801,
+      "durationMs": 756,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "8db7147bc6b9",
-      "title": "every page asks for the same stylesheet version",
+      "id": "894a1e4301f8",
+      "title": "renders without console errors",
       "path": [
-        "asset versions"
+        "every page"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-webkit",
@@ -3059,41 +3297,24 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 1788,
+      "durationMs": 1325,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "ec2015dd3a08",
-      "title": "nav collapses behind a toggle and opens on tap",
+      "id": "e2ac1a986fc0",
+      "title": "asks for the same stylesheet version",
       "path": [
-        "mobile viewport"
+        "every page"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "desktop-webkit",
       "tags": [
         "@smoke"
       ],
-      "status": "skipped",
-      "durationMs": 412,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "d5250ec610aa",
-      "title": "hero content is visible without horizontal scroll",
-      "path": [
-        "mobile viewport"
-      ],
-      "file": "tests/smoke.spec.ts",
-      "project": "desktop-webkit",
-      "tags": [
-        "@smoke"
-      ],
-      "status": "skipped",
-      "durationMs": 534,
+      "status": "passed",
+      "durationMs": 1458,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3110,7 +3331,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1841,
+      "durationMs": 1795,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3127,7 +3348,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 1605,
+      "durationMs": 1689,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3144,7 +3365,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 3779,
+      "durationMs": 2259,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3161,14 +3382,14 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 855,
+      "durationMs": 1106,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "4e2391c60cc8",
-      "title": "the home page outline reads as a document to assistive technology",
+      "id": "21a1dfe7d399",
+      "title": "the home page outline reads as a document to assistive readers",
       "path": [
         "accessibility"
       ],
@@ -3178,24 +3399,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 384,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "bb2ccb0fc142",
-      "title": "the navigation exposes every section and the CV action",
-      "path": [
-        "accessibility"
-      ],
-      "file": "tests/a11y.spec.ts",
-      "project": "mobile-chromium",
-      "tags": [
-        "@a11y"
-      ],
-      "status": "skipped",
-      "durationMs": 189,
+      "durationMs": 523,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3212,7 +3416,7 @@
         "@a11y"
       ],
       "status": "passed",
-      "durationMs": 632,
+      "durationMs": 742,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3229,7 +3433,7 @@
         "@print"
       ],
       "status": "passed",
-      "durationMs": 389,
+      "durationMs": 633,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3247,14 +3451,14 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 181,
+      "durationMs": 172,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "05e1c87db34e",
-      "title": "the committed PDF is not stale against cv.html",
+      "id": "251ffc5ffc9c",
+      "title": "compare the committed PDF against cv.html",
       "path": [
         "CV print & PDF",
         "rendered PDF"
@@ -3265,16 +3469,84 @@
         "@print"
       ],
       "status": "skipped",
-      "durationMs": 143,
+      "durationMs": 155,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "423bf95987e4",
-      "title": "the home page stays inside its budget on a throttled connection",
+      "id": "877bdb0ff747",
+      "title": "the home page only links to things that exist",
       "path": [
-        "performance budget"
+        "links"
+      ],
+      "file": "tests/links.spec.ts",
+      "project": "mobile-chromium",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 531,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "59bea581c6c5",
+      "title": "the CV page only links to things that exist",
+      "path": [
+        "links"
+      ],
+      "file": "tests/links.spec.ts",
+      "project": "mobile-chromium",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 344,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "0ad0717a24e0",
+      "title": "the QA suite runner page only links to things that exist",
+      "path": [
+        "links"
+      ],
+      "file": "tests/links.spec.ts",
+      "project": "mobile-chromium",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 544,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "b598ed62552e",
+      "title": "the not found page only links to things that exist",
+      "path": [
+        "links"
+      ],
+      "file": "tests/links.spec.ts",
+      "project": "mobile-chromium",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 268,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "46faa1b159dc",
+      "title": "the home page loads within budget on slow 4G",
+      "path": [
+        "performance"
       ],
       "file": "tests/performance.spec.ts",
       "project": "mobile-chromium",
@@ -3282,16 +3554,16 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 148,
+      "durationMs": 163,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "dd0cb57e4278",
-      "title": "the CV page stays inside its budget on a throttled connection",
+      "id": "92e7c0e1a0f7",
+      "title": "the CV page loads within budget on slow 4G",
       "path": [
-        "performance budget"
+        "performance"
       ],
       "file": "tests/performance.spec.ts",
       "project": "mobile-chromium",
@@ -3299,16 +3571,16 @@
         "@perf"
       ],
       "status": "skipped",
-      "durationMs": 141,
+      "durationMs": 199,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "6f3b14d3f47a",
-      "title": "renders the committed report with a per-browser breakdown",
+      "id": "df700151dbbe",
+      "title": "shows the real report's totals for each browser",
       "path": [
-        "qa suite page - published report"
+        "QA dashboard - real report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3316,16 +3588,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 510,
+      "durationMs": 653,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "7969108764e1",
+      "id": "cf8b761598fd",
       "title": "links back to the portfolio and to the raw report",
       "path": [
-        "qa suite page - published report"
+        "QA dashboard - real report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3333,16 +3605,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 548,
+      "durationMs": 552,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "9dfae6dcd8dd",
-      "title": "the suite card on the portfolio opens the runner",
+      "id": "cada1e65683c",
+      "title": "the portfolio's QA suite card opens the dashboard",
       "path": [
-        "qa suite page - published report"
+        "QA dashboard - real report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3350,16 +3622,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 587,
+      "durationMs": 664,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "088a52dd156e",
+      "id": "83741c323729",
       "title": "a clean run shows its totals and every browser",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3367,16 +3639,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 412,
+      "durationMs": 485,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "cd6d1287521d",
-      "title": "a failing test links straight to its trace in Playwright's Trace Viewer",
+      "id": "4fb8f9614ab1",
+      "title": "a failed test links to its trace",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3384,16 +3656,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 426,
+      "durationMs": 485,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "e19812c782b6",
-      "title": "a flaky test is counted apart from passes and failures",
+      "id": "522513305ac6",
+      "title": "flaky tests are counted separately",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3401,16 +3673,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 420,
+      "durationMs": 441,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "bcff90f40d2f",
+      "id": "1a88f4ba526b",
       "title": "the showcase offers the recorded video and the trace",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3418,16 +3690,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 513,
+      "durationMs": 542,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "7523ce5ec84b",
-      "title": "a run that recorded no showcase shows no empty player",
+      "id": "004e2295feaa",
+      "title": "no recording means no video player",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3435,16 +3707,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 431,
+      "durationMs": 481,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "642ec5471e97",
-      "title": "accessibility violations are called out rather than averaged away",
+      "id": "46021ee04456",
+      "title": "accessibility violations are shown per page",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3452,16 +3724,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 415,
+      "durationMs": 506,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "1f948ed579fb",
-      "title": "a clean accessibility gate says so",
+      "id": "faa83ee4c949",
+      "title": "no accessibility violations shows as passing",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3469,16 +3741,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 406,
+      "durationMs": 465,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "4b5830b03f54",
-      "title": "a page over its performance budget is flagged on the metric that broke it",
+      "id": "91e73c838fbd",
+      "title": "only the metric over budget is flagged",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3486,16 +3758,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 396,
+      "durationMs": 508,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "3f138ee96c6a",
-      "title": "tests that failed or retried in recent runs surface under Stability",
+      "id": "cb0eb181dec1",
+      "title": "recently failed or flaky tests show under Stability",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3503,16 +3775,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 383,
+      "durationMs": 519,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "ea1f1b360cb2",
-      "title": "a test much slower than its usual pace is marked as regressed",
+      "id": "f91a1586f523",
+      "title": "a test much slower than usual is flagged",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3520,16 +3792,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 371,
+      "durationMs": 455,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "0dc832258f7e",
+      "id": "9297942e2b7b",
       "title": "tag chips filter the test list",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3537,16 +3809,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 500,
+      "durationMs": 600,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "c436a238600d",
-      "title": "results from a local run are labelled as such",
+      "id": "46f908d1f019",
+      "title": "a local run is labelled as local",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3554,16 +3826,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 363,
+      "durationMs": 466,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "8696b32b85b0",
-      "title": "the trend waits for a second run before drawing a line",
+      "id": "b449dcaddc4d",
+      "title": "the trend chart needs at least two runs",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3571,16 +3843,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 530,
+      "durationMs": 642,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "e7122eb43b42",
-      "title": "missing history files cost their panels, not the page",
+      "id": "0d62dbcf34e1",
+      "title": "missing history files only empty their own panels",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3588,16 +3860,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 391,
+      "durationMs": 507,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "e460b5ac4af7",
-      "title": "a report that isn't there says so instead of showing a blank page",
+      "id": "2a8982897f2d",
+      "title": "a missing report shows an error",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3605,16 +3877,16 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 400,
+      "durationMs": 478,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "c2093fc7674e",
-      "title": "an unreachable report says so too",
+      "id": "c2b9896de62a",
+      "title": "a report that can't be reached shows an error",
       "path": [
-        "qa suite page - rendering any run"
+        "QA dashboard - made-up report"
       ],
       "file": "tests/qa-dashboard.spec.ts",
       "project": "mobile-chromium",
@@ -3622,7 +3894,7 @@
         "@dashboard"
       ],
       "status": "passed",
-      "durationMs": 391,
+      "durationMs": 506,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3639,7 +3911,7 @@
         "@showcase"
       ],
       "status": "skipped",
-      "durationMs": 401,
+      "durationMs": 396,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3656,14 +3928,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 404,
+      "durationMs": 486,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "d2913cd7f3f5",
-      "title": "renders without console errors on any page",
+      "id": "56fed8f86921",
+      "title": "each nav link scrolls to its section",
       "path": [
         "home page"
       ],
@@ -3673,14 +3945,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 675,
+      "durationMs": 2616,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "0780ec1fb56a",
-      "title": "nav links resolve to real sections on the page",
+      "id": "4390803fa76f",
+      "title": "experience lists every role, newest first",
       "path": [
         "home page"
       ],
@@ -3690,14 +3962,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 2166,
+      "durationMs": 585,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "3c649478fd54",
-      "title": "experience section lists all four roles in order",
+      "id": "5f2302161c75",
+      "title": "only the newest role is marked Current",
       "path": [
         "home page"
       ],
@@ -3707,14 +3979,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 386,
+      "durationMs": 499,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "8239e0e97734",
-      "title": "current role carries the Current badge and the rest don't",
+      "id": "d6ece4786112",
+      "title": "Shift Board lists its AI providers",
       "path": [
         "home page"
       ],
@@ -3724,24 +3996,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 386,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "cbb6ae52f0fd",
-      "title": "projects section features Shift Board with its AI-provider tags",
-      "path": [
-        "home page"
-      ],
-      "file": "tests/smoke.spec.ts",
-      "project": "mobile-chromium",
-      "tags": [
-        "@smoke"
-      ],
-      "status": "passed",
-      "durationMs": 396,
+      "durationMs": 524,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3758,14 +4013,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 353,
+      "durationMs": 498,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "ba9871781b7e",
-      "title": "hero and nav both offer a way to reach the CV",
+      "id": "6260151fc241",
+      "title": "the hero and nav both link to the CV",
       "path": [
         "home page"
       ],
@@ -3775,7 +4030,7 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 382,
+      "durationMs": 488,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -3792,14 +4047,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 324,
+      "durationMs": 464,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "b100e3db1b3b",
-      "title": "the footer year comes from the visitor's clock",
+      "id": "282425d8dd2f",
+      "title": "the footer shows the current year",
       "path": [
         "home page"
       ],
@@ -3809,16 +4064,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 393,
+      "durationMs": 495,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "a7b723c00331",
-      "title": "earlier roles stay collapsed until asked for",
+      "id": "d9c9ab983c52",
+      "title": "earlier roles are hidden until expanded",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "mobile-chromium",
@@ -3826,16 +4081,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 503,
+      "durationMs": 602,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "e62a9ce932c8",
-      "title": "skill bars fill to the value each one declares",
+      "id": "cb497c605bca",
+      "title": "each skill bar fills to its percentage",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "mobile-chromium",
@@ -3843,16 +4098,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 711,
+      "durationMs": 805,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "3dbc8f189be1",
+      "id": "9199d493138d",
       "title": "reduced motion turns the skill bar animation off",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "mobile-chromium",
@@ -3860,16 +4115,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 424,
+      "durationMs": 497,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "0cf1752dc201",
-      "title": "a floating CTA is visible while browsing and steps aside at Projects",
+      "id": "f091fae9ee18",
+      "title": "the floating button hides at Projects",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "mobile-chromium",
@@ -3877,16 +4132,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 499,
+      "durationMs": 818,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "45fd339e3aa7",
-      "title": "a reload opens the page at the top, not where the last visit ended",
+      "id": "0fd8c76b4466",
+      "title": "reloading opens the page at the top",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "mobile-chromium",
@@ -3894,16 +4149,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 447,
+      "durationMs": 550,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "326a789c158d",
+      "id": "c3cb57af3796",
       "title": "keyboard users can skip straight to the content",
       "path": [
-        "interactive features"
+        "interactions"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "mobile-chromium",
@@ -3911,16 +4166,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 493,
+      "durationMs": 656,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "8a493e3272fa",
-      "title": "a retired anchor still reaches the section it now lives in",
+      "id": "4c5c3802a06f",
+      "title": "the old #work link goes to Projects",
       "path": [
-        "addresses"
+        "URLs"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "mobile-chromium",
@@ -3928,16 +4183,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 431,
+      "durationMs": 582,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "74ff73c7ca43",
-      "title": "an unknown section in the address lands on the not found page",
+      "id": "42bdf1d23382",
+      "title": "an unknown #section goes to the 404 page",
       "path": [
-        "addresses"
+        "URLs"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "mobile-chromium",
@@ -3945,16 +4200,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 437,
+      "durationMs": 465,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "23fb43d6469f",
-      "title": "an unknown path answers with a real 404 status",
+      "id": "a4d2db1b470d",
+      "title": "an unknown page returns 404",
       "path": [
-        "addresses"
+        "URLs"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "mobile-chromium",
@@ -3962,16 +4217,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 188,
+      "durationMs": 172,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "fd1c87772805",
-      "title": "a deep unknown path still renders the styled not found page",
+      "id": "3edcadf453f9",
+      "title": "the 404 page keeps its styling on nested paths",
       "path": [
-        "addresses"
+        "URLs"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "mobile-chromium",
@@ -3979,31 +4234,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 501,
+      "durationMs": 539,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "c4f3b5314095",
-      "title": "renders the résumé with a working PDF download link",
-      "path": [
-        "cv page"
-      ],
-      "file": "tests/smoke.spec.ts",
-      "project": "mobile-chromium",
-      "tags": [
-        "@smoke"
-      ],
-      "status": "passed",
-      "durationMs": 359,
-      "retries": 0,
-      "error": null,
-      "publishedAttachments": []
-    },
-    {
-      "id": "516b080a0703",
-      "title": "lists all four experience entries and the certifications block",
+      "id": "7f5278a84e09",
+      "title": "the PDF download works",
       "path": [
         "cv page"
       ],
@@ -4013,7 +4251,24 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 280,
+      "durationMs": 375,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "7c255cbd0ea2",
+      "title": "lists every role, Shift Board and the certifications",
+      "path": [
+        "cv page"
+      ],
+      "file": "tests/smoke.spec.ts",
+      "project": "mobile-chromium",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 384,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
@@ -4030,14 +4285,14 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 467,
+      "durationMs": 534,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "19a23ae17455",
-      "title": "shows a friendly not-found message with a way back",
+      "id": "99d6aa15794f",
+      "title": "shows 404 and a link home",
       "path": [
         "404 page"
       ],
@@ -4047,16 +4302,16 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 260,
+      "durationMs": 349,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "22685a2e33de",
-      "title": "every page asks for the same stylesheet version",
+      "id": "e1d047c98e1b",
+      "title": "renders without console errors",
       "path": [
-        "asset versions"
+        "every page"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "mobile-chromium",
@@ -4064,51 +4319,174 @@
         "@smoke"
       ],
       "status": "passed",
-      "durationMs": 787,
+      "durationMs": 739,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "4b611cfd76ab",
-      "title": "nav collapses behind a toggle and opens on tap",
+      "id": "6ea24f79da24",
+      "title": "asks for the same stylesheet version",
+      "path": [
+        "every page"
+      ],
+      "file": "tests/smoke.spec.ts",
+      "project": "mobile-chromium",
+      "tags": [
+        "@smoke"
+      ],
+      "status": "passed",
+      "durationMs": 798,
+      "retries": 0,
+      "error": null,
+      "publishedAttachments": []
+    },
+    {
+      "id": "9da00136eba6",
+      "title": "the nav opens from the menu button",
       "path": [
         "mobile viewport"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "mobile-chromium",
       "tags": [
-        "@smoke"
+        "@smoke",
+        "@mobile"
       ],
       "status": "passed",
-      "durationMs": 457,
+      "durationMs": 543,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
     },
     {
-      "id": "1650fe4d7bab",
-      "title": "hero content is visible without horizontal scroll",
+      "id": "ab63ae79df47",
+      "title": "the page doesn't scroll sideways on a phone",
       "path": [
         "mobile viewport"
       ],
       "file": "tests/smoke.spec.ts",
       "project": "mobile-chromium",
       "tags": [
-        "@smoke"
+        "@smoke",
+        "@mobile"
       ],
       "status": "passed",
-      "durationMs": 351,
+      "durationMs": 444,
       "retries": 0,
       "error": null,
       "publishedAttachments": []
+    },
+    {
+      "id": "5f7e4b49f0cb",
+      "title": "the home page looks as designed",
+      "path": [
+        "visual"
+      ],
+      "file": "tests/visual.spec.ts",
+      "project": "mobile-chromium",
+      "tags": [
+        "@visual"
+      ],
+      "status": "failed",
+      "durationMs": 793,
+      "retries": 1,
+      "error": "Error: A snapshot doesn't exist at /home/runner/work/portfolio/portfolio/tests/visual.spec.ts-snapshots/home-mobile-chromium-linux.png.",
+      "publishedAttachments": [
+        {
+          "type": "video",
+          "path": "assets/qa/artifacts/5f7e4b49f0cb/video.webm"
+        },
+        {
+          "type": "trace",
+          "path": "assets/qa/artifacts/5f7e4b49f0cb/trace.zip"
+        }
+      ]
+    },
+    {
+      "id": "b351d9148a54",
+      "title": "the CV looks as designed on screen and on paper",
+      "path": [
+        "visual"
+      ],
+      "file": "tests/visual.spec.ts",
+      "project": "mobile-chromium",
+      "tags": [
+        "@visual"
+      ],
+      "status": "failed",
+      "durationMs": 700,
+      "retries": 1,
+      "error": "Error: A snapshot doesn't exist at /home/runner/work/portfolio/portfolio/tests/visual.spec.ts-snapshots/cv-screen-mobile-chromium-linux.png.",
+      "publishedAttachments": [
+        {
+          "type": "video",
+          "path": "assets/qa/artifacts/b351d9148a54/video.webm"
+        },
+        {
+          "type": "trace",
+          "path": "assets/qa/artifacts/b351d9148a54/trace.zip"
+        }
+      ]
+    },
+    {
+      "id": "c60b391ddc63",
+      "title": "the not-found page looks as designed",
+      "path": [
+        "visual"
+      ],
+      "file": "tests/visual.spec.ts",
+      "project": "mobile-chromium",
+      "tags": [
+        "@visual"
+      ],
+      "status": "failed",
+      "durationMs": 692,
+      "retries": 1,
+      "error": "Error: A snapshot doesn't exist at /home/runner/work/portfolio/portfolio/tests/visual.spec.ts-snapshots/not-found-mobile-chromium-linux.png.",
+      "publishedAttachments": [
+        {
+          "type": "video",
+          "path": "assets/qa/artifacts/c60b391ddc63/video.webm"
+        },
+        {
+          "type": "trace",
+          "path": "assets/qa/artifacts/c60b391ddc63/trace.zip"
+        }
+      ]
+    },
+    {
+      "id": "10141a53d62d",
+      "title": "the dashboard looks as designed with failures, flakes and skips",
+      "path": [
+        "visual"
+      ],
+      "file": "tests/visual.spec.ts",
+      "project": "mobile-chromium",
+      "tags": [
+        "@visual"
+      ],
+      "status": "failed",
+      "durationMs": 712,
+      "retries": 1,
+      "error": "Error: A snapshot doesn't exist at /home/runner/work/portfolio/portfolio/tests/visual.spec.ts-snapshots/dashboard-mobile-chromium-linux.png.",
+      "publishedAttachments": [
+        {
+          "type": "video",
+          "path": "assets/qa/artifacts/10141a53d62d/video.webm"
+        },
+        {
+          "type": "trace",
+          "path": "assets/qa/artifacts/10141a53d62d/trace.zip"
+        }
+      ]
     }
   ],
   "accessibility": [
     {
       "page": "/",
       "violations": 0,
-      "passes": 16,
+      "passes": 21,
       "incomplete": 1,
       "rules": [],
       "project": "desktop-chromium"
@@ -4140,7 +4518,7 @@
     {
       "page": "/",
       "violations": 0,
-      "passes": 16,
+      "passes": 21,
       "incomplete": 1,
       "rules": [],
       "project": "desktop-firefox"
@@ -4172,7 +4550,7 @@
     {
       "page": "/",
       "violations": 0,
-      "passes": 16,
+      "passes": 21,
       "incomplete": 1,
       "rules": [],
       "project": "desktop-webkit"
@@ -4237,10 +4615,10 @@
   "performance": [
     {
       "page": "/",
-      "lcpMs": 720,
-      "fcpMs": 720,
+      "lcpMs": 672,
+      "fcpMs": 672,
       "cls": 0,
-      "transferKb": 47,
+      "transferKb": 48,
       "budget": {
         "lcpMs": 2500,
         "cls": 0.1,
@@ -4250,10 +4628,10 @@
     },
     {
       "page": "/cv.html",
-      "lcpMs": 628,
-      "fcpMs": 628,
+      "lcpMs": 636,
+      "fcpMs": 636,
       "cls": 0,
-      "transferKb": 40,
+      "transferKb": 41,
       "budget": {
         "lcpMs": 2500,
         "cls": 0.1,
@@ -4263,7 +4641,7 @@
     }
   ],
   "showcase": {
-    "title": "A recruiter's first minute on the site",
+    "title": "a recruiter's first minute on the site",
     "project": "desktop-chromium",
     "trace": "assets/qa/artifacts/2d9b8ec0d186/trace.zip",
     "video": "assets/qa/artifacts/2d9b8ec0d186/video.webm"

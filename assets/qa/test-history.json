@@ -1,2600 +1,2434 @@
 {
-  "runs": 3,
+  "runs": 4,
   "tests": {
     "8be1d2850674": {
       "title": "the home page has no WCAG 2.2 A/AA violations",
       "project": "desktop-chromium",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         2682,
         1983,
-        2035
+        2035,
+        2049
       ]
     },
     "c09512314080": {
       "title": "the CV page has no WCAG 2.2 A/AA violations",
       "project": "desktop-chromium",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         1708,
         1810,
-        1732
+        1732,
+        1734
       ]
     },
     "ab9298b1b8ea": {
       "title": "the QA suite runner page has no WCAG 2.2 A/AA violations",
       "project": "desktop-chromium",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "pfpp",
       "durations": [
         2933,
         5642,
-        4200
+        4200,
+        2566
       ]
     },
     "e84c91527f14": {
       "title": "the not found page has no WCAG 2.2 A/AA violations",
       "project": "desktop-chromium",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         2412,
         866,
-        824
+        824,
+        901
       ]
     },
-    "da5423b74411": {
-      "title": "the home page outline reads as a document to assistive technology",
+    "05d959854a76": {
+      "title": "the home page outline reads as a document to assistive readers",
       "project": "desktop-chromium",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1262,
-        446,
-        369
+        514
       ]
     },
     "e980ed7cad4c": {
       "title": "the navigation exposes every section and the CV action",
       "project": "desktop-chromium",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         1385,
         423,
-        299
+        299,
+        430
       ]
     },
     "b0bc01ba27ec": {
       "title": "every control shows a visible focus indicator",
       "project": "desktop-chromium",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         1278,
         639,
-        701
+        701,
+        820
       ]
     },
     "c4b4ae511f19": {
       "title": "print styles drop the screen chrome and keep entries whole",
       "project": "desktop-chromium",
       "file": "tests/cv-print.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         1174,
         452,
-        439
+        439,
+        700
       ]
     },
     "8f04983e3846": {
       "title": "the CV prints to at most 4 A4 pages",
       "project": "desktop-chromium",
       "file": "tests/cv-print.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         1684,
         963,
-        887
+        887,
+        458
       ]
     },
-    "c00877cd9bd5": {
-      "title": "the committed PDF is not stale against cv.html",
+    "e5f4c974c29d": {
+      "title": "compare the committed PDF against cv.html",
       "project": "desktop-chromium",
       "file": "tests/cv-print.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        3545,
-        1001,
-        989
+        503
       ]
     },
-    "a371daf8b026": {
-      "title": "the home page stays inside its budget on a throttled connection",
+    "667181a84a3b": {
+      "title": "the home page only links to things that exist",
       "project": "desktop-chromium",
-      "file": "tests/performance.spec.ts",
-      "outcomes": "ppp",
+      "file": "tests/links.spec.ts",
+      "outcomes": "p",
       "durations": [
-        3578,
-        1843,
-        2045
-      ]
-    },
-    "1c9e4bd8065d": {
-      "title": "the CV page stays inside its budget on a throttled connection",
-      "project": "desktop-chromium",
-      "file": "tests/performance.spec.ts",
-      "outcomes": "ppp",
-      "durations": [
-        2589,
-        1761,
-        1951
-      ]
-    },
-    "711aab6fecd4": {
-      "title": "renders the committed report with a per-browser breakdown",
-      "project": "desktop-chromium",
-      "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
-      "durations": [
-        2729,
-        5693,
-        560
-      ]
-    },
-    "430b940b0db3": {
-      "title": "links back to the portfolio and to the raw report",
-      "project": "desktop-chromium",
-      "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "ppp",
-      "durations": [
-        2121,
-        471,
-        686
-      ]
-    },
-    "5719e2ca5a84": {
-      "title": "the suite card on the portfolio opens the runner",
-      "project": "desktop-chromium",
-      "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "ppp",
-      "durations": [
-        2042,
-        522,
-        829
-      ]
-    },
-    "3d094ef07c4f": {
-      "title": "a clean run shows its totals and every browser",
-      "project": "desktop-chromium",
-      "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
-      "durations": [
-        1788,
-        5654,
         520
       ]
     },
-    "a529e178d798": {
-      "title": "a failing test links straight to its trace in Playwright's Trace Viewer",
+    "3932af8b4098": {
+      "title": "the CV page only links to things that exist",
       "project": "desktop-chromium",
-      "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "file": "tests/links.spec.ts",
+      "outcomes": "p",
       "durations": [
-        1263,
-        5649,
-        593
+        380
       ]
     },
-    "5c4662407d6a": {
-      "title": "a flaky test is counted apart from passes and failures",
+    "ce529bb84594": {
+      "title": "the QA suite runner page only links to things that exist",
       "project": "desktop-chromium",
-      "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "file": "tests/links.spec.ts",
+      "outcomes": "p",
       "durations": [
-        1847,
-        5644,
-        509
+        574
       ]
     },
-    "b82c4c0b9870": {
+    "bdeb94bc92e7": {
+      "title": "the not found page only links to things that exist",
+      "project": "desktop-chromium",
+      "file": "tests/links.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        278
+      ]
+    },
+    "a022506a8806": {
+      "title": "the home page loads within budget on slow 4G",
+      "project": "desktop-chromium",
+      "file": "tests/performance.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        1995
+      ]
+    },
+    "914c70f998ea": {
+      "title": "the CV page loads within budget on slow 4G",
+      "project": "desktop-chromium",
+      "file": "tests/performance.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        1960
+      ]
+    },
+    "55c1d5fe66f9": {
+      "title": "shows the real report's totals for each browser",
+      "project": "desktop-chromium",
+      "file": "tests/qa-dashboard.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        782
+      ]
+    },
+    "59714de95f41": {
+      "title": "links back to the portfolio and to the raw report",
+      "project": "desktop-chromium",
+      "file": "tests/qa-dashboard.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        648
+      ]
+    },
+    "02311b499eea": {
+      "title": "the portfolio's QA suite card opens the dashboard",
+      "project": "desktop-chromium",
+      "file": "tests/qa-dashboard.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        847
+      ]
+    },
+    "a201fc67cf49": {
+      "title": "a clean run shows its totals and every browser",
+      "project": "desktop-chromium",
+      "file": "tests/qa-dashboard.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        602
+      ]
+    },
+    "d2b407b016c9": {
+      "title": "a failed test links to its trace",
+      "project": "desktop-chromium",
+      "file": "tests/qa-dashboard.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        619
+      ]
+    },
+    "39f0be8d7475": {
+      "title": "flaky tests are counted separately",
+      "project": "desktop-chromium",
+      "file": "tests/qa-dashboard.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        565
+      ]
+    },
+    "353847fd0605": {
       "title": "the showcase offers the recorded video and the trace",
       "project": "desktop-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1846,
-        31448,
-        656
+        693
       ]
     },
-    "cfcead3146fb": {
-      "title": "a run that recorded no showcase shows no empty player",
+    "8fbbe5c002ad": {
+      "title": "no recording means no video player",
       "project": "desktop-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1491,
-        5637,
-        558
+        619
       ]
     },
-    "df6622fcac02": {
-      "title": "accessibility violations are called out rather than averaged away",
+    "c0409faf589d": {
+      "title": "accessibility violations are shown per page",
       "project": "desktop-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1935,
-        5644,
-        495
+        543
       ]
     },
-    "d02dfd9ed600": {
-      "title": "a clean accessibility gate says so",
+    "cc9641e18b14": {
+      "title": "no accessibility violations shows as passing",
       "project": "desktop-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1315,
-        5639,
-        514
+        522
       ]
     },
-    "914e9c8e2b21": {
-      "title": "a page over its performance budget is flagged on the metric that broke it",
+    "d8dc96bcdb1e": {
+      "title": "only the metric over budget is flagged",
       "project": "desktop-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1493,
-        5623,
-        556
+        547
       ]
     },
-    "a95db4a30ba1": {
-      "title": "tests that failed or retried in recent runs surface under Stability",
+    "b0808c0cfac2": {
+      "title": "recently failed or flaky tests show under Stability",
       "project": "desktop-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1323,
-        5698,
-        511
+        532
       ]
     },
-    "c458c625a41d": {
-      "title": "a test much slower than its usual pace is marked as regressed",
+    "09a36b8f5820": {
+      "title": "a test much slower than usual is flagged",
       "project": "desktop-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1218,
-        5714,
-        487
+        548
       ]
     },
-    "e121148a660f": {
+    "35bd2b116abe": {
       "title": "tag chips filter the test list",
       "project": "desktop-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        2079,
-        31200,
-        722
+        673
       ]
     },
-    "b77bb354a02b": {
-      "title": "results from a local run are labelled as such",
+    "7ed7f8853fc9": {
+      "title": "a local run is labelled as local",
       "project": "desktop-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1822,
-        5638,
-        438
+        513
       ]
     },
-    "05f6c491d548": {
-      "title": "the trend waits for a second run before drawing a line",
+    "6bbbbd2b641b": {
+      "title": "the trend chart needs at least two runs",
       "project": "desktop-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        2377,
-        5700,
-        632
+        728
       ]
     },
-    "3f757e128fdb": {
-      "title": "missing history files cost their panels, not the page",
+    "cbad197f813d": {
+      "title": "missing history files only empty their own panels",
       "project": "desktop-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1638,
-        5647,
         572
       ]
     },
-    "0c1b35639203": {
-      "title": "a report that isn't there says so instead of showing a blank page",
+    "76905ad15132": {
+      "title": "a missing report shows an error",
       "project": "desktop-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1292,
-        5649,
-        498
+        507
       ]
     },
-    "bdf08178b3b5": {
-      "title": "an unreachable report says so too",
+    "4ed087832a9d": {
+      "title": "a report that can't be reached shows an error",
       "project": "desktop-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1327,
-        5844,
-        388
+        506
       ]
     },
     "2d9b8ec0d186": {
       "title": "a recruiter's first minute on the site",
       "project": "desktop-chromium",
       "file": "tests/showcase.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "pfpp",
       "durations": [
         7837,
         9522,
-        5323
+        5323,
+        5421
       ]
     },
     "e21b817b7d03": {
       "title": "loads with the right title and hero content",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         1288,
         512,
+        554,
+        521
+      ]
+    },
+    "698506a7f642": {
+      "title": "each nav link scrolls to its section",
+      "project": "desktop-chromium",
+      "file": "tests/smoke.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        1937
+      ]
+    },
+    "4aab3a7ae04d": {
+      "title": "experience lists every role, newest first",
+      "project": "desktop-chromium",
+      "file": "tests/smoke.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        792
+      ]
+    },
+    "7e0f2a764f4a": {
+      "title": "only the newest role is marked Current",
+      "project": "desktop-chromium",
+      "file": "tests/smoke.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        647
+      ]
+    },
+    "9dd6696691bf": {
+      "title": "Shift Board lists its AI providers",
+      "project": "desktop-chromium",
+      "file": "tests/smoke.spec.ts",
+      "outcomes": "p",
+      "durations": [
         554
-      ]
-    },
-    "5f7b19ab64ed": {
-      "title": "renders without console errors on any page",
-      "project": "desktop-chromium",
-      "file": "tests/smoke.spec.ts",
-      "outcomes": "pfp",
-      "durations": [
-        1276,
-        776,
-        649
-      ]
-    },
-    "475a27e48990": {
-      "title": "nav links resolve to real sections on the page",
-      "project": "desktop-chromium",
-      "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
-      "durations": [
-        1302,
-        1797,
-        1708
-      ]
-    },
-    "7a929325d3a2": {
-      "title": "experience section lists all four roles in order",
-      "project": "desktop-chromium",
-      "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
-      "durations": [
-        1410,
-        465,
-        489
-      ]
-    },
-    "131e1a118700": {
-      "title": "current role carries the Current badge and the rest don't",
-      "project": "desktop-chromium",
-      "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
-      "durations": [
-        980,
-        425,
-        463
-      ]
-    },
-    "cb09ba02a052": {
-      "title": "projects section features Shift Board with its AI-provider tags",
-      "project": "desktop-chromium",
-      "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
-      "durations": [
-        1310,
-        460,
-        477
       ]
     },
     "4d55aab31c6d": {
       "title": "contact section links to LinkedIn in a new tab",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         969,
         469,
-        451
+        451,
+        554
       ]
     },
-    "a68199987f8f": {
-      "title": "hero and nav both offer a way to reach the CV",
+    "9e2142586b19": {
+      "title": "the hero and nav both link to the CV",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        906,
-        490,
-        425
+        551
       ]
     },
     "cdeb43999d24": {
       "title": "footer LinkedIn link matches the contact link",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         1200,
         639,
-        408
+        408,
+        583
       ]
     },
-    "056f580b4668": {
-      "title": "the footer year comes from the visitor's clock",
+    "1d606089bcaf": {
+      "title": "the footer shows the current year",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1208,
-        567,
-        403
+        571
       ]
     },
-    "822d91629686": {
-      "title": "earlier roles stay collapsed until asked for",
+    "5fb21d1baa32": {
+      "title": "earlier roles are hidden until expanded",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1320,
-        796,
-        589
+        709
       ]
     },
-    "d06f55f47e39": {
-      "title": "skill bars fill to the value each one declares",
+    "7747f80b16e9": {
+      "title": "each skill bar fills to its percentage",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1165,
-        939,
-        903
+        1133
       ]
     },
-    "902738cc3706": {
+    "256d320963bb": {
       "title": "reduced motion turns the skill bar animation off",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1300,
-        560,
-        458
+        577
       ]
     },
-    "f889fd063a72": {
-      "title": "a floating CTA is visible while browsing and steps aside at Projects",
+    "c95711a7f283": {
+      "title": "the floating button hides at Projects",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1269,
-        693,
-        539
+        837
       ]
     },
-    "3a838c4ef667": {
-      "title": "a reload opens the page at the top, not where the last visit ended",
+    "2ebbbba21c27": {
+      "title": "reloading opens the page at the top",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1054,
-        696,
-        609
+        540
       ]
     },
-    "8c727837af99": {
+    "9dbd428e772b": {
       "title": "keyboard users can skip straight to the content",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1714,
-        624,
-        538
+        651
       ]
     },
-    "9ba7c0b8ae42": {
-      "title": "a retired anchor still reaches the section it now lives in",
+    "361180102709": {
+      "title": "the old #work link goes to Projects",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1479,
-        601,
-        560
+        534
       ]
     },
-    "260720dacecd": {
-      "title": "an unknown section in the address lands on the not found page",
+    "7872b9b84491": {
+      "title": "an unknown #section goes to the 404 page",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1145,
-        527,
-        416
+        451
       ]
     },
-    "ab6e6e2978b3": {
-      "title": "an unknown path answers with a real 404 status",
+    "080aa42a47cb": {
+      "title": "an unknown page returns 404",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        79,
-        226,
-        283
+        258
       ]
     },
-    "da652e6b4030": {
-      "title": "a deep unknown path still renders the styled not found page",
+    "b58e9d08279c": {
+      "title": "the 404 page keeps its styling on nested paths",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1184,
-        632,
-        555
+        614
       ]
     },
-    "bc63bf5aeb0a": {
-      "title": "renders the résumé with a working PDF download link",
+    "a10da9870aeb": {
+      "title": "the PDF download works",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        429,
-        520,
-        393
+        401
       ]
     },
-    "25daf9c6c42b": {
-      "title": "lists all four experience entries and the certifications block",
+    "287b58ad20d0": {
+      "title": "lists every role, Shift Board and the certifications",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        769,
-        364,
-        349
+        417
       ]
     },
     "7abc1524b30a": {
       "title": "back link returns to the portfolio",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         864,
         615,
-        589
+        589,
+        619
       ]
     },
-    "d4b5815d67c1": {
-      "title": "shows a friendly not-found message with a way back",
+    "2d7506d189ee": {
+      "title": "shows 404 and a link home",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        973,
-        453,
-        309
+        315
       ]
     },
-    "008f46f8551e": {
-      "title": "every page asks for the same stylesheet version",
+    "f55df196b346": {
+      "title": "renders without console errors",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        2888,
-        774,
-        785
+        794
       ]
     },
-    "ad4884d14da5": {
-      "title": "nav collapses behind a toggle and opens on tap",
+    "a6342b0446cc": {
+      "title": "asks for the same stylesheet version",
       "project": "desktop-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "p",
       "durations": [
-        65,
-        257,
-        260
+        926
       ]
     },
-    "0d5078785557": {
-      "title": "hero content is visible without horizontal scroll",
+    "4e5967770289": {
+      "title": "the home page looks as designed",
       "project": "desktop-chromium",
-      "file": "tests/smoke.spec.ts",
-      "outcomes": "sss",
+      "file": "tests/visual.spec.ts",
+      "outcomes": "f",
       "durations": [
-        66,
-        228,
-        221
+        834
+      ]
+    },
+    "161ab3aea0eb": {
+      "title": "the CV looks as designed on screen and on paper",
+      "project": "desktop-chromium",
+      "file": "tests/visual.spec.ts",
+      "outcomes": "f",
+      "durations": [
+        793
+      ]
+    },
+    "832d39a8cec1": {
+      "title": "the not-found page looks as designed",
+      "project": "desktop-chromium",
+      "file": "tests/visual.spec.ts",
+      "outcomes": "f",
+      "durations": [
+        607
+      ]
+    },
+    "91a7d0fdf8b7": {
+      "title": "the dashboard looks as designed with failures, flakes and skips",
+      "project": "desktop-chromium",
+      "file": "tests/visual.spec.ts",
+      "outcomes": "f",
+      "durations": [
+        733
       ]
     },
     "3f1e799bea40": {
       "title": "the home page has no WCAG 2.2 A/AA violations",
       "project": "desktop-firefox",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         9730,
         3024,
-        3880
+        3880,
+        4516
       ]
     },
     "7c25f144e805": {
       "title": "the CV page has no WCAG 2.2 A/AA violations",
       "project": "desktop-firefox",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         8848,
         2774,
-        3611
+        3611,
+        3537
       ]
     },
     "e8bbf4951372": {
       "title": "the QA suite runner page has no WCAG 2.2 A/AA violations",
       "project": "desktop-firefox",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "pfpp",
       "durations": [
         11583,
         6267,
-        5469
+        5469,
+        3651
       ]
     },
     "4ad5a91bf27d": {
       "title": "the not found page has no WCAG 2.2 A/AA violations",
       "project": "desktop-firefox",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         6524,
         860,
-        1330
+        1330,
+        1431
       ]
     },
-    "93a8020c833d": {
-      "title": "the home page outline reads as a document to assistive technology",
+    "091c5b7f64b9": {
+      "title": "the home page outline reads as a document to assistive readers",
       "project": "desktop-firefox",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1841,
-        464,
-        706
+        762
       ]
     },
     "40403b8ae453": {
       "title": "the navigation exposes every section and the CV action",
       "project": "desktop-firefox",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         2760,
         459,
-        647
+        647,
+        830
       ]
     },
     "416fe0d8b2fc": {
       "title": "every control shows a visible focus indicator",
       "project": "desktop-firefox",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         2473,
         617,
-        883
+        883,
+        1282
       ]
     },
     "8838b48fe919": {
       "title": "print styles drop the screen chrome and keep entries whole",
       "project": "desktop-firefox",
       "file": "tests/cv-print.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         3051,
         553,
-        862
+        862,
+        1028
       ]
     },
     "bf211854f1e9": {
       "title": "the CV prints to at most 4 A4 pages",
       "project": "desktop-firefox",
       "file": "tests/cv-print.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "ssss",
       "durations": [
         488,
         258,
-        482
+        482,
+        426
       ]
     },
-    "ef41b15ff01b": {
-      "title": "the committed PDF is not stale against cv.html",
+    "ee76752d8ef3": {
+      "title": "compare the committed PDF against cv.html",
       "project": "desktop-firefox",
       "file": "tests/cv-print.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "s",
       "durations": [
-        510,
-        283,
-        439
+        457
       ]
     },
-    "1e1afa4eb188": {
-      "title": "the home page stays inside its budget on a throttled connection",
+    "0835adef7354": {
+      "title": "the home page only links to things that exist",
+      "project": "desktop-firefox",
+      "file": "tests/links.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        1016
+      ]
+    },
+    "94c56a39f979": {
+      "title": "the CV page only links to things that exist",
+      "project": "desktop-firefox",
+      "file": "tests/links.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        818
+      ]
+    },
+    "2393201c59f5": {
+      "title": "the QA suite runner page only links to things that exist",
+      "project": "desktop-firefox",
+      "file": "tests/links.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        849
+      ]
+    },
+    "410b891ef830": {
+      "title": "the not found page only links to things that exist",
+      "project": "desktop-firefox",
+      "file": "tests/links.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        660
+      ]
+    },
+    "14e0a57f4d40": {
+      "title": "the home page loads within budget on slow 4G",
       "project": "desktop-firefox",
       "file": "tests/performance.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "s",
       "durations": [
-        573,
-        271,
-        347
+        357
       ]
     },
-    "aee42fdc6503": {
-      "title": "the CV page stays inside its budget on a throttled connection",
+    "25d091a21693": {
+      "title": "the CV page loads within budget on slow 4G",
       "project": "desktop-firefox",
       "file": "tests/performance.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "s",
       "durations": [
-        697,
-        1491,
-        365
+        393
       ]
     },
-    "ba7231155b25": {
-      "title": "renders the committed report with a per-browser breakdown",
+    "01822bb2043d": {
+      "title": "shows the real report's totals for each browser",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        3289,
-        6581,
-        1048
+        970
       ]
     },
-    "9a1599fc472c": {
+    "2ff371674ab3": {
       "title": "links back to the portfolio and to the raw report",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        3163,
-        1144,
-        2744
+        2793
       ]
     },
-    "308b4490b56d": {
-      "title": "the suite card on the portfolio opens the runner",
+    "0658e8cb9b7b": {
+      "title": "the portfolio's QA suite card opens the dashboard",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        3041,
-        655,
-        1122
+        936
       ]
     },
-    "78a1e106605c": {
+    "20550bdb2764": {
       "title": "a clean run shows its totals and every browser",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        2600,
-        6167,
-        633
+        2412
       ]
     },
-    "b5c6ce5aea98": {
-      "title": "a failing test links straight to its trace in Playwright's Trace Viewer",
+    "f2e8314ecc11": {
+      "title": "a failed test links to its trace",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        2627,
-        6335,
-        693
+        890
       ]
     },
-    "d3bf94cef1a2": {
-      "title": "a flaky test is counted apart from passes and failures",
+    "0e187d36644d": {
+      "title": "flaky tests are counted separately",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        2347,
-        6130,
-        976
+        637
       ]
     },
-    "bf0bf2b17d20": {
+    "73bc97c04c9b": {
       "title": "the showcase offers the recorded video and the trace",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        2226,
-        30258,
-        995
+        1114
       ]
     },
-    "fd0aaa80e9f9": {
-      "title": "a run that recorded no showcase shows no empty player",
+    "12cecd8b092a": {
+      "title": "no recording means no video player",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        2271,
-        7066,
-        729
+        759
       ]
     },
-    "6935856362d2": {
-      "title": "accessibility violations are called out rather than averaged away",
+    "aa0088aa860b": {
+      "title": "accessibility violations are shown per page",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        2381,
-        6160,
-        787
+        818
       ]
     },
-    "b92857c84dc8": {
-      "title": "a clean accessibility gate says so",
+    "fcad39a412d8": {
+      "title": "no accessibility violations shows as passing",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        2308,
-        6177,
-        719
+        797
       ]
     },
-    "6f2932310c7d": {
-      "title": "a page over its performance budget is flagged on the metric that broke it",
+    "91ea09d6a34f": {
+      "title": "only the metric over budget is flagged",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1792,
-        6539,
-        2362
+        811
       ]
     },
-    "94d16a8e066e": {
-      "title": "tests that failed or retried in recent runs surface under Stability",
+    "ce470f42e2cc": {
+      "title": "recently failed or flaky tests show under Stability",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        5051,
-        6509,
-        792
+        755
       ]
     },
-    "3e0577a6721c": {
-      "title": "a test much slower than its usual pace is marked as regressed",
+    "c4cd7bbc48c2": {
+      "title": "a test much slower than usual is flagged",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        3326,
-        6395,
-        598
+        773
       ]
     },
-    "4758dc1102e5": {
+    "876b308f9c8e": {
       "title": "tag chips filter the test list",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        3628,
-        30255,
-        870
+        1067
       ]
     },
-    "084ac7b33d60": {
-      "title": "results from a local run are labelled as such",
+    "5e75e65ced5f": {
+      "title": "a local run is labelled as local",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        3026,
-        6182,
-        1059
+        793
       ]
     },
-    "2a6c0d33de59": {
-      "title": "the trend waits for a second run before drawing a line",
+    "2c0710c4e6f6": {
+      "title": "the trend chart needs at least two runs",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        3063,
-        6352,
-        914
+        1020
       ]
     },
-    "a47e02528813": {
-      "title": "missing history files cost their panels, not the page",
+    "addda6515e11": {
+      "title": "missing history files only empty their own panels",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        2483,
-        6167,
-        710
+        765
       ]
     },
-    "70ba1e6375aa": {
-      "title": "a report that isn't there says so instead of showing a blank page",
+    "6275cc00b48f": {
+      "title": "a missing report shows an error",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        2422,
-        6185,
-        708
+        752
       ]
     },
-    "8950850bddf6": {
-      "title": "an unreachable report says so too",
+    "a73a9652014a": {
+      "title": "a report that can't be reached shows an error",
       "project": "desktop-firefox",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        2456,
-        6649,
-        673
+        658
       ]
     },
     "123d805d8c86": {
       "title": "a recruiter's first minute on the site",
       "project": "desktop-firefox",
       "file": "tests/showcase.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "ssss",
       "durations": [
         2641,
         986,
-        1005
+        1005,
+        1048
       ]
     },
     "2d0c4463968e": {
       "title": "loads with the right title and hero content",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         2334,
         1409,
-        732
+        732,
+        788
       ]
     },
-    "1cff2a82de09": {
-      "title": "renders without console errors on any page",
+    "fdd9c1b7fca6": {
+      "title": "each nav link scrolls to its section",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        3182,
-        651,
-        4008
+        4644
       ]
     },
-    "aab48a098b06": {
-      "title": "nav links resolve to real sections on the page",
+    "13cb2ebdb7bc": {
+      "title": "experience lists every role, newest first",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        2614,
-        1536,
-        1759
+        945
       ]
     },
-    "95cc97fb999b": {
-      "title": "experience section lists all four roles in order",
+    "33a745996bdc": {
+      "title": "only the newest role is marked Current",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        2064,
-        680,
-        694
+        653
       ]
     },
-    "3e5b6e799f39": {
-      "title": "current role carries the Current badge and the rest don't",
+    "d3f4383bd933": {
+      "title": "Shift Board lists its AI providers",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        2665,
-        601,
-        664
-      ]
-    },
-    "065782355c64": {
-      "title": "projects section features Shift Board with its AI-provider tags",
-      "project": "desktop-firefox",
-      "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
-      "durations": [
-        4753,
-        577,
-        820
+        3441
       ]
     },
     "0ffcdd4d77ff": {
       "title": "contact section links to LinkedIn in a new tab",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         2202,
         447,
-        1316
+        1316,
+        1209
       ]
     },
-    "671b96ad8f1a": {
-      "title": "hero and nav both offer a way to reach the CV",
+    "9efe058a4862": {
+      "title": "the hero and nav both link to the CV",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1855,
-        440,
-        591
+        753
       ]
     },
     "9a38eba26128": {
       "title": "footer LinkedIn link matches the contact link",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         3075,
         445,
-        720
+        720,
+        1453
       ]
     },
-    "047f0ead3059": {
-      "title": "the footer year comes from the visitor's clock",
+    "2ab3c545edb1": {
+      "title": "the footer shows the current year",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        2898,
-        1757,
-        838
+        746
       ]
     },
-    "84b2df83cfe3": {
-      "title": "earlier roles stay collapsed until asked for",
+    "b88fc0cb5635": {
+      "title": "earlier roles are hidden until expanded",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        5018,
-        750,
-        4192
+        1121
       ]
     },
-    "bb59585438e1": {
-      "title": "skill bars fill to the value each one declares",
+    "e99f3868fc22": {
+      "title": "each skill bar fills to its percentage",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        5364,
-        826,
-        1046
+        1643
       ]
     },
-    "97a246dd2896": {
+    "d7d8e4cca0d3": {
       "title": "reduced motion turns the skill bar animation off",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        4371,
-        503,
-        608
+        821
       ]
     },
-    "74b15c459ef3": {
-      "title": "a floating CTA is visible while browsing and steps aside at Projects",
+    "bcbdf31c466f": {
+      "title": "the floating button hides at Projects",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        4416,
-        1965,
-        737
+        1320
       ]
     },
-    "2e8a2fef0c95": {
-      "title": "a reload opens the page at the top, not where the last visit ended",
+    "327512596acf": {
+      "title": "reloading opens the page at the top",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        2680,
-        712,
-        791
+        990
       ]
     },
-    "876cdfb13f92": {
+    "092bd6aafa97": {
       "title": "keyboard users can skip straight to the content",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        5713,
-        712,
-        806
+        943
       ]
     },
-    "72d4e33ad96b": {
-      "title": "a retired anchor still reaches the section it now lives in",
+    "f2683fc9cd34": {
+      "title": "the old #work link goes to Projects",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        3126,
-        683,
-        1524
+        810
       ]
     },
-    "d4cb94d36bd6": {
-      "title": "an unknown section in the address lands on the not found page",
+    "ee92ac41833c": {
+      "title": "an unknown #section goes to the 404 page",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        3211,
-        707,
-        811
+        823
       ]
     },
-    "3e950cc99066": {
-      "title": "an unknown path answers with a real 404 status",
+    "a865e94e8fc6": {
+      "title": "an unknown page returns 404",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        541,
-        322,
-        340
+        423
       ]
     },
-    "203451d99c2f": {
-      "title": "a deep unknown path still renders the styled not found page",
+    "7592dc8096bb": {
+      "title": "the 404 page keeps its styling on nested paths",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        2559,
-        847,
-        1007
+        992
       ]
     },
-    "9295d8917f28": {
-      "title": "renders the résumé with a working PDF download link",
+    "a1046a6ec7ac": {
+      "title": "the PDF download works",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        2843,
-        761,
-        5396
+        765
       ]
     },
-    "2bffdecf0a65": {
-      "title": "lists all four experience entries and the certifications block",
+    "d05f529f6aca": {
+      "title": "lists every role, Shift Board and the certifications",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        2291,
-        612,
-        580
+        748
       ]
     },
     "fb74a23b4f57": {
       "title": "back link returns to the portfolio",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         3422,
         3944,
-        795
+        795,
+        1010
       ]
     },
-    "952e6d29cf4f": {
-      "title": "shows a friendly not-found message with a way back",
+    "963290382e2b": {
+      "title": "shows 404 and a link home",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        3957,
-        490,
-        537
+        675
       ]
     },
-    "9947cf7c628d": {
-      "title": "every page asks for the same stylesheet version",
+    "be4b1772cd2f": {
+      "title": "renders without console errors",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        4588,
-        774,
-        1191
+        5262
       ]
     },
-    "8846a5573cc2": {
-      "title": "nav collapses behind a toggle and opens on tap",
+    "09102952b648": {
+      "title": "asks for the same stylesheet version",
       "project": "desktop-firefox",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "p",
       "durations": [
-        505,
-        253,
-        352
-      ]
-    },
-    "90883ffc78c1": {
-      "title": "hero content is visible without horizontal scroll",
-      "project": "desktop-firefox",
-      "file": "tests/smoke.spec.ts",
-      "outcomes": "sss",
-      "durations": [
-        502,
-        259,
-        379
+        5122
       ]
     },
     "32159289cb4a": {
       "title": "the home page has no WCAG 2.2 A/AA violations",
       "project": "desktop-webkit",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         6761,
         6018,
-        6550
+        6550,
+        9716
       ]
     },
     "84353ff6ae88": {
       "title": "the CV page has no WCAG 2.2 A/AA violations",
       "project": "desktop-webkit",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         4012,
         2897,
-        2736
+        2736,
+        5853
       ]
     },
     "5e316dd0a5c7": {
       "title": "the QA suite runner page has no WCAG 2.2 A/AA violations",
       "project": "desktop-webkit",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "pfpp",
       "durations": [
         6754,
         5970,
-        4716
+        4716,
+        3096
       ]
     },
     "affb5d761ce2": {
       "title": "the not found page has no WCAG 2.2 A/AA violations",
       "project": "desktop-webkit",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         2505,
         1115,
-        1402
+        1402,
+        1436
       ]
     },
-    "0576c1918e73": {
-      "title": "the home page outline reads as a document to assistive technology",
+    "29487e015df8": {
+      "title": "the home page outline reads as a document to assistive readers",
       "project": "desktop-webkit",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        2807,
-        822,
-        1137
+        986
       ]
     },
     "bf6408bdae35": {
       "title": "the navigation exposes every section and the CV action",
       "project": "desktop-webkit",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         3276,
         918,
-        1034
+        1034,
+        1224
       ]
     },
     "a7860fa6ebc0": {
       "title": "every control shows a visible focus indicator",
       "project": "desktop-webkit",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "ssss",
       "durations": [
         376,
         420,
-        586
+        586,
+        534
       ]
     },
     "cff70c70a07b": {
       "title": "print styles drop the screen chrome and keep entries whole",
       "project": "desktop-webkit",
       "file": "tests/cv-print.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         2771,
         1111,
-        1319
+        1319,
+        1175
       ]
     },
     "18e153110f2e": {
       "title": "the CV prints to at most 4 A4 pages",
       "project": "desktop-webkit",
       "file": "tests/cv-print.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "ssss",
       "durations": [
         428,
         459,
-        417
+        417,
+        487
       ]
     },
-    "a5c3098a673a": {
-      "title": "the committed PDF is not stale against cv.html",
+    "e5ca7a09ed42": {
+      "title": "compare the committed PDF against cv.html",
       "project": "desktop-webkit",
       "file": "tests/cv-print.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "s",
       "durations": [
-        416,
-        396,
-        566
+        512
       ]
     },
-    "26aeadca7dbb": {
-      "title": "the home page stays inside its budget on a throttled connection",
+    "2f7f3e0d03c0": {
+      "title": "the home page only links to things that exist",
+      "project": "desktop-webkit",
+      "file": "tests/links.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        1148
+      ]
+    },
+    "3cdfbe7476a6": {
+      "title": "the CV page only links to things that exist",
+      "project": "desktop-webkit",
+      "file": "tests/links.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        947
+      ]
+    },
+    "19b4a39cc5be": {
+      "title": "the QA suite runner page only links to things that exist",
+      "project": "desktop-webkit",
+      "file": "tests/links.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        1048
+      ]
+    },
+    "74ed342d7812": {
+      "title": "the not found page only links to things that exist",
+      "project": "desktop-webkit",
+      "file": "tests/links.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        814
+      ]
+    },
+    "de2f528bbd68": {
+      "title": "the home page loads within budget on slow 4G",
       "project": "desktop-webkit",
       "file": "tests/performance.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "s",
       "durations": [
-        437,
-        330,
-        470
+        497
       ]
     },
-    "4eedc1b33edd": {
-      "title": "the CV page stays inside its budget on a throttled connection",
+    "e28c4e7005f6": {
+      "title": "the CV page loads within budget on slow 4G",
       "project": "desktop-webkit",
       "file": "tests/performance.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "s",
       "durations": [
-        461,
-        370,
-        565
+        521
       ]
     },
-    "d7fdd6edef80": {
-      "title": "renders the committed report with a per-browser breakdown",
+    "bb39c4fbcb0e": {
+      "title": "shows the real report's totals for each browser",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1743,
-        6036,
-        1155
+        1109
       ]
     },
-    "130c3e723827": {
+    "f33edd71a85a": {
       "title": "links back to the portfolio and to the raw report",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        2746,
-        603,
-        1047
+        1081
       ]
     },
-    "35147ec064c6": {
-      "title": "the suite card on the portfolio opens the runner",
+    "ab58d0459cab": {
+      "title": "the portfolio's QA suite card opens the dashboard",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        2676,
-        1053,
-        1780
+        1538
       ]
     },
-    "46d086bb4043": {
+    "ae757556843f": {
       "title": "a clean run shows its totals and every browser",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        3361,
-        5969,
-        1018
+        779
       ]
     },
-    "203c660519dc": {
-      "title": "a failing test links straight to its trace in Playwright's Trace Viewer",
+    "4ee46791f4ed": {
+      "title": "a failed test links to its trace",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        3291,
-        6063,
-        1106
+        918
       ]
     },
-    "e5770733d968": {
-      "title": "a flaky test is counted apart from passes and failures",
+    "70d97cdd80c0": {
+      "title": "flaky tests are counted separately",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        2591,
-        5989,
-        1057
+        894
       ]
     },
-    "cf81f1b3b2a1": {
+    "f0664d3faf93": {
       "title": "the showcase offers the recorded video and the trace",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        2538,
-        31364,
-        1651
+        1162
       ]
     },
-    "5abeca460014": {
-      "title": "a run that recorded no showcase shows no empty player",
+    "ddc18f010823": {
+      "title": "no recording means no video player",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1168,
-        5850,
-        948
+        1015
       ]
     },
-    "ce0c66624527": {
-      "title": "accessibility violations are called out rather than averaged away",
+    "3aa2e54e790a": {
+      "title": "accessibility violations are shown per page",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1193,
-        5876,
-        995
+        946
       ]
     },
-    "bbb773091a71": {
-      "title": "a clean accessibility gate says so",
+    "d138f9c5288f": {
+      "title": "no accessibility violations shows as passing",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1026,
-        5881,
-        937
+        846
       ]
     },
-    "bd3f2814983c": {
-      "title": "a page over its performance budget is flagged on the metric that broke it",
+    "81374b3f23f8": {
+      "title": "only the metric over budget is flagged",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        811,
-        5841,
-        997
+        905
       ]
     },
-    "427f78651f0a": {
-      "title": "tests that failed or retried in recent runs surface under Stability",
+    "af5978e96027": {
+      "title": "recently failed or flaky tests show under Stability",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1071,
-        6065,
-        1082
+        831
       ]
     },
-    "4c305404ad02": {
-      "title": "a test much slower than its usual pace is marked as regressed",
+    "8a6644ee4cee": {
+      "title": "a test much slower than usual is flagged",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1113,
-        5942,
-        932
+        930
       ]
     },
-    "7eb30abde97a": {
+    "a87c6f9863fb": {
       "title": "tag chips filter the test list",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        3332,
-        31365,
-        1561
+        1641
       ]
     },
-    "6642edfb4312": {
-      "title": "results from a local run are labelled as such",
+    "c6bdd07567b8": {
+      "title": "a local run is labelled as local",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        889,
-        5847,
-        938
+        904
       ]
     },
-    "c38d265800d2": {
-      "title": "the trend waits for a second run before drawing a line",
+    "0b4283dbc798": {
+      "title": "the trend chart needs at least two runs",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        4124,
-        5885,
-        1123
+        1167
       ]
     },
-    "e338c995d05c": {
-      "title": "missing history files cost their panels, not the page",
+    "f8d0a3688c4c": {
+      "title": "missing history files only empty their own panels",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1254,
-        5869,
-        953
+        910
       ]
     },
-    "5bd2dca7c2a0": {
-      "title": "a report that isn't there says so instead of showing a blank page",
+    "42984d11eb21": {
+      "title": "a missing report shows an error",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1236,
-        5852,
-        847
+        804
       ]
     },
-    "0ac3083d9772": {
-      "title": "an unreachable report says so too",
+    "7983d67c3dd9": {
+      "title": "a report that can't be reached shows an error",
       "project": "desktop-webkit",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        3877,
-        6127,
-        797
+        738
       ]
     },
     "a7e2e19af78a": {
       "title": "a recruiter's first minute on the site",
       "project": "desktop-webkit",
       "file": "tests/showcase.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "ssss",
       "durations": [
         657,
         605,
-        566
+        566,
+        575
       ]
     },
     "8a19cfc2f6fe": {
       "title": "loads with the right title and hero content",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         950,
         1008,
-        960
+        960,
+        979
       ]
     },
-    "dd238cce10f7": {
-      "title": "renders without console errors on any page",
+    "1b893bb17750": {
+      "title": "each nav link scrolls to its section",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        4511,
-        996,
-        1355
+        4498
       ]
     },
-    "30a57735cb5b": {
-      "title": "nav links resolve to real sections on the page",
+    "c814e48551fb": {
+      "title": "experience lists every role, newest first",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        4794,
-        3818,
-        5317
+        1288
       ]
     },
-    "81182d213597": {
-      "title": "experience section lists all four roles in order",
+    "0e9d1c948c05": {
+      "title": "only the newest role is marked Current",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        3100,
-        1394,
-        1019
+        887
       ]
     },
-    "8909c26fd9d2": {
-      "title": "current role carries the Current badge and the rest don't",
+    "37148400e869": {
+      "title": "Shift Board lists its AI providers",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        2981,
-        1350,
-        931
-      ]
-    },
-    "96822a3970ec": {
-      "title": "projects section features Shift Board with its AI-provider tags",
-      "project": "desktop-webkit",
-      "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
-      "durations": [
-        5051,
-        1220,
-        968
+        971
       ]
     },
     "114b8245293b": {
       "title": "contact section links to LinkedIn in a new tab",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         4367,
         1188,
-        977
+        977,
+        1191
       ]
     },
-    "f0d1ab87fc35": {
-      "title": "hero and nav both offer a way to reach the CV",
+    "57bfb4380b41": {
+      "title": "the hero and nav both link to the CV",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        4479,
-        1177,
-        986
+        1136
       ]
     },
     "5d3b3fc8bc26": {
       "title": "footer LinkedIn link matches the contact link",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         4007,
         1087,
-        1023
+        1023,
+        970
       ]
     },
-    "6df045723e88": {
-      "title": "the footer year comes from the visitor's clock",
+    "5f516de4e91a": {
+      "title": "the footer shows the current year",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        2812,
-        1126,
-        941
+        973
       ]
     },
-    "b2cd6088a36e": {
-      "title": "earlier roles stay collapsed until asked for",
+    "954fd47c911c": {
+      "title": "earlier roles are hidden until expanded",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        3091,
-        1340,
-        1435
+        1302
       ]
     },
-    "5afdece26701": {
-      "title": "skill bars fill to the value each one declares",
+    "7cb65fbc1e42": {
+      "title": "each skill bar fills to its percentage",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        3549,
-        1811,
-        1723
+        1689
       ]
     },
-    "cadd5f9a0c8b": {
+    "80e45847f159": {
       "title": "reduced motion turns the skill bar animation off",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1090,
-        1127,
-        1063
+        1192
       ]
     },
-    "33effb836493": {
-      "title": "a floating CTA is visible while browsing and steps aside at Projects",
+    "0be24930435b": {
+      "title": "the floating button hides at Projects",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1357,
-        1500,
-        1448
+        2271
       ]
     },
-    "90026988c182": {
-      "title": "a reload opens the page at the top, not where the last visit ended",
+    "f1b8b0000ef3": {
+      "title": "reloading opens the page at the top",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        3430,
-        1426,
-        1697
+        1375
       ]
     },
-    "84aa81738d78": {
+    "e8381c7a75f8": {
       "title": "keyboard users can skip straight to the content",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "s",
       "durations": [
-        520,
-        865,
-        695
+        487
       ]
     },
-    "596eb0352005": {
-      "title": "a retired anchor still reaches the section it now lives in",
+    "6c7352d6c0df": {
+      "title": "the old #work link goes to Projects",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1346,
-        1485,
-        1205
+        955
       ]
     },
-    "79b38037f69b": {
-      "title": "an unknown section in the address lands on the not found page",
+    "d8cde91b5a3a": {
+      "title": "an unknown #section goes to the 404 page",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1903,
-        1332,
-        1329
+        1105
       ]
     },
-    "055c999390b2": {
-      "title": "an unknown path answers with a real 404 status",
+    "84c17413cbe7": {
+      "title": "an unknown page returns 404",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        283,
-        763,
-        648
+        667
       ]
     },
-    "3c1a1185390e": {
-      "title": "a deep unknown path still renders the styled not found page",
+    "5a6de5ae67df": {
+      "title": "the 404 page keeps its styling on nested paths",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1635,
-        1179,
-        1054
+        1193
       ]
     },
-    "53334a42f9b3": {
-      "title": "renders the résumé with a working PDF download link",
+    "fbd62654ea7f": {
+      "title": "the PDF download works",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1063,
-        971,
-        1056
+        1046
       ]
     },
-    "ebe0b005fafb": {
-      "title": "lists all four experience entries and the certifications block",
+    "afb783cf291a": {
+      "title": "lists every role, Shift Board and the certifications",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        2127,
-        938,
-        864
+        915
       ]
     },
     "fa4f44d46231": {
       "title": "back link returns to the portfolio",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         3110,
         1424,
-        1326
+        1326,
+        1131
       ]
     },
-    "98c90e911d34": {
-      "title": "shows a friendly not-found message with a way back",
+    "9b150431fe8e": {
+      "title": "shows 404 and a link home",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        744,
-        692,
-        801
+        756
       ]
     },
-    "8db7147bc6b9": {
-      "title": "every page asks for the same stylesheet version",
+    "894a1e4301f8": {
+      "title": "renders without console errors",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        4867,
-        1403,
-        1788
+        1325
       ]
     },
-    "ec2015dd3a08": {
-      "title": "nav collapses behind a toggle and opens on tap",
+    "e2ac1a986fc0": {
+      "title": "asks for the same stylesheet version",
       "project": "desktop-webkit",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "p",
       "durations": [
-        241,
-        468,
-        412
-      ]
-    },
-    "d5250ec610aa": {
-      "title": "hero content is visible without horizontal scroll",
-      "project": "desktop-webkit",
-      "file": "tests/smoke.spec.ts",
-      "outcomes": "sss",
-      "durations": [
-        225,
-        559,
-        534
+        1458
       ]
     },
     "6a8e907eaccb": {
       "title": "the home page has no WCAG 2.2 A/AA violations",
       "project": "mobile-chromium",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         4629,
         1840,
-        1841
+        1841,
+        1795
       ]
     },
     "9cb6b429f2b4": {
       "title": "the CV page has no WCAG 2.2 A/AA violations",
       "project": "mobile-chromium",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         2096,
         1630,
-        1605
+        1605,
+        1689
       ]
     },
     "ae54a21bd36d": {
       "title": "the QA suite runner page has no WCAG 2.2 A/AA violations",
       "project": "mobile-chromium",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "pfpp",
       "durations": [
         3780,
         5477,
-        3779
+        3779,
+        2259
       ]
     },
     "3bea3f127c89": {
       "title": "the not found page has no WCAG 2.2 A/AA violations",
       "project": "mobile-chromium",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         2741,
         682,
-        855
+        855,
+        1106
       ]
     },
-    "4e2391c60cc8": {
-      "title": "the home page outline reads as a document to assistive technology",
+    "21a1dfe7d399": {
+      "title": "the home page outline reads as a document to assistive readers",
       "project": "mobile-chromium",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1547,
-        282,
-        384
-      ]
-    },
-    "bb2ccb0fc142": {
-      "title": "the navigation exposes every section and the CV action",
-      "project": "mobile-chromium",
-      "file": "tests/a11y.spec.ts",
-      "outcomes": "sss",
-      "durations": [
-        105,
-        153,
-        189
+        523
       ]
     },
     "2ee06780120c": {
       "title": "every control shows a visible focus indicator",
       "project": "mobile-chromium",
       "file": "tests/a11y.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         1561,
         439,
-        632
+        632,
+        742
       ]
     },
     "527b3914d0bd": {
       "title": "print styles drop the screen chrome and keep entries whole",
       "project": "mobile-chromium",
       "file": "tests/cv-print.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         1308,
         324,
-        389
+        389,
+        633
       ]
     },
     "a0d8bdc76b18": {
       "title": "the CV prints to at most 4 A4 pages",
       "project": "mobile-chromium",
       "file": "tests/cv-print.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "ssss",
       "durations": [
         109,
         164,
-        181
+        181,
+        172
       ]
     },
-    "05e1c87db34e": {
-      "title": "the committed PDF is not stale against cv.html",
+    "251ffc5ffc9c": {
+      "title": "compare the committed PDF against cv.html",
       "project": "mobile-chromium",
       "file": "tests/cv-print.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "s",
       "durations": [
-        99,
-        130,
-        143
+        155
       ]
     },
-    "423bf95987e4": {
-      "title": "the home page stays inside its budget on a throttled connection",
+    "877bdb0ff747": {
+      "title": "the home page only links to things that exist",
+      "project": "mobile-chromium",
+      "file": "tests/links.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        531
+      ]
+    },
+    "59bea581c6c5": {
+      "title": "the CV page only links to things that exist",
+      "project": "mobile-chromium",
+      "file": "tests/links.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        344
+      ]
+    },
+    "0ad0717a24e0": {
+      "title": "the QA suite runner page only links to things that exist",
+      "project": "mobile-chromium",
+      "file": "tests/links.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        544
+      ]
+    },
+    "b598ed62552e": {
+      "title": "the not found page only links to things that exist",
+      "project": "mobile-chromium",
+      "file": "tests/links.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        268
+      ]
+    },
+    "46faa1b159dc": {
+      "title": "the home page loads within budget on slow 4G",
       "project": "mobile-chromium",
       "file": "tests/performance.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "s",
       "durations": [
-        82,
-        132,
-        148
+        163
       ]
     },
-    "dd0cb57e4278": {
-      "title": "the CV page stays inside its budget on a throttled connection",
+    "92e7c0e1a0f7": {
+      "title": "the CV page loads within budget on slow 4G",
       "project": "mobile-chromium",
       "file": "tests/performance.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "s",
       "durations": [
-        79,
-        153,
-        141
+        199
       ]
     },
-    "6f3b14d3f47a": {
-      "title": "renders the committed report with a per-browser breakdown",
+    "df700151dbbe": {
+      "title": "shows the real report's totals for each browser",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1431,
-        5592,
-        510
+        653
       ]
     },
-    "7969108764e1": {
+    "cf8b761598fd": {
       "title": "links back to the portfolio and to the raw report",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1231,
-        358,
-        548
+        552
       ]
     },
-    "9dfae6dcd8dd": {
-      "title": "the suite card on the portfolio opens the runner",
+    "cada1e65683c": {
+      "title": "the portfolio's QA suite card opens the dashboard",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1605,
-        494,
-        587
+        664
       ]
     },
-    "088a52dd156e": {
+    "83741c323729": {
       "title": "a clean run shows its totals and every browser",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1407,
-        5586,
-        412
+        485
       ]
     },
-    "cd6d1287521d": {
-      "title": "a failing test links straight to its trace in Playwright's Trace Viewer",
+    "4fb8f9614ab1": {
+      "title": "a failed test links to its trace",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1720,
-        5520,
-        426
+        485
       ]
     },
-    "e19812c782b6": {
-      "title": "a flaky test is counted apart from passes and failures",
+    "522513305ac6": {
+      "title": "flaky tests are counted separately",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1509,
-        5564,
-        420
+        441
       ]
     },
-    "bcff90f40d2f": {
+    "1a88f4ba526b": {
       "title": "the showcase offers the recorded video and the trace",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1551,
-        31012,
-        513
+        542
       ]
     },
-    "7523ce5ec84b": {
-      "title": "a run that recorded no showcase shows no empty player",
+    "004e2295feaa": {
+      "title": "no recording means no video player",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1337,
-        5495,
-        431
+        481
       ]
     },
-    "642ec5471e97": {
-      "title": "accessibility violations are called out rather than averaged away",
+    "46021ee04456": {
+      "title": "accessibility violations are shown per page",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1176,
-        5502,
-        415
+        506
       ]
     },
-    "1f948ed579fb": {
-      "title": "a clean accessibility gate says so",
+    "faa83ee4c949": {
+      "title": "no accessibility violations shows as passing",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1219,
-        5571,
-        406
+        465
       ]
     },
-    "4b5830b03f54": {
-      "title": "a page over its performance budget is flagged on the metric that broke it",
+    "91e73c838fbd": {
+      "title": "only the metric over budget is flagged",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        882,
-        5551,
-        396
+        508
       ]
     },
-    "3f138ee96c6a": {
-      "title": "tests that failed or retried in recent runs surface under Stability",
+    "cb0eb181dec1": {
+      "title": "recently failed or flaky tests show under Stability",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        721,
-        5569,
-        383
+        519
       ]
     },
-    "ea1f1b360cb2": {
-      "title": "a test much slower than its usual pace is marked as regressed",
+    "f91a1586f523": {
+      "title": "a test much slower than usual is flagged",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1387,
-        5488,
-        371
+        455
       ]
     },
-    "0dc832258f7e": {
+    "9297942e2b7b": {
       "title": "tag chips filter the test list",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1438,
-        30992,
-        500
+        600
       ]
     },
-    "c436a238600d": {
-      "title": "results from a local run are labelled as such",
+    "46f908d1f019": {
+      "title": "a local run is labelled as local",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1330,
-        5556,
-        363
+        466
       ]
     },
-    "8696b32b85b0": {
-      "title": "the trend waits for a second run before drawing a line",
+    "b449dcaddc4d": {
+      "title": "the trend chart needs at least two runs",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        2226,
-        5492,
-        530
+        642
       ]
     },
-    "e7122eb43b42": {
-      "title": "missing history files cost their panels, not the page",
+    "0d62dbcf34e1": {
+      "title": "missing history files only empty their own panels",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1269,
-        5577,
-        391
+        507
       ]
     },
-    "e460b5ac4af7": {
-      "title": "a report that isn't there says so instead of showing a blank page",
+    "2a8982897f2d": {
+      "title": "a missing report shows an error",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1206,
-        5517,
-        400
+        478
       ]
     },
-    "c2093fc7674e": {
-      "title": "an unreachable report says so too",
+    "c2b9896de62a": {
+      "title": "a report that can't be reached shows an error",
       "project": "mobile-chromium",
       "file": "tests/qa-dashboard.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        1111,
-        5547,
-        391
+        506
       ]
     },
     "a83d85d1ac0f": {
       "title": "a recruiter's first minute on the site",
       "project": "mobile-chromium",
       "file": "tests/showcase.spec.ts",
-      "outcomes": "sss",
+      "outcomes": "ssss",
       "durations": [
         458,
         394,
-        401
+        401,
+        396
       ]
     },
     "1a1ac5675883": {
       "title": "loads with the right title and hero content",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         1591,
         429,
-        404
+        404,
+        486
       ]
     },
-    "d2913cd7f3f5": {
-      "title": "renders without console errors on any page",
+    "56fed8f86921": {
+      "title": "each nav link scrolls to its section",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "pfp",
+      "outcomes": "p",
       "durations": [
-        2109,
-        804,
-        675
+        2616
       ]
     },
-    "0780ec1fb56a": {
-      "title": "nav links resolve to real sections on the page",
+    "4390803fa76f": {
+      "title": "experience lists every role, newest first",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        2575,
-        2391,
-        2166
+        585
       ]
     },
-    "3c649478fd54": {
-      "title": "experience section lists all four roles in order",
+    "5f2302161c75": {
+      "title": "only the newest role is marked Current",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1474,
-        587,
-        386
+        499
       ]
     },
-    "8239e0e97734": {
-      "title": "current role carries the Current badge and the rest don't",
+    "d6ece4786112": {
+      "title": "Shift Board lists its AI providers",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        2097,
-        385,
-        386
-      ]
-    },
-    "cbb6ae52f0fd": {
-      "title": "projects section features Shift Board with its AI-provider tags",
-      "project": "mobile-chromium",
-      "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
-      "durations": [
-        2110,
-        426,
-        396
+        524
       ]
     },
     "c5ec991410b6": {
       "title": "contact section links to LinkedIn in a new tab",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         1511,
         384,
-        353
+        353,
+        498
       ]
     },
-    "ba9871781b7e": {
-      "title": "hero and nav both offer a way to reach the CV",
+    "6260151fc241": {
+      "title": "the hero and nav both link to the CV",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1635,
-        381,
-        382
+        488
       ]
     },
     "c4dc3ddaa0d2": {
       "title": "footer LinkedIn link matches the contact link",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         1497,
         341,
-        324
+        324,
+        464
       ]
     },
-    "b100e3db1b3b": {
-      "title": "the footer year comes from the visitor's clock",
+    "282425d8dd2f": {
+      "title": "the footer shows the current year",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1342,
-        417,
-        393
+        495
       ]
     },
-    "a7b723c00331": {
-      "title": "earlier roles stay collapsed until asked for",
+    "d9c9ab983c52": {
+      "title": "earlier roles are hidden until expanded",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1416,
-        478,
-        503
+        602
       ]
     },
-    "e62a9ce932c8": {
-      "title": "skill bars fill to the value each one declares",
+    "cb497c605bca": {
+      "title": "each skill bar fills to its percentage",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1148,
-        763,
-        711
+        805
       ]
     },
-    "3dbc8f189be1": {
+    "9199d493138d": {
       "title": "reduced motion turns the skill bar animation off",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1214,
-        397,
-        424
+        497
       ]
     },
-    "0cf1752dc201": {
-      "title": "a floating CTA is visible while browsing and steps aside at Projects",
+    "f091fae9ee18": {
+      "title": "the floating button hides at Projects",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1270,
-        508,
-        499
+        818
       ]
     },
-    "45fd339e3aa7": {
-      "title": "a reload opens the page at the top, not where the last visit ended",
+    "0fd8c76b4466": {
+      "title": "reloading opens the page at the top",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1934,
-        491,
-        447
+        550
       ]
     },
-    "326a789c158d": {
+    "c3cb57af3796": {
       "title": "keyboard users can skip straight to the content",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1526,
-        505,
-        493
+        656
       ]
     },
-    "8a493e3272fa": {
-      "title": "a retired anchor still reaches the section it now lives in",
+    "4c5c3802a06f": {
+      "title": "the old #work link goes to Projects",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1568,
-        467,
-        431
+        582
       ]
     },
-    "74ff73c7ca43": {
-      "title": "an unknown section in the address lands on the not found page",
+    "42bdf1d23382": {
+      "title": "an unknown #section goes to the 404 page",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        729,
-        351,
-        437
+        465
       ]
     },
-    "23fb43d6469f": {
-      "title": "an unknown path answers with a real 404 status",
+    "a4d2db1b470d": {
+      "title": "an unknown page returns 404",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        107,
-        235,
-        188
+        172
       ]
     },
-    "fd1c87772805": {
-      "title": "a deep unknown path still renders the styled not found page",
+    "3edcadf453f9": {
+      "title": "the 404 page keeps its styling on nested paths",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        996,
-        476,
-        501
+        539
       ]
     },
-    "c4f3b5314095": {
-      "title": "renders the résumé with a working PDF download link",
+    "7f5278a84e09": {
+      "title": "the PDF download works",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1534,
-        399,
-        359
+        375
       ]
     },
-    "516b080a0703": {
-      "title": "lists all four experience entries and the certifications block",
+    "7c255cbd0ea2": {
+      "title": "lists every role, Shift Board and the certifications",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1462,
-        373,
-        280
+        384
       ]
     },
     "f4e77c816e0c": {
       "title": "back link returns to the portfolio",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "pppp",
       "durations": [
         1556,
         527,
-        467
+        467,
+        534
       ]
     },
-    "19a23ae17455": {
-      "title": "shows a friendly not-found message with a way back",
+    "99d6aa15794f": {
+      "title": "shows 404 and a link home",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        429,
-        277,
-        260
+        349
       ]
     },
-    "22685a2e33de": {
-      "title": "every page asks for the same stylesheet version",
+    "e1d047c98e1b": {
+      "title": "renders without console errors",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1804,
-        600,
-        787
+        739
       ]
     },
-    "4b611cfd76ab": {
-      "title": "nav collapses behind a toggle and opens on tap",
+    "6ea24f79da24": {
+      "title": "asks for the same stylesheet version",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1205,
-        429,
-        457
+        798
       ]
     },
-    "1650fe4d7bab": {
-      "title": "hero content is visible without horizontal scroll",
+    "9da00136eba6": {
+      "title": "the nav opens from the menu button",
       "project": "mobile-chromium",
       "file": "tests/smoke.spec.ts",
-      "outcomes": "ppp",
+      "outcomes": "p",
       "durations": [
-        1694,
-        309,
-        351
+        543
+      ]
+    },
+    "ab63ae79df47": {
+      "title": "the page doesn't scroll sideways on a phone",
+      "project": "mobile-chromium",
+      "file": "tests/smoke.spec.ts",
+      "outcomes": "p",
+      "durations": [
+        444
+      ]
+    },
+    "5f7e4b49f0cb": {
+      "title": "the home page looks as designed",
+      "project": "mobile-chromium",
+      "file": "tests/visual.spec.ts",
+      "outcomes": "f",
+      "durations": [
+        793
+      ]
+    },
+    "b351d9148a54": {
+      "title": "the CV looks as designed on screen and on paper",
+      "project": "mobile-chromium",
+      "file": "tests/visual.spec.ts",
+      "outcomes": "f",
+      "durations": [
+        700
+      ]
+    },
+    "c60b391ddc63": {
+      "title": "the not-found page looks as designed",
+      "project": "mobile-chromium",
+      "file": "tests/visual.spec.ts",
+      "outcomes": "f",
+      "durations": [
+        692
+      ]
+    },
+    "10141a53d62d": {
+      "title": "the dashboard looks as designed with failures, flakes and skips",
+      "project": "mobile-chromium",
+      "file": "tests/visual.spec.ts",
+      "outcomes": "f",
+      "durations": [
+        712
       ]
     }
   }

@@ -42,5 +42,16 @@
     "flaky": 0,
     "skipped": 17,
     "passRate": 96.6
+  },
+  {
+    "generatedAt": "2026-09-21T13:31:08.952Z",
+    "source": "ci",
+    "commitShort": "14cf28f",
+    "total": 253,
+    "passed": 228,
+    "failed": 8,
+    "flaky": 0,
+    "skipped": 17,
+    "passRate": 96.6
   }
 ]
